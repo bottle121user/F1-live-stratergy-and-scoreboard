@@ -1,0 +1,34 @@
+Checking pit probability for different compounds at different ages:
+
+--- SOFT ---
+Age 10: STAY OUT (0.00)
+Age 15: STAY OUT (0.00)
+Age 18: STAY OUT (0.20)
+Age 20: STAY OUT (0.20)
+Age 22: PIT NOW (0.40)
+Age 25: PIT NOW (0.40)
+Age 30: PIT NOW (0.40)
+Age 35: PIT NOW (0.40)
+Age 40: PIT NOW (0.40)
+
+--- MEDIUM ---
+Age 10: STAY OUT (0.00)
+Age 15: STAY OUT (0.00)
+Age 18: STAY OUT (0.00)
+Age 20: STAY OUT (0.00)
+Age 22: STAY OUT (0.00)
+Age 25: STAY OUT (0.20)
+Age 30: PIT NOW (0.40)
+Age 35: PIT NOW (0.40)
+Age 40: PIT NOW (0.40)
+
+--- HARD ---
+Age 10: STAY OUT (0.00)
+Age 15: STAY OUT (0.00)
+Age 18: STAY OUT (0.00)
+Age 20: STAY OUT (0.00)
+Age 22: STAY OUT (0.00)
+Age 25: STAY OUT (0.00)
+Age 30: STAY OUT (0.00)
+Age 35: STAY OUT (0.20)
+Age 40: PIT NOW (0.40)

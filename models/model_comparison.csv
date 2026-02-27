@@ -1,0 +1,4 @@
+model,accuracy,precision,recall,f1
+RandomForest,1.0,1.0,1.0,1.0
+XGBoost,0.9649122807017544,0.0,0.0,0.0
+LightGBM,1.0,1.0,1.0,1.0

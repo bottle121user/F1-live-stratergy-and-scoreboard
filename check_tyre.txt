@@ -1,0 +1,12 @@
+Max tyre life overall: 78.0
+Description of TyreLife:
+                count  ...   max
+Compound               ...      
+HARD          53965.0  ...  78.0
+INTERMEDIATE   7246.0  ...  57.0
+MEDIUM        44784.0  ...  77.0
+SOFT          15452.0  ...  50.0
+UNKNOWN          20.0  ...   1.0
+WET             420.0  ...  21.0
+
+[6 rows x 8 columns]

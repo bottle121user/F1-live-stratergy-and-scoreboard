@@ -1,0 +1,14 @@
+[server]
+headless = true
+port = 8501
+
+[theme]
+base = "dark"
+primaryColor = "#e10600"
+backgroundColor = "#0d0d0f"
+secondaryBackgroundColor = "#18181f"
+textColor = "#f0f0f0"
+
+[runner]
+# Silence Streamlit's "use_container_width" deprecation warnings
+fastReruns = true

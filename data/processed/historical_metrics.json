@@ -1,0 +1,12 @@
+{
+  "team_pace_offsets": {
+    "Unknown": 0.0
+  },
+  "driver_tyre_factors": {
+    "HAM": 1.072,
+    "LEC": 0.979,
+    "NOR": 0.928,
+    "SAI": 1.021,
+    "VER": 0.999
+  }
+}

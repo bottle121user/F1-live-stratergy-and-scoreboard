@@ -1,0 +1,28 @@
+# ──────────────────────────────────────────
+#  F1 Pit Strategy AI — Runtime Requirements
+#  (dev-only packages like jupyterlab removed)
+# ──────────────────────────────────────────
+
+# Data fetching
+fastf1>=3.3.0
+
+# Data handling
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Visualisation
+plotly>=5.20.0
+
+# Machine Learning
+scikit-learn>=1.4.0
+lightgbm>=4.3.0
+
+# Web dashboard
+streamlit>=1.32.0
+
+# API calls (live scoreboard)
+requests>=2.31.0
+
+# Utilities
+tqdm>=4.66.0
+python-dotenv>=1.0.0
