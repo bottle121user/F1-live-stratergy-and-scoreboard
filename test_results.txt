@@ -1,34 +1,1645 @@
-Checking pit probability for different compounds at different ages:
 
---- SOFT ---
-Age 10: STAY OUT (0.00)
-Age 15: STAY OUT (0.00)
-Age 18: STAY OUT (0.20)
-Age 20: STAY OUT (0.20)
-Age 22: PIT NOW (0.40)
-Age 25: PIT NOW (0.40)
-Age 30: PIT NOW (0.40)
-Age 35: PIT NOW (0.40)
-Age 40: PIT NOW (0.40)
+================================================================================
+  TAB 1: LIVE PIT DECISION — All Circuits × All Compounds × Edge Cases
+================================================================================
+  Circuit | Compound | Lap | LapsSincePit | LapsRem | SC | Rain | Team | Driver | Decision | PitProb% | StayProb% | Confidence%
+  ----------------------------------------------------------------------------
+  Bahrain Grand Prix        | SOFT         |  1 |   1 |  56 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Bahrain Grand Prix        | SOFT         |  1 |   1 |  56 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Bahrain Grand Prix        | SOFT         | 20 |  10 |  37 |    | R0.0 | Unknown      | HAM   | STAY OUT |   5.4 |  94.6 |  94.6
+  Bahrain Grand Prix        | SOFT         | 20 |  10 |  37 |    | R0.0 | Unknown      | LEC   | STAY OUT |   5.4 |  94.6 |  94.6
+  Bahrain Grand Prix        | SOFT         | 30 |  20 |  27 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  62.9 |  37.1 |  62.9
+  Bahrain Grand Prix        | SOFT         | 30 |  20 |  27 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  62.9 |  37.1 |  62.9
+  Bahrain Grand Prix        | SOFT         | 40 |  30 |  17 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.8 |  18.2 |  81.8
+  Bahrain Grand Prix        | SOFT         | 40 |  30 |  17 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.8 |  18.2 |  81.8
+  Bahrain Grand Prix        | SOFT         | 50 |  40 |   7 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Bahrain Grand Prix        | SOFT         | 50 |  40 |   7 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Bahrain Grand Prix        | SOFT         | 57 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Bahrain Grand Prix        | SOFT         | 57 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Bahrain Grand Prix        | SOFT         | 57 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  73.2 |  26.8 |  73.2
+  Bahrain Grand Prix        | SOFT         | 57 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  73.2 |  26.8 |  73.2
+  Bahrain Grand Prix        | SOFT         | 25 |   5 |  32 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  19.4 |  80.5 |  80.5
+  Bahrain Grand Prix        | SOFT         | 25 |   5 |  32 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  19.4 |  80.5 |  80.5
+  Bahrain Grand Prix        | SOFT         | 30 |  15 |  27 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  49.5 |  50.5 |  50.5
+  Bahrain Grand Prix        | SOFT         | 30 |  15 |  27 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  49.5 |  50.5 |  50.5
+  Bahrain Grand Prix        | SOFT         | 35 |  10 |  22 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  49.7 |  50.3 |  50.3
+  Bahrain Grand Prix        | SOFT         | 35 |  10 |  22 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  49.7 |  50.3 |  50.3
+  Bahrain Grand Prix        | MEDIUM       |  1 |   1 |  56 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Bahrain Grand Prix        | MEDIUM       |  1 |   1 |  56 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Bahrain Grand Prix        | MEDIUM       | 20 |  10 |  37 |    | R0.0 | Unknown      | HAM   | STAY OUT |   6.1 |  93.9 |  93.9
+  Bahrain Grand Prix        | MEDIUM       | 20 |  10 |  37 |    | R0.0 | Unknown      | LEC   | STAY OUT |   6.1 |  93.9 |  93.9
+  Bahrain Grand Prix        | MEDIUM       | 30 |  20 |  27 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  46.5 |  53.5 |  53.5
+  Bahrain Grand Prix        | MEDIUM       | 30 |  20 |  27 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  46.5 |  53.5 |  53.5
+  Bahrain Grand Prix        | MEDIUM       | 40 |  30 |  17 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.8 |  13.2 |  86.8
+  Bahrain Grand Prix        | MEDIUM       | 40 |  30 |  17 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.8 |  13.2 |  86.8
+  Bahrain Grand Prix        | MEDIUM       | 50 |  40 |   7 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  85.8 |  14.2 |  85.8
+  Bahrain Grand Prix        | MEDIUM       | 50 |  40 |   7 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  85.8 |  14.2 |  85.8
+  Bahrain Grand Prix        | MEDIUM       | 57 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.5 |  13.5 |  86.5
+  Bahrain Grand Prix        | MEDIUM       | 57 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.5 |  13.5 |  86.5
+  Bahrain Grand Prix        | MEDIUM       | 57 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  78.2 |  21.8 |  78.2
+  Bahrain Grand Prix        | MEDIUM       | 57 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  78.2 |  21.8 |  78.2
+  Bahrain Grand Prix        | MEDIUM       | 25 |   5 |  32 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  20.0 |  80.0 |  80.0
+  Bahrain Grand Prix        | MEDIUM       | 25 |   5 |  32 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  20.0 |  80.0 |  80.0
+  Bahrain Grand Prix        | MEDIUM       | 30 |  15 |  27 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  50.4 |  49.6 |  50.4
+  Bahrain Grand Prix        | MEDIUM       | 30 |  15 |  27 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  50.4 |  49.6 |  50.4
+  Bahrain Grand Prix        | MEDIUM       | 35 |  10 |  22 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  50.3 |  49.7 |  50.3
+  Bahrain Grand Prix        | MEDIUM       | 35 |  10 |  22 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  50.3 |  49.7 |  50.3
+  Bahrain Grand Prix        | HARD         |  1 |   1 |  56 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Bahrain Grand Prix        | HARD         |  1 |   1 |  56 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Bahrain Grand Prix        | HARD         | 20 |  10 |  37 |    | R0.0 | Unknown      | HAM   | STAY OUT |   3.8 |  96.2 |  96.2
+  Bahrain Grand Prix        | HARD         | 20 |  10 |  37 |    | R0.0 | Unknown      | LEC   | STAY OUT |   3.8 |  96.2 |  96.2
+  Bahrain Grand Prix        | HARD         | 30 |  20 |  27 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  41.5 |  58.5 |  58.5
+  Bahrain Grand Prix        | HARD         | 30 |  20 |  27 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  41.5 |  58.5 |  58.5
+  Bahrain Grand Prix        | HARD         | 40 |  30 |  17 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  46.3 |  53.7 |  53.7
+  Bahrain Grand Prix        | HARD         | 40 |  30 |  17 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  46.3 |  53.7 |  53.7
+  Bahrain Grand Prix        | HARD         | 50 |  40 |   7 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  85.5 |  14.5 |  85.5
+  Bahrain Grand Prix        | HARD         | 50 |  40 |   7 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  85.5 |  14.5 |  85.5
+  Bahrain Grand Prix        | HARD         | 57 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.2 |  13.8 |  86.2
+  Bahrain Grand Prix        | HARD         | 57 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.2 |  13.8 |  86.2
+  Bahrain Grand Prix        | HARD         | 57 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  77.8 |  22.2 |  77.8
+  Bahrain Grand Prix        | HARD         | 57 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  77.8 |  22.2 |  77.8
+  Bahrain Grand Prix        | HARD         | 25 |   5 |  32 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  17.8 |  82.2 |  82.2
+  Bahrain Grand Prix        | HARD         | 25 |   5 |  32 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  17.8 |  82.2 |  82.2
+  Bahrain Grand Prix        | HARD         | 30 |  15 |  27 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  48.1 |  51.9 |  51.9
+  Bahrain Grand Prix        | HARD         | 30 |  15 |  27 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  48.1 |  51.9 |  51.9
+  Bahrain Grand Prix        | HARD         | 35 |  10 |  22 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  48.1 |  51.9 |  51.9
+  Bahrain Grand Prix        | HARD         | 35 |  10 |  22 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  48.1 |  51.9 |  51.9
+  Bahrain Grand Prix        | INTERMEDIATE |  1 |   1 |  56 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Bahrain Grand Prix        | INTERMEDIATE |  1 |   1 |  56 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Bahrain Grand Prix        | INTERMEDIATE | 20 |  10 |  37 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  48.8 |  51.2 |  51.2
+  Bahrain Grand Prix        | INTERMEDIATE | 20 |  10 |  37 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  48.8 |  51.2 |  51.2
+  Bahrain Grand Prix        | INTERMEDIATE | 30 |  20 |  27 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | INTERMEDIATE | 30 |  20 |  27 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | INTERMEDIATE | 40 |  30 |  17 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | INTERMEDIATE | 40 |  30 |  17 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | INTERMEDIATE | 50 |  40 |   7 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | INTERMEDIATE | 50 |  40 |   7 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | INTERMEDIATE | 57 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | INTERMEDIATE | 57 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | INTERMEDIATE | 57 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | INTERMEDIATE | 57 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | INTERMEDIATE | 25 |   5 |  32 | SC | R0.0 | Unknown      | HAM   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Bahrain Grand Prix        | INTERMEDIATE | 25 |   5 |  32 | SC | R0.0 | Unknown      | LEC   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Bahrain Grand Prix        | INTERMEDIATE | 30 |  15 |  27 |    | R0.5 | Unknown      | HAM   | STAY OUT |   3.1 |  96.9 |  96.9
+  Bahrain Grand Prix        | INTERMEDIATE | 30 |  15 |  27 |    | R0.5 | Unknown      | LEC   | STAY OUT |   3.1 |  96.9 |  96.9
+  Bahrain Grand Prix        | INTERMEDIATE | 35 |  10 |  22 |    | R1.0 | Unknown      | HAM   | STAY OUT |   3.1 |  96.9 |  96.9
+  Bahrain Grand Prix        | INTERMEDIATE | 35 |  10 |  22 |    | R1.0 | Unknown      | LEC   | STAY OUT |   3.1 |  96.9 |  96.9
+  Bahrain Grand Prix        | WET          |  1 |   1 |  56 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Bahrain Grand Prix        | WET          |  1 |   1 |  56 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Bahrain Grand Prix        | WET          | 20 |  10 |  37 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  48.8 |  51.2 |  51.2
+  Bahrain Grand Prix        | WET          | 20 |  10 |  37 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  48.8 |  51.2 |  51.2
+  Bahrain Grand Prix        | WET          | 30 |  20 |  27 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | WET          | 30 |  20 |  27 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | WET          | 40 |  30 |  17 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | WET          | 40 |  30 |  17 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | WET          | 50 |  40 |   7 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | WET          | 50 |  40 |   7 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | WET          | 57 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | WET          | 57 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | WET          | 57 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | WET          | 57 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Bahrain Grand Prix        | WET          | 25 |   5 |  32 | SC | R0.0 | Unknown      | HAM   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Bahrain Grand Prix        | WET          | 25 |   5 |  32 | SC | R0.0 | Unknown      | LEC   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Bahrain Grand Prix        | WET          | 30 |  15 |  27 |    | R0.5 | Unknown      | HAM   | STAY OUT |   3.1 |  96.9 |  96.9
+  Bahrain Grand Prix        | WET          | 30 |  15 |  27 |    | R0.5 | Unknown      | LEC   | STAY OUT |   3.1 |  96.9 |  96.9
+  Bahrain Grand Prix        | WET          | 35 |  10 |  22 |    | R1.0 | Unknown      | HAM   | STAY OUT |   3.1 |  96.9 |  96.9
+  Bahrain Grand Prix        | WET          | 35 |  10 |  22 |    | R1.0 | Unknown      | LEC   | STAY OUT |   3.1 |  96.9 |  96.9
+  Saudi Arabian Grand Prix  | SOFT         |  1 |   1 |  49 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Saudi Arabian Grand Prix  | SOFT         |  1 |   1 |  49 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Saudi Arabian Grand Prix  | SOFT         | 20 |  10 |  30 |    | R0.0 | Unknown      | HAM   | STAY OUT |   5.1 |  94.9 |  94.9
+  Saudi Arabian Grand Prix  | SOFT         | 20 |  10 |  30 |    | R0.0 | Unknown      | LEC   | STAY OUT |   5.1 |  94.9 |  94.9
+  Saudi Arabian Grand Prix  | SOFT         | 30 |  20 |  20 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  63.4 |  36.6 |  63.4
+  Saudi Arabian Grand Prix  | SOFT         | 30 |  20 |  20 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  63.4 |  36.6 |  63.4
+  Saudi Arabian Grand Prix  | SOFT         | 40 |  30 |  10 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.1 |  18.9 |  81.1
+  Saudi Arabian Grand Prix  | SOFT         | 40 |  30 |  10 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.1 |  18.9 |  81.1
+  Saudi Arabian Grand Prix  | SOFT         | 50 |  40 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Saudi Arabian Grand Prix  | SOFT         | 50 |  40 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Saudi Arabian Grand Prix  | SOFT         | 50 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Saudi Arabian Grand Prix  | SOFT         | 50 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Saudi Arabian Grand Prix  | SOFT         | 50 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  73.2 |  26.8 |  73.2
+  Saudi Arabian Grand Prix  | SOFT         | 50 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  73.2 |  26.8 |  73.2
+  Saudi Arabian Grand Prix  | SOFT         | 25 |   5 |  25 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  19.4 |  80.5 |  80.5
+  Saudi Arabian Grand Prix  | SOFT         | 25 |   5 |  25 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  19.4 |  80.5 |  80.5
+  Saudi Arabian Grand Prix  | SOFT         | 30 |  15 |  20 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  50.0 |  50.0 |  50.0
+  Saudi Arabian Grand Prix  | SOFT         | 30 |  15 |  20 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  50.0 |  50.0 |  50.0
+  Saudi Arabian Grand Prix  | SOFT         | 35 |  10 |  15 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  49.7 |  50.3 |  50.3
+  Saudi Arabian Grand Prix  | SOFT         | 35 |  10 |  15 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  49.7 |  50.3 |  50.3
+  Saudi Arabian Grand Prix  | MEDIUM       |  1 |   1 |  49 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Saudi Arabian Grand Prix  | MEDIUM       |  1 |   1 |  49 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Saudi Arabian Grand Prix  | MEDIUM       | 20 |  10 |  30 |    | R0.0 | Unknown      | HAM   | STAY OUT |   5.8 |  94.2 |  94.2
+  Saudi Arabian Grand Prix  | MEDIUM       | 20 |  10 |  30 |    | R0.0 | Unknown      | LEC   | STAY OUT |   5.8 |  94.2 |  94.2
+  Saudi Arabian Grand Prix  | MEDIUM       | 30 |  20 |  20 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  47.0 |  53.0 |  53.0
+  Saudi Arabian Grand Prix  | MEDIUM       | 30 |  20 |  20 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  47.0 |  53.0 |  53.0
+  Saudi Arabian Grand Prix  | MEDIUM       | 40 |  30 |  10 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.1 |  13.9 |  86.1
+  Saudi Arabian Grand Prix  | MEDIUM       | 40 |  30 |  10 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.1 |  13.9 |  86.1
+  Saudi Arabian Grand Prix  | MEDIUM       | 50 |  40 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  85.8 |  14.2 |  85.8
+  Saudi Arabian Grand Prix  | MEDIUM       | 50 |  40 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  85.8 |  14.2 |  85.8
+  Saudi Arabian Grand Prix  | MEDIUM       | 50 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.5 |  13.5 |  86.5
+  Saudi Arabian Grand Prix  | MEDIUM       | 50 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.5 |  13.5 |  86.5
+  Saudi Arabian Grand Prix  | MEDIUM       | 50 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  78.2 |  21.8 |  78.2
+  Saudi Arabian Grand Prix  | MEDIUM       | 50 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  78.2 |  21.8 |  78.2
+  Saudi Arabian Grand Prix  | MEDIUM       | 25 |   5 |  25 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  20.0 |  80.0 |  80.0
+  Saudi Arabian Grand Prix  | MEDIUM       | 25 |   5 |  25 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  20.0 |  80.0 |  80.0
+  Saudi Arabian Grand Prix  | MEDIUM       | 30 |  15 |  20 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  51.0 |  49.0 |  51.0
+  Saudi Arabian Grand Prix  | MEDIUM       | 30 |  15 |  20 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  51.0 |  49.0 |  51.0
+  Saudi Arabian Grand Prix  | MEDIUM       | 35 |  10 |  15 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  51.0 |  49.0 |  51.0
+  Saudi Arabian Grand Prix  | MEDIUM       | 35 |  10 |  15 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  51.0 |  49.0 |  51.0
+  Saudi Arabian Grand Prix  | HARD         |  1 |   1 |  49 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Saudi Arabian Grand Prix  | HARD         |  1 |   1 |  49 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Saudi Arabian Grand Prix  | HARD         | 20 |  10 |  30 |    | R0.0 | Unknown      | HAM   | STAY OUT |   3.5 |  96.5 |  96.5
+  Saudi Arabian Grand Prix  | HARD         | 20 |  10 |  30 |    | R0.0 | Unknown      | LEC   | STAY OUT |   3.5 |  96.5 |  96.5
+  Saudi Arabian Grand Prix  | HARD         | 30 |  20 |  20 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  42.1 |  57.9 |  57.9
+  Saudi Arabian Grand Prix  | HARD         | 30 |  20 |  20 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  42.1 |  57.9 |  57.9
+  Saudi Arabian Grand Prix  | HARD         | 40 |  30 |  10 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.7 |  54.3 |  54.3
+  Saudi Arabian Grand Prix  | HARD         | 40 |  30 |  10 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.7 |  54.3 |  54.3
+  Saudi Arabian Grand Prix  | HARD         | 50 |  40 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  85.5 |  14.5 |  85.5
+  Saudi Arabian Grand Prix  | HARD         | 50 |  40 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  85.5 |  14.5 |  85.5
+  Saudi Arabian Grand Prix  | HARD         | 50 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.2 |  13.8 |  86.2
+  Saudi Arabian Grand Prix  | HARD         | 50 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.2 |  13.8 |  86.2
+  Saudi Arabian Grand Prix  | HARD         | 50 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  77.8 |  22.2 |  77.8
+  Saudi Arabian Grand Prix  | HARD         | 50 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  77.8 |  22.2 |  77.8
+  Saudi Arabian Grand Prix  | HARD         | 25 |   5 |  25 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  17.8 |  82.2 |  82.2
+  Saudi Arabian Grand Prix  | HARD         | 25 |   5 |  25 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  17.8 |  82.2 |  82.2
+  Saudi Arabian Grand Prix  | HARD         | 30 |  15 |  20 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  48.6 |  51.4 |  51.4
+  Saudi Arabian Grand Prix  | HARD         | 30 |  15 |  20 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  48.6 |  51.4 |  51.4
+  Saudi Arabian Grand Prix  | HARD         | 35 |  10 |  15 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  49.7 |  50.3 |  50.3
+  Saudi Arabian Grand Prix  | HARD         | 35 |  10 |  15 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  49.7 |  50.3 |  50.3
+  Saudi Arabian Grand Prix  | INTERMEDIATE |  1 |   1 |  49 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Saudi Arabian Grand Prix  | INTERMEDIATE |  1 |   1 |  49 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 20 |  10 |  30 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  48.4 |  51.5 |  51.5
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 20 |  10 |  30 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  48.4 |  51.5 |  51.5
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 30 |  20 |  20 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 30 |  20 |  20 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 40 |  30 |  10 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 40 |  30 |  10 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  40 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  40 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 25 |   5 |  25 | SC | R0.0 | Unknown      | HAM   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 25 |   5 |  25 | SC | R0.0 | Unknown      | LEC   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 30 |  15 |  20 |    | R0.5 | Unknown      | HAM   | STAY OUT |   3.6 |  96.4 |  96.4
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 30 |  15 |  20 |    | R0.5 | Unknown      | LEC   | STAY OUT |   3.6 |  96.4 |  96.4
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 35 |  10 |  15 |    | R1.0 | Unknown      | HAM   | STAY OUT |   4.7 |  95.3 |  95.3
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 35 |  10 |  15 |    | R1.0 | Unknown      | LEC   | STAY OUT |   4.7 |  95.3 |  95.3
+  Saudi Arabian Grand Prix  | WET          |  1 |   1 |  49 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Saudi Arabian Grand Prix  | WET          |  1 |   1 |  49 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Saudi Arabian Grand Prix  | WET          | 20 |  10 |  30 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  48.4 |  51.5 |  51.5
+  Saudi Arabian Grand Prix  | WET          | 20 |  10 |  30 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  48.4 |  51.5 |  51.5
+  Saudi Arabian Grand Prix  | WET          | 30 |  20 |  20 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | WET          | 30 |  20 |  20 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | WET          | 40 |  30 |  10 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | WET          | 40 |  30 |  10 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | WET          | 50 |  40 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | WET          | 50 |  40 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | WET          | 50 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | WET          | 50 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | WET          | 50 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | WET          | 50 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Saudi Arabian Grand Prix  | WET          | 25 |   5 |  25 | SC | R0.0 | Unknown      | HAM   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Saudi Arabian Grand Prix  | WET          | 25 |   5 |  25 | SC | R0.0 | Unknown      | LEC   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Saudi Arabian Grand Prix  | WET          | 30 |  15 |  20 |    | R0.5 | Unknown      | HAM   | STAY OUT |   3.6 |  96.4 |  96.4
+  Saudi Arabian Grand Prix  | WET          | 30 |  15 |  20 |    | R0.5 | Unknown      | LEC   | STAY OUT |   3.6 |  96.4 |  96.4
+  Saudi Arabian Grand Prix  | WET          | 35 |  10 |  15 |    | R1.0 | Unknown      | HAM   | STAY OUT |   4.7 |  95.3 |  95.3
+  Saudi Arabian Grand Prix  | WET          | 35 |  10 |  15 |    | R1.0 | Unknown      | LEC   | STAY OUT |   4.7 |  95.3 |  95.3
+  Australian Grand Prix     | SOFT         |  1 |   1 |  57 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Australian Grand Prix     | SOFT         |  1 |   1 |  57 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Australian Grand Prix     | SOFT         | 20 |  10 |  38 |    | R0.0 | Unknown      | HAM   | STAY OUT |   6.1 |  93.9 |  93.9
+  Australian Grand Prix     | SOFT         | 20 |  10 |  38 |    | R0.0 | Unknown      | LEC   | STAY OUT |   6.1 |  93.9 |  93.9
+  Australian Grand Prix     | SOFT         | 30 |  20 |  28 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  62.9 |  37.1 |  62.9
+  Australian Grand Prix     | SOFT         | 30 |  20 |  28 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  62.9 |  37.1 |  62.9
+  Australian Grand Prix     | SOFT         | 40 |  30 |  18 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  85.7 |  14.3 |  85.7
+  Australian Grand Prix     | SOFT         | 40 |  30 |  18 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  85.7 |  14.3 |  85.7
+  Australian Grand Prix     | SOFT         | 50 |  40 |   8 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Australian Grand Prix     | SOFT         | 50 |  40 |   8 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Australian Grand Prix     | SOFT         | 58 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Australian Grand Prix     | SOFT         | 58 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Australian Grand Prix     | SOFT         | 58 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  73.2 |  26.8 |  73.2
+  Australian Grand Prix     | SOFT         | 58 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  73.2 |  26.8 |  73.2
+  Australian Grand Prix     | SOFT         | 25 |   5 |  33 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  19.8 |  80.2 |  80.2
+  Australian Grand Prix     | SOFT         | 25 |   5 |  33 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  19.8 |  80.2 |  80.2
+  Australian Grand Prix     | SOFT         | 30 |  15 |  28 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  49.5 |  50.5 |  50.5
+  Australian Grand Prix     | SOFT         | 30 |  15 |  28 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  49.5 |  50.5 |  50.5
+  Australian Grand Prix     | SOFT         | 35 |  10 |  23 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  49.7 |  50.3 |  50.3
+  Australian Grand Prix     | SOFT         | 35 |  10 |  23 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  49.7 |  50.3 |  50.3
+  Australian Grand Prix     | MEDIUM       |  1 |   1 |  57 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Australian Grand Prix     | MEDIUM       |  1 |   1 |  57 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Australian Grand Prix     | MEDIUM       | 20 |  10 |  38 |    | R0.0 | Unknown      | HAM   | STAY OUT |   7.1 |  92.9 |  92.9
+  Australian Grand Prix     | MEDIUM       | 20 |  10 |  38 |    | R0.0 | Unknown      | LEC   | STAY OUT |   7.1 |  92.9 |  92.9
+  Australian Grand Prix     | MEDIUM       | 30 |  20 |  28 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  46.5 |  53.5 |  53.5
+  Australian Grand Prix     | MEDIUM       | 30 |  20 |  28 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  46.5 |  53.5 |  53.5
+  Australian Grand Prix     | MEDIUM       | 40 |  30 |  18 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  90.7 |   9.3 |  90.7
+  Australian Grand Prix     | MEDIUM       | 40 |  30 |  18 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  90.7 |   9.3 |  90.7
+  Australian Grand Prix     | MEDIUM       | 50 |  40 |   8 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  85.8 |  14.2 |  85.8
+  Australian Grand Prix     | MEDIUM       | 50 |  40 |   8 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  85.8 |  14.2 |  85.8
+  Australian Grand Prix     | MEDIUM       | 58 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.5 |  13.5 |  86.5
+  Australian Grand Prix     | MEDIUM       | 58 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.5 |  13.5 |  86.5
+  Australian Grand Prix     | MEDIUM       | 58 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  78.2 |  21.8 |  78.2
+  Australian Grand Prix     | MEDIUM       | 58 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  78.2 |  21.8 |  78.2
+  Australian Grand Prix     | MEDIUM       | 25 |   5 |  33 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  20.3 |  79.7 |  79.7
+  Australian Grand Prix     | MEDIUM       | 25 |   5 |  33 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  20.3 |  79.7 |  79.7
+  Australian Grand Prix     | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  50.4 |  49.6 |  50.4
+  Australian Grand Prix     | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  50.4 |  49.6 |  50.4
+  Australian Grand Prix     | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  50.3 |  49.7 |  50.3
+  Australian Grand Prix     | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  50.3 |  49.7 |  50.3
+  Australian Grand Prix     | HARD         |  1 |   1 |  57 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Australian Grand Prix     | HARD         |  1 |   1 |  57 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Australian Grand Prix     | HARD         | 20 |  10 |  38 |    | R0.0 | Unknown      | HAM   | STAY OUT |   4.8 |  95.2 |  95.2
+  Australian Grand Prix     | HARD         | 20 |  10 |  38 |    | R0.0 | Unknown      | LEC   | STAY OUT |   4.8 |  95.2 |  95.2
+  Australian Grand Prix     | HARD         | 30 |  20 |  28 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  41.5 |  58.5 |  58.5
+  Australian Grand Prix     | HARD         | 30 |  20 |  28 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  41.5 |  58.5 |  58.5
+  Australian Grand Prix     | HARD         | 40 |  30 |  18 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  50.2 |  49.8 |  50.2
+  Australian Grand Prix     | HARD         | 40 |  30 |  18 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  50.2 |  49.8 |  50.2
+  Australian Grand Prix     | HARD         | 50 |  40 |   8 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  85.5 |  14.5 |  85.5
+  Australian Grand Prix     | HARD         | 50 |  40 |   8 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  85.5 |  14.5 |  85.5
+  Australian Grand Prix     | HARD         | 58 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.2 |  13.8 |  86.2
+  Australian Grand Prix     | HARD         | 58 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.2 |  13.8 |  86.2
+  Australian Grand Prix     | HARD         | 58 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  77.8 |  22.2 |  77.8
+  Australian Grand Prix     | HARD         | 58 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  77.8 |  22.2 |  77.8
+  Australian Grand Prix     | HARD         | 25 |   5 |  33 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  18.1 |  81.9 |  81.9
+  Australian Grand Prix     | HARD         | 25 |   5 |  33 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  18.1 |  81.9 |  81.9
+  Australian Grand Prix     | HARD         | 30 |  15 |  28 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  48.1 |  51.9 |  51.9
+  Australian Grand Prix     | HARD         | 30 |  15 |  28 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  48.1 |  51.9 |  51.9
+  Australian Grand Prix     | HARD         | 35 |  10 |  23 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  48.1 |  51.9 |  51.9
+  Australian Grand Prix     | HARD         | 35 |  10 |  23 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  48.1 |  51.9 |  51.9
+  Australian Grand Prix     | INTERMEDIATE |  1 |   1 |  57 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Australian Grand Prix     | INTERMEDIATE |  1 |   1 |  57 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Australian Grand Prix     | INTERMEDIATE | 20 |  10 |  38 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  49.8 |  50.2 |  50.2
+  Australian Grand Prix     | INTERMEDIATE | 20 |  10 |  38 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  49.8 |  50.2 |  50.2
+  Australian Grand Prix     | INTERMEDIATE | 30 |  20 |  28 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | INTERMEDIATE | 30 |  20 |  28 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | INTERMEDIATE | 58 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | INTERMEDIATE | 58 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | INTERMEDIATE | 58 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | INTERMEDIATE | 58 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | INTERMEDIATE | 25 |   5 |  33 | SC | R0.0 | Unknown      | HAM   | PIT NOW  |  63.1 |  36.9 |  63.1
+  Australian Grand Prix     | INTERMEDIATE | 25 |   5 |  33 | SC | R0.0 | Unknown      | LEC   | PIT NOW  |  63.1 |  36.9 |  63.1
+  Australian Grand Prix     | INTERMEDIATE | 30 |  15 |  28 |    | R0.5 | Unknown      | HAM   | STAY OUT |   3.1 |  96.9 |  96.9
+  Australian Grand Prix     | INTERMEDIATE | 30 |  15 |  28 |    | R0.5 | Unknown      | LEC   | STAY OUT |   3.1 |  96.9 |  96.9
+  Australian Grand Prix     | INTERMEDIATE | 35 |  10 |  23 |    | R1.0 | Unknown      | HAM   | STAY OUT |   3.1 |  96.9 |  96.9
+  Australian Grand Prix     | INTERMEDIATE | 35 |  10 |  23 |    | R1.0 | Unknown      | LEC   | STAY OUT |   3.1 |  96.9 |  96.9
+  Australian Grand Prix     | WET          |  1 |   1 |  57 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Australian Grand Prix     | WET          |  1 |   1 |  57 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Australian Grand Prix     | WET          | 20 |  10 |  38 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  49.8 |  50.2 |  50.2
+  Australian Grand Prix     | WET          | 20 |  10 |  38 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  49.8 |  50.2 |  50.2
+  Australian Grand Prix     | WET          | 30 |  20 |  28 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | WET          | 30 |  20 |  28 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | WET          | 40 |  30 |  18 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | WET          | 40 |  30 |  18 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | WET          | 50 |  40 |   8 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | WET          | 50 |  40 |   8 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | WET          | 58 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | WET          | 58 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | WET          | 58 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | WET          | 58 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Australian Grand Prix     | WET          | 25 |   5 |  33 | SC | R0.0 | Unknown      | HAM   | PIT NOW  |  63.1 |  36.9 |  63.1
+  Australian Grand Prix     | WET          | 25 |   5 |  33 | SC | R0.0 | Unknown      | LEC   | PIT NOW  |  63.1 |  36.9 |  63.1
+  Australian Grand Prix     | WET          | 30 |  15 |  28 |    | R0.5 | Unknown      | HAM   | STAY OUT |   3.1 |  96.9 |  96.9
+  Australian Grand Prix     | WET          | 30 |  15 |  28 |    | R0.5 | Unknown      | LEC   | STAY OUT |   3.1 |  96.9 |  96.9
+  Australian Grand Prix     | WET          | 35 |  10 |  23 |    | R1.0 | Unknown      | HAM   | STAY OUT |   3.1 |  96.9 |  96.9
+  Australian Grand Prix     | WET          | 35 |  10 |  23 |    | R1.0 | Unknown      | LEC   | STAY OUT |   3.1 |  96.9 |  96.9
+  Japanese Grand Prix       | SOFT         |  1 |   1 |  52 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Japanese Grand Prix       | SOFT         |  1 |   1 |  52 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Japanese Grand Prix       | SOFT         | 20 |  10 |  33 |    | R0.0 | Unknown      | HAM   | STAY OUT |   5.4 |  94.6 |  94.6
+  Japanese Grand Prix       | SOFT         | 20 |  10 |  33 |    | R0.0 | Unknown      | LEC   | STAY OUT |   5.4 |  94.6 |  94.6
+  Japanese Grand Prix       | SOFT         | 30 |  20 |  23 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  63.2 |  36.8 |  63.2
+  Japanese Grand Prix       | SOFT         | 30 |  20 |  23 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  63.2 |  36.8 |  63.2
+  Japanese Grand Prix       | SOFT         | 40 |  30 |  13 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.1 |  18.9 |  81.1
+  Japanese Grand Prix       | SOFT         | 40 |  30 |  13 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.1 |  18.9 |  81.1
+  Japanese Grand Prix       | SOFT         | 50 |  40 |   3 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Japanese Grand Prix       | SOFT         | 50 |  40 |   3 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Japanese Grand Prix       | SOFT         | 53 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Japanese Grand Prix       | SOFT         | 53 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Japanese Grand Prix       | SOFT         | 53 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  73.2 |  26.8 |  73.2
+  Japanese Grand Prix       | SOFT         | 53 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  73.2 |  26.8 |  73.2
+  Japanese Grand Prix       | SOFT         | 25 |   5 |  28 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  19.4 |  80.5 |  80.5
+  Japanese Grand Prix       | SOFT         | 25 |   5 |  28 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  19.4 |  80.5 |  80.5
+  Japanese Grand Prix       | SOFT         | 30 |  15 |  23 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  49.7 |  50.3 |  50.3
+  Japanese Grand Prix       | SOFT         | 30 |  15 |  23 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  49.7 |  50.3 |  50.3
+  Japanese Grand Prix       | SOFT         | 35 |  10 |  18 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  51.6 |  48.4 |  51.6
+  Japanese Grand Prix       | SOFT         | 35 |  10 |  18 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  51.6 |  48.4 |  51.6
+  Japanese Grand Prix       | MEDIUM       |  1 |   1 |  52 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Japanese Grand Prix       | MEDIUM       |  1 |   1 |  52 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Japanese Grand Prix       | MEDIUM       | 20 |  10 |  33 |    | R0.0 | Unknown      | HAM   | STAY OUT |   6.1 |  93.9 |  93.9
+  Japanese Grand Prix       | MEDIUM       | 20 |  10 |  33 |    | R0.0 | Unknown      | LEC   | STAY OUT |   6.1 |  93.9 |  93.9
+  Japanese Grand Prix       | MEDIUM       | 30 |  20 |  23 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  46.7 |  53.3 |  53.3
+  Japanese Grand Prix       | MEDIUM       | 30 |  20 |  23 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  46.7 |  53.3 |  53.3
+  Japanese Grand Prix       | MEDIUM       | 40 |  30 |  13 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.1 |  13.9 |  86.1
+  Japanese Grand Prix       | MEDIUM       | 40 |  30 |  13 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.1 |  13.9 |  86.1
+  Japanese Grand Prix       | MEDIUM       | 50 |  40 |   3 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  85.8 |  14.2 |  85.8
+  Japanese Grand Prix       | MEDIUM       | 50 |  40 |   3 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  85.8 |  14.2 |  85.8
+  Japanese Grand Prix       | MEDIUM       | 53 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.5 |  13.5 |  86.5
+  Japanese Grand Prix       | MEDIUM       | 53 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.5 |  13.5 |  86.5
+  Japanese Grand Prix       | MEDIUM       | 53 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  78.2 |  21.8 |  78.2
+  Japanese Grand Prix       | MEDIUM       | 53 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  78.2 |  21.8 |  78.2
+  Japanese Grand Prix       | MEDIUM       | 25 |   5 |  28 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  20.0 |  80.0 |  80.0
+  Japanese Grand Prix       | MEDIUM       | 25 |   5 |  28 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  20.0 |  80.0 |  80.0
+  Japanese Grand Prix       | MEDIUM       | 30 |  15 |  23 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  50.7 |  49.3 |  50.7
+  Japanese Grand Prix       | MEDIUM       | 30 |  15 |  23 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  50.7 |  49.3 |  50.7
+  Japanese Grand Prix       | MEDIUM       | 35 |  10 |  18 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  52.9 |  47.1 |  52.9
+  Japanese Grand Prix       | MEDIUM       | 35 |  10 |  18 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  52.9 |  47.1 |  52.9
+  Japanese Grand Prix       | HARD         |  1 |   1 |  52 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Japanese Grand Prix       | HARD         |  1 |   1 |  52 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Japanese Grand Prix       | HARD         | 20 |  10 |  33 |    | R0.0 | Unknown      | HAM   | STAY OUT |   3.8 |  96.2 |  96.2
+  Japanese Grand Prix       | HARD         | 20 |  10 |  33 |    | R0.0 | Unknown      | LEC   | STAY OUT |   3.8 |  96.2 |  96.2
+  Japanese Grand Prix       | HARD         | 30 |  20 |  23 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  41.8 |  58.2 |  58.2
+  Japanese Grand Prix       | HARD         | 30 |  20 |  23 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  41.8 |  58.2 |  58.2
+  Japanese Grand Prix       | HARD         | 40 |  30 |  13 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.7 |  54.3 |  54.3
+  Japanese Grand Prix       | HARD         | 40 |  30 |  13 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.7 |  54.3 |  54.3
+  Japanese Grand Prix       | HARD         | 50 |  40 |   3 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  85.5 |  14.5 |  85.5
+  Japanese Grand Prix       | HARD         | 50 |  40 |   3 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  85.5 |  14.5 |  85.5
+  Japanese Grand Prix       | HARD         | 53 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.2 |  13.8 |  86.2
+  Japanese Grand Prix       | HARD         | 53 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.2 |  13.8 |  86.2
+  Japanese Grand Prix       | HARD         | 53 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  77.8 |  22.2 |  77.8
+  Japanese Grand Prix       | HARD         | 53 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  77.8 |  22.2 |  77.8
+  Japanese Grand Prix       | HARD         | 25 |   5 |  28 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  17.8 |  82.2 |  82.2
+  Japanese Grand Prix       | HARD         | 25 |   5 |  28 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  17.8 |  82.2 |  82.2
+  Japanese Grand Prix       | HARD         | 30 |  15 |  23 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  48.4 |  51.6 |  51.6
+  Japanese Grand Prix       | HARD         | 30 |  15 |  23 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  48.4 |  51.6 |  51.6
+  Japanese Grand Prix       | HARD         | 35 |  10 |  18 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  51.0 |  49.0 |  51.0
+  Japanese Grand Prix       | HARD         | 35 |  10 |  18 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  51.0 |  49.0 |  51.0
+  Japanese Grand Prix       | INTERMEDIATE |  1 |   1 |  52 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Japanese Grand Prix       | INTERMEDIATE |  1 |   1 |  52 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Japanese Grand Prix       | INTERMEDIATE | 20 |  10 |  33 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  48.8 |  51.2 |  51.2
+  Japanese Grand Prix       | INTERMEDIATE | 20 |  10 |  33 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  48.8 |  51.2 |  51.2
+  Japanese Grand Prix       | INTERMEDIATE | 30 |  20 |  23 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | INTERMEDIATE | 30 |  20 |  23 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | INTERMEDIATE | 40 |  30 |  13 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | INTERMEDIATE | 40 |  30 |  13 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | INTERMEDIATE | 50 |  40 |   3 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | INTERMEDIATE | 50 |  40 |   3 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | INTERMEDIATE | 53 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | INTERMEDIATE | 53 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | INTERMEDIATE | 53 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | INTERMEDIATE | 53 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | INTERMEDIATE | 25 |   5 |  28 | SC | R0.0 | Unknown      | HAM   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Japanese Grand Prix       | INTERMEDIATE | 25 |   5 |  28 | SC | R0.0 | Unknown      | LEC   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Japanese Grand Prix       | INTERMEDIATE | 30 |  15 |  23 |    | R0.5 | Unknown      | HAM   | STAY OUT |   3.4 |  96.6 |  96.6
+  Japanese Grand Prix       | INTERMEDIATE | 30 |  15 |  23 |    | R0.5 | Unknown      | LEC   | STAY OUT |   3.4 |  96.6 |  96.6
+  Japanese Grand Prix       | INTERMEDIATE | 35 |  10 |  18 |    | R1.0 | Unknown      | HAM   | STAY OUT |   6.0 |  94.0 |  94.0
+  Japanese Grand Prix       | INTERMEDIATE | 35 |  10 |  18 |    | R1.0 | Unknown      | LEC   | STAY OUT |   6.0 |  94.0 |  94.0
+  Japanese Grand Prix       | WET          |  1 |   1 |  52 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Japanese Grand Prix       | WET          |  1 |   1 |  52 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Japanese Grand Prix       | WET          | 20 |  10 |  33 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  48.8 |  51.2 |  51.2
+  Japanese Grand Prix       | WET          | 20 |  10 |  33 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  48.8 |  51.2 |  51.2
+  Japanese Grand Prix       | WET          | 30 |  20 |  23 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | WET          | 30 |  20 |  23 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | WET          | 40 |  30 |  13 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | WET          | 40 |  30 |  13 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | WET          | 50 |  40 |   3 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | WET          | 50 |  40 |   3 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | WET          | 53 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | WET          | 53 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | WET          | 53 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | WET          | 53 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Japanese Grand Prix       | WET          | 25 |   5 |  28 | SC | R0.0 | Unknown      | HAM   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Japanese Grand Prix       | WET          | 25 |   5 |  28 | SC | R0.0 | Unknown      | LEC   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Japanese Grand Prix       | WET          | 30 |  15 |  23 |    | R0.5 | Unknown      | HAM   | STAY OUT |   3.4 |  96.6 |  96.6
+  Japanese Grand Prix       | WET          | 30 |  15 |  23 |    | R0.5 | Unknown      | LEC   | STAY OUT |   3.4 |  96.6 |  96.6
+  Japanese Grand Prix       | WET          | 35 |  10 |  18 |    | R1.0 | Unknown      | HAM   | STAY OUT |   6.0 |  94.0 |  94.0
+  Japanese Grand Prix       | WET          | 35 |  10 |  18 |    | R1.0 | Unknown      | LEC   | STAY OUT |   6.0 |  94.0 |  94.0
+  Chinese Grand Prix        | SOFT         |  1 |   1 |  55 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Chinese Grand Prix        | SOFT         |  1 |   1 |  55 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Chinese Grand Prix        | SOFT         | 20 |  10 |  36 |    | R0.0 | Unknown      | HAM   | STAY OUT |   5.4 |  94.6 |  94.6
+  Chinese Grand Prix        | SOFT         | 20 |  10 |  36 |    | R0.0 | Unknown      | LEC   | STAY OUT |   5.4 |  94.6 |  94.6
+  Chinese Grand Prix        | SOFT         | 30 |  20 |  26 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  62.9 |  37.1 |  62.9
+  Chinese Grand Prix        | SOFT         | 30 |  20 |  26 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  62.9 |  37.1 |  62.9
+  Chinese Grand Prix        | SOFT         | 40 |  30 |  16 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.1 |  18.9 |  81.1
+  Chinese Grand Prix        | SOFT         | 40 |  30 |  16 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.1 |  18.9 |  81.1
+  Chinese Grand Prix        | SOFT         | 50 |  40 |   6 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Chinese Grand Prix        | SOFT         | 50 |  40 |   6 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Chinese Grand Prix        | SOFT         | 56 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Chinese Grand Prix        | SOFT         | 56 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Chinese Grand Prix        | SOFT         | 56 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  73.2 |  26.8 |  73.2
+  Chinese Grand Prix        | SOFT         | 56 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  73.2 |  26.8 |  73.2
+  Chinese Grand Prix        | SOFT         | 25 |   5 |  31 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  19.4 |  80.5 |  80.5
+  Chinese Grand Prix        | SOFT         | 25 |   5 |  31 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  19.4 |  80.5 |  80.5
+  Chinese Grand Prix        | SOFT         | 30 |  15 |  26 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  49.5 |  50.5 |  50.5
+  Chinese Grand Prix        | SOFT         | 30 |  15 |  26 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  49.5 |  50.5 |  50.5
+  Chinese Grand Prix        | SOFT         | 35 |  10 |  21 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  50.0 |  50.0 |  50.0
+  Chinese Grand Prix        | SOFT         | 35 |  10 |  21 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  50.0 |  50.0 |  50.0
+  Chinese Grand Prix        | MEDIUM       |  1 |   1 |  55 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Chinese Grand Prix        | MEDIUM       |  1 |   1 |  55 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Chinese Grand Prix        | MEDIUM       | 20 |  10 |  36 |    | R0.0 | Unknown      | HAM   | STAY OUT |   6.1 |  93.9 |  93.9
+  Chinese Grand Prix        | MEDIUM       | 20 |  10 |  36 |    | R0.0 | Unknown      | LEC   | STAY OUT |   6.1 |  93.9 |  93.9
+  Chinese Grand Prix        | MEDIUM       | 30 |  20 |  26 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  46.5 |  53.5 |  53.5
+  Chinese Grand Prix        | MEDIUM       | 30 |  20 |  26 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  46.5 |  53.5 |  53.5
+  Chinese Grand Prix        | MEDIUM       | 40 |  30 |  16 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.1 |  13.9 |  86.1
+  Chinese Grand Prix        | MEDIUM       | 40 |  30 |  16 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.1 |  13.9 |  86.1
+  Chinese Grand Prix        | MEDIUM       | 50 |  40 |   6 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  85.8 |  14.2 |  85.8
+  Chinese Grand Prix        | MEDIUM       | 50 |  40 |   6 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  85.8 |  14.2 |  85.8
+  Chinese Grand Prix        | MEDIUM       | 56 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.5 |  13.5 |  86.5
+  Chinese Grand Prix        | MEDIUM       | 56 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.5 |  13.5 |  86.5
+  Chinese Grand Prix        | MEDIUM       | 56 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  78.2 |  21.8 |  78.2
+  Chinese Grand Prix        | MEDIUM       | 56 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  78.2 |  21.8 |  78.2
+  Chinese Grand Prix        | MEDIUM       | 25 |   5 |  31 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  20.0 |  80.0 |  80.0
+  Chinese Grand Prix        | MEDIUM       | 25 |   5 |  31 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  20.0 |  80.0 |  80.0
+  Chinese Grand Prix        | MEDIUM       | 30 |  15 |  26 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  50.4 |  49.6 |  50.4
+  Chinese Grand Prix        | MEDIUM       | 30 |  15 |  26 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  50.4 |  49.6 |  50.4
+  Chinese Grand Prix        | MEDIUM       | 35 |  10 |  21 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  50.6 |  49.4 |  50.6
+  Chinese Grand Prix        | MEDIUM       | 35 |  10 |  21 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  50.6 |  49.4 |  50.6
+  Chinese Grand Prix        | HARD         |  1 |   1 |  55 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Chinese Grand Prix        | HARD         |  1 |   1 |  55 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Chinese Grand Prix        | HARD         | 20 |  10 |  36 |    | R0.0 | Unknown      | HAM   | STAY OUT |   3.8 |  96.2 |  96.2
+  Chinese Grand Prix        | HARD         | 20 |  10 |  36 |    | R0.0 | Unknown      | LEC   | STAY OUT |   3.8 |  96.2 |  96.2
+  Chinese Grand Prix        | HARD         | 30 |  20 |  26 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  41.5 |  58.5 |  58.5
+  Chinese Grand Prix        | HARD         | 30 |  20 |  26 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  41.5 |  58.5 |  58.5
+  Chinese Grand Prix        | HARD         | 40 |  30 |  16 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.7 |  54.3 |  54.3
+  Chinese Grand Prix        | HARD         | 40 |  30 |  16 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.7 |  54.3 |  54.3
+  Chinese Grand Prix        | HARD         | 50 |  40 |   6 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  85.5 |  14.5 |  85.5
+  Chinese Grand Prix        | HARD         | 50 |  40 |   6 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  85.5 |  14.5 |  85.5
+  Chinese Grand Prix        | HARD         | 56 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.2 |  13.8 |  86.2
+  Chinese Grand Prix        | HARD         | 56 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.2 |  13.8 |  86.2
+  Chinese Grand Prix        | HARD         | 56 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  77.8 |  22.2 |  77.8
+  Chinese Grand Prix        | HARD         | 56 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  77.8 |  22.2 |  77.8
+  Chinese Grand Prix        | HARD         | 25 |   5 |  31 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  17.8 |  82.2 |  82.2
+  Chinese Grand Prix        | HARD         | 25 |   5 |  31 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  17.8 |  82.2 |  82.2
+  Chinese Grand Prix        | HARD         | 30 |  15 |  26 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  48.1 |  51.9 |  51.9
+  Chinese Grand Prix        | HARD         | 30 |  15 |  26 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  48.1 |  51.9 |  51.9
+  Chinese Grand Prix        | HARD         | 35 |  10 |  21 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  48.3 |  51.7 |  51.7
+  Chinese Grand Prix        | HARD         | 35 |  10 |  21 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  48.3 |  51.7 |  51.7
+  Chinese Grand Prix        | INTERMEDIATE |  1 |   1 |  55 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Chinese Grand Prix        | INTERMEDIATE |  1 |   1 |  55 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Chinese Grand Prix        | INTERMEDIATE | 20 |  10 |  36 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  48.8 |  51.2 |  51.2
+  Chinese Grand Prix        | INTERMEDIATE | 20 |  10 |  36 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  48.8 |  51.2 |  51.2
+  Chinese Grand Prix        | INTERMEDIATE | 30 |  20 |  26 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | INTERMEDIATE | 30 |  20 |  26 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | INTERMEDIATE | 40 |  30 |  16 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | INTERMEDIATE | 40 |  30 |  16 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | INTERMEDIATE | 50 |  40 |   6 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | INTERMEDIATE | 50 |  40 |   6 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | INTERMEDIATE | 56 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | INTERMEDIATE | 56 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | INTERMEDIATE | 56 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | INTERMEDIATE | 56 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | INTERMEDIATE | 25 |   5 |  31 | SC | R0.0 | Unknown      | HAM   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Chinese Grand Prix        | INTERMEDIATE | 25 |   5 |  31 | SC | R0.0 | Unknown      | LEC   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Chinese Grand Prix        | INTERMEDIATE | 30 |  15 |  26 |    | R0.5 | Unknown      | HAM   | STAY OUT |   3.1 |  96.9 |  96.9
+  Chinese Grand Prix        | INTERMEDIATE | 30 |  15 |  26 |    | R0.5 | Unknown      | LEC   | STAY OUT |   3.1 |  96.9 |  96.9
+  Chinese Grand Prix        | INTERMEDIATE | 35 |  10 |  21 |    | R1.0 | Unknown      | HAM   | STAY OUT |   3.3 |  96.7 |  96.7
+  Chinese Grand Prix        | INTERMEDIATE | 35 |  10 |  21 |    | R1.0 | Unknown      | LEC   | STAY OUT |   3.3 |  96.7 |  96.7
+  Chinese Grand Prix        | WET          |  1 |   1 |  55 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Chinese Grand Prix        | WET          |  1 |   1 |  55 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Chinese Grand Prix        | WET          | 20 |  10 |  36 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  48.8 |  51.2 |  51.2
+  Chinese Grand Prix        | WET          | 20 |  10 |  36 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  48.8 |  51.2 |  51.2
+  Chinese Grand Prix        | WET          | 30 |  20 |  26 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | WET          | 30 |  20 |  26 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | WET          | 40 |  30 |  16 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | WET          | 40 |  30 |  16 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | WET          | 50 |  40 |   6 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | WET          | 50 |  40 |   6 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | WET          | 56 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | WET          | 56 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | WET          | 56 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | WET          | 56 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Chinese Grand Prix        | WET          | 25 |   5 |  31 | SC | R0.0 | Unknown      | HAM   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Chinese Grand Prix        | WET          | 25 |   5 |  31 | SC | R0.0 | Unknown      | LEC   | PIT NOW  |  62.8 |  37.2 |  62.8
+  Chinese Grand Prix        | WET          | 30 |  15 |  26 |    | R0.5 | Unknown      | HAM   | STAY OUT |   3.1 |  96.9 |  96.9
+  Chinese Grand Prix        | WET          | 30 |  15 |  26 |    | R0.5 | Unknown      | LEC   | STAY OUT |   3.1 |  96.9 |  96.9
+  Chinese Grand Prix        | WET          | 35 |  10 |  21 |    | R1.0 | Unknown      | HAM   | STAY OUT |   3.3 |  96.7 |  96.7
+  Chinese Grand Prix        | WET          | 35 |  10 |  21 |    | R1.0 | Unknown      | LEC   | STAY OUT |   3.3 |  96.7 |  96.7
+  Abu Dhabi Grand Prix      | SOFT         |  1 |   1 |  57 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Abu Dhabi Grand Prix      | SOFT         |  1 |   1 |  57 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Abu Dhabi Grand Prix      | SOFT         | 20 |  10 |  38 |    | R0.0 | Unknown      | HAM   | STAY OUT |   6.1 |  93.9 |  93.9
+  Abu Dhabi Grand Prix      | SOFT         | 20 |  10 |  38 |    | R0.0 | Unknown      | LEC   | STAY OUT |   6.1 |  93.9 |  93.9
+  Abu Dhabi Grand Prix      | SOFT         | 30 |  20 |  28 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  62.9 |  37.1 |  62.9
+  Abu Dhabi Grand Prix      | SOFT         | 30 |  20 |  28 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  62.9 |  37.1 |  62.9
+  Abu Dhabi Grand Prix      | SOFT         | 40 |  30 |  18 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  85.7 |  14.3 |  85.7
+  Abu Dhabi Grand Prix      | SOFT         | 40 |  30 |  18 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  85.7 |  14.3 |  85.7
+  Abu Dhabi Grand Prix      | SOFT         | 50 |  40 |   8 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Abu Dhabi Grand Prix      | SOFT         | 50 |  40 |   8 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Abu Dhabi Grand Prix      | SOFT         | 58 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Abu Dhabi Grand Prix      | SOFT         | 58 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  81.5 |  18.5 |  81.5
+  Abu Dhabi Grand Prix      | SOFT         | 58 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  73.2 |  26.8 |  73.2
+  Abu Dhabi Grand Prix      | SOFT         | 58 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  73.2 |  26.8 |  73.2
+  Abu Dhabi Grand Prix      | SOFT         | 25 |   5 |  33 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  19.8 |  80.2 |  80.2
+  Abu Dhabi Grand Prix      | SOFT         | 25 |   5 |  33 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  19.8 |  80.2 |  80.2
+  Abu Dhabi Grand Prix      | SOFT         | 30 |  15 |  28 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  49.5 |  50.5 |  50.5
+  Abu Dhabi Grand Prix      | SOFT         | 30 |  15 |  28 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  49.5 |  50.5 |  50.5
+  Abu Dhabi Grand Prix      | SOFT         | 35 |  10 |  23 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  49.7 |  50.3 |  50.3
+  Abu Dhabi Grand Prix      | SOFT         | 35 |  10 |  23 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  49.7 |  50.3 |  50.3
+  Abu Dhabi Grand Prix      | MEDIUM       |  1 |   1 |  57 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Abu Dhabi Grand Prix      | MEDIUM       |  1 |   1 |  57 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Abu Dhabi Grand Prix      | MEDIUM       | 20 |  10 |  38 |    | R0.0 | Unknown      | HAM   | STAY OUT |   7.1 |  92.9 |  92.9
+  Abu Dhabi Grand Prix      | MEDIUM       | 20 |  10 |  38 |    | R0.0 | Unknown      | LEC   | STAY OUT |   7.1 |  92.9 |  92.9
+  Abu Dhabi Grand Prix      | MEDIUM       | 30 |  20 |  28 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  46.5 |  53.5 |  53.5
+  Abu Dhabi Grand Prix      | MEDIUM       | 30 |  20 |  28 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  46.5 |  53.5 |  53.5
+  Abu Dhabi Grand Prix      | MEDIUM       | 40 |  30 |  18 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  90.7 |   9.3 |  90.7
+  Abu Dhabi Grand Prix      | MEDIUM       | 40 |  30 |  18 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  90.7 |   9.3 |  90.7
+  Abu Dhabi Grand Prix      | MEDIUM       | 50 |  40 |   8 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  85.8 |  14.2 |  85.8
+  Abu Dhabi Grand Prix      | MEDIUM       | 50 |  40 |   8 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  85.8 |  14.2 |  85.8
+  Abu Dhabi Grand Prix      | MEDIUM       | 58 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.5 |  13.5 |  86.5
+  Abu Dhabi Grand Prix      | MEDIUM       | 58 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.5 |  13.5 |  86.5
+  Abu Dhabi Grand Prix      | MEDIUM       | 58 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  78.2 |  21.8 |  78.2
+  Abu Dhabi Grand Prix      | MEDIUM       | 58 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  78.2 |  21.8 |  78.2
+  Abu Dhabi Grand Prix      | MEDIUM       | 25 |   5 |  33 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  20.3 |  79.7 |  79.7
+  Abu Dhabi Grand Prix      | MEDIUM       | 25 |   5 |  33 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  20.3 |  79.7 |  79.7
+  Abu Dhabi Grand Prix      | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  50.4 |  49.6 |  50.4
+  Abu Dhabi Grand Prix      | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  50.4 |  49.6 |  50.4
+  Abu Dhabi Grand Prix      | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  50.3 |  49.7 |  50.3
+  Abu Dhabi Grand Prix      | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  50.3 |  49.7 |  50.3
+  Abu Dhabi Grand Prix      | HARD         |  1 |   1 |  57 |    | R0.0 | Unknown      | HAM   | STAY OUT |   0.5 |  99.5 |  99.5
+  Abu Dhabi Grand Prix      | HARD         |  1 |   1 |  57 |    | R0.0 | Unknown      | LEC   | STAY OUT |   0.5 |  99.5 |  99.5
+  Abu Dhabi Grand Prix      | HARD         | 20 |  10 |  38 |    | R0.0 | Unknown      | HAM   | STAY OUT |   4.8 |  95.2 |  95.2
+  Abu Dhabi Grand Prix      | HARD         | 20 |  10 |  38 |    | R0.0 | Unknown      | LEC   | STAY OUT |   4.8 |  95.2 |  95.2
+  Abu Dhabi Grand Prix      | HARD         | 30 |  20 |  28 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  41.5 |  58.5 |  58.5
+  Abu Dhabi Grand Prix      | HARD         | 30 |  20 |  28 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  41.5 |  58.5 |  58.5
+  Abu Dhabi Grand Prix      | HARD         | 40 |  30 |  18 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  50.2 |  49.8 |  50.2
+  Abu Dhabi Grand Prix      | HARD         | 40 |  30 |  18 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  50.2 |  49.8 |  50.2
+  Abu Dhabi Grand Prix      | HARD         | 50 |  40 |   8 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  85.5 |  14.5 |  85.5
+  Abu Dhabi Grand Prix      | HARD         | 50 |  40 |   8 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  85.5 |  14.5 |  85.5
+  Abu Dhabi Grand Prix      | HARD         | 58 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  86.2 |  13.8 |  86.2
+  Abu Dhabi Grand Prix      | HARD         | 58 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  86.2 |  13.8 |  86.2
+  Abu Dhabi Grand Prix      | HARD         | 58 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  77.8 |  22.2 |  77.8
+  Abu Dhabi Grand Prix      | HARD         | 58 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  77.8 |  22.2 |  77.8
+  Abu Dhabi Grand Prix      | HARD         | 25 |   5 |  33 | SC | R0.0 | Unknown      | HAM   | STAY OUT |  18.1 |  81.9 |  81.9
+  Abu Dhabi Grand Prix      | HARD         | 25 |   5 |  33 | SC | R0.0 | Unknown      | LEC   | STAY OUT |  18.1 |  81.9 |  81.9
+  Abu Dhabi Grand Prix      | HARD         | 30 |  15 |  28 |    | R0.5 | Unknown      | HAM   | PIT NOW  |  48.1 |  51.9 |  51.9
+  Abu Dhabi Grand Prix      | HARD         | 30 |  15 |  28 |    | R0.5 | Unknown      | LEC   | PIT NOW  |  48.1 |  51.9 |  51.9
+  Abu Dhabi Grand Prix      | HARD         | 35 |  10 |  23 |    | R1.0 | Unknown      | HAM   | PIT NOW  |  48.1 |  51.9 |  51.9
+  Abu Dhabi Grand Prix      | HARD         | 35 |  10 |  23 |    | R1.0 | Unknown      | LEC   | PIT NOW  |  48.1 |  51.9 |  51.9
+  Abu Dhabi Grand Prix      | INTERMEDIATE |  1 |   1 |  57 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Abu Dhabi Grand Prix      | INTERMEDIATE |  1 |   1 |  57 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 20 |  10 |  38 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  49.8 |  50.2 |  50.2
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 20 |  10 |  38 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  49.8 |  50.2 |  50.2
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 30 |  20 |  28 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 30 |  20 |  28 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 58 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 58 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 58 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 58 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 25 |   5 |  33 | SC | R0.0 | Unknown      | HAM   | PIT NOW  |  63.1 |  36.9 |  63.1
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 25 |   5 |  33 | SC | R0.0 | Unknown      | LEC   | PIT NOW  |  63.1 |  36.9 |  63.1
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 30 |  15 |  28 |    | R0.5 | Unknown      | HAM   | STAY OUT |   3.1 |  96.9 |  96.9
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 30 |  15 |  28 |    | R0.5 | Unknown      | LEC   | STAY OUT |   3.1 |  96.9 |  96.9
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 35 |  10 |  23 |    | R1.0 | Unknown      | HAM   | STAY OUT |   3.1 |  96.9 |  96.9
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 35 |  10 |  23 |    | R1.0 | Unknown      | LEC   | STAY OUT |   3.1 |  96.9 |  96.9
+  Abu Dhabi Grand Prix      | WET          |  1 |   1 |  57 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Abu Dhabi Grand Prix      | WET          |  1 |   1 |  57 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Abu Dhabi Grand Prix      | WET          | 20 |  10 |  38 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  49.8 |  50.2 |  50.2
+  Abu Dhabi Grand Prix      | WET          | 20 |  10 |  38 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  49.8 |  50.2 |  50.2
+  Abu Dhabi Grand Prix      | WET          | 30 |  20 |  28 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | WET          | 30 |  20 |  28 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | WET          | 40 |  30 |  18 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | WET          | 40 |  30 |  18 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | WET          | 50 |  40 |   8 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | WET          | 50 |  40 |   8 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | WET          | 58 |  50 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | WET          | 58 |  50 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | WET          | 58 |  55 |   0 |    | R0.0 | Unknown      | HAM   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | WET          | 58 |  55 |   0 |    | R0.0 | Unknown      | LEC   | PIT NOW  |  99.0 |   1.0 |  99.0
+  Abu Dhabi Grand Prix      | WET          | 25 |   5 |  33 | SC | R0.0 | Unknown      | HAM   | PIT NOW  |  63.1 |  36.9 |  63.1
+  Abu Dhabi Grand Prix      | WET          | 25 |   5 |  33 | SC | R0.0 | Unknown      | LEC   | PIT NOW  |  63.1 |  36.9 |  63.1
+  Abu Dhabi Grand Prix      | WET          | 30 |  15 |  28 |    | R0.5 | Unknown      | HAM   | STAY OUT |   3.1 |  96.9 |  96.9
+  Abu Dhabi Grand Prix      | WET          | 30 |  15 |  28 |    | R0.5 | Unknown      | LEC   | STAY OUT |   3.1 |  96.9 |  96.9
+  Abu Dhabi Grand Prix      | WET          | 35 |  10 |  23 |    | R1.0 | Unknown      | HAM   | STAY OUT |   3.1 |  96.9 |  96.9
+  Abu Dhabi Grand Prix      | WET          | 35 |  10 |  23 |    | R1.0 | Unknown      | LEC   | STAY OUT |   3.1 |  96.9 |  96.9
 
---- MEDIUM ---
-Age 10: STAY OUT (0.00)
-Age 15: STAY OUT (0.00)
-Age 18: STAY OUT (0.00)
-Age 20: STAY OUT (0.00)
-Age 22: STAY OUT (0.00)
-Age 25: STAY OUT (0.20)
-Age 30: PIT NOW (0.40)
-Age 35: PIT NOW (0.40)
-Age 40: PIT NOW (0.40)
+--- ALL 24 Circuits — typical mid-race (Lap 30, 14 laps on SOFT, first driver/team) ---
+  Circuit | Compound | Decision | PitProb% | Confidence%
+  ----------------------------------------------------------------------------
+  Bahrain Grand Prix             | SOFT         | STAY OUT |   4.5 |  95.5
+  Bahrain Grand Prix             | MEDIUM       | STAY OUT |   5.4 |  94.6
+  Bahrain Grand Prix             | HARD         | STAY OUT |   3.1 |  96.9
+  Bahrain Grand Prix             | INTERMEDIATE | PIT NOW  |  48.1 |  51.9
+  Bahrain Grand Prix             | WET          | PIT NOW  |  48.1 |  51.9
+  Saudi Arabian Grand Prix       | SOFT         | STAY OUT |   5.0 |  95.0
+  Saudi Arabian Grand Prix       | MEDIUM       | STAY OUT |   6.0 |  94.0
+  Saudi Arabian Grand Prix       | HARD         | STAY OUT |   3.6 |  96.4
+  Saudi Arabian Grand Prix       | INTERMEDIATE | PIT NOW  |  48.6 |  51.4
+  Saudi Arabian Grand Prix       | WET          | PIT NOW  |  48.6 |  51.4
+  Australian Grand Prix          | SOFT         | STAY OUT |   4.5 |  95.5
+  Australian Grand Prix          | MEDIUM       | STAY OUT |   5.4 |  94.6
+  Australian Grand Prix          | HARD         | STAY OUT |   3.1 |  96.9
+  Australian Grand Prix          | INTERMEDIATE | PIT NOW  |  48.1 |  51.9
+  Australian Grand Prix          | WET          | PIT NOW  |  48.1 |  51.9
+  Japanese Grand Prix            | SOFT         | STAY OUT |   4.7 |  95.3
+  Japanese Grand Prix            | MEDIUM       | STAY OUT |   5.7 |  94.3
+  Japanese Grand Prix            | HARD         | STAY OUT |   3.4 |  96.6
+  Japanese Grand Prix            | INTERMEDIATE | PIT NOW  |  48.4 |  51.6
+  Japanese Grand Prix            | WET          | PIT NOW  |  48.4 |  51.6
+  Chinese Grand Prix             | SOFT         | STAY OUT |   4.5 |  95.5
+  Chinese Grand Prix             | MEDIUM       | STAY OUT |   5.4 |  94.6
+  Chinese Grand Prix             | HARD         | STAY OUT |   3.1 |  96.9
+  Chinese Grand Prix             | INTERMEDIATE | PIT NOW  |  48.1 |  51.9
+  Chinese Grand Prix             | WET          | PIT NOW  |  48.1 |  51.9
+  Miami Grand Prix               | SOFT         | STAY OUT |   4.5 |  95.5
+  Miami Grand Prix               | MEDIUM       | STAY OUT |   5.4 |  94.6
+  Miami Grand Prix               | HARD         | STAY OUT |   3.1 |  96.9
+  Miami Grand Prix               | INTERMEDIATE | PIT NOW  |  48.1 |  51.9
+  Miami Grand Prix               | WET          | PIT NOW  |  48.1 |  51.9
+  Emilia Romagna Grand Prix      | SOFT         | STAY OUT |   4.8 |  95.2
+  Emilia Romagna Grand Prix      | MEDIUM       | STAY OUT |   5.7 |  94.3
+  Emilia Romagna Grand Prix      | HARD         | STAY OUT |   3.4 |  96.6
+  Emilia Romagna Grand Prix      | INTERMEDIATE | PIT NOW  |  48.4 |  51.6
+  Emilia Romagna Grand Prix      | WET          | PIT NOW  |  48.4 |  51.6
+  Monaco Grand Prix              | SOFT         | STAY OUT |   3.1 |  96.9
+  Monaco Grand Prix              | MEDIUM       | STAY OUT |   3.8 |  96.2
+  Monaco Grand Prix              | HARD         | STAY OUT |   2.4 |  97.6
+  Monaco Grand Prix              | INTERMEDIATE | PIT NOW  |  47.4 |  52.6
+  Monaco Grand Prix              | WET          | PIT NOW  |  47.4 |  52.6
+  Canadian Grand Prix            | SOFT         | STAY OUT |   3.4 |  96.6
+  Canadian Grand Prix            | MEDIUM       | STAY OUT |   4.1 |  95.9
+  Canadian Grand Prix            | HARD         | STAY OUT |   2.7 |  97.3
+  Canadian Grand Prix            | INTERMEDIATE | PIT NOW  |  47.7 |  52.3
+  Canadian Grand Prix            | WET          | PIT NOW  |  47.7 |  52.3
+  Spanish Grand Prix             | SOFT         | STAY OUT |   4.8 |  95.2
+  Spanish Grand Prix             | MEDIUM       | STAY OUT |   5.7 |  94.3
+  Spanish Grand Prix             | HARD         | STAY OUT |   3.4 |  96.6
+  Spanish Grand Prix             | INTERMEDIATE | PIT NOW  |  48.4 |  51.6
+  Spanish Grand Prix             | WET          | PIT NOW  |  48.4 |  51.6
+  Austrian Grand Prix            | SOFT         | STAY OUT |   3.4 |  96.6
+  Austrian Grand Prix            | MEDIUM       | STAY OUT |   4.1 |  95.9
+  Austrian Grand Prix            | HARD         | STAY OUT |   2.7 |  97.3
+  Austrian Grand Prix            | INTERMEDIATE | PIT NOW  |  47.7 |  52.3
+  Austrian Grand Prix            | WET          | PIT NOW  |  47.7 |  52.3
+  British Grand Prix             | SOFT         | STAY OUT |   4.7 |  95.3
+  British Grand Prix             | MEDIUM       | STAY OUT |   5.7 |  94.3
+  British Grand Prix             | HARD         | STAY OUT |   3.4 |  96.6
+  British Grand Prix             | INTERMEDIATE | PIT NOW  |  48.4 |  51.6
+  British Grand Prix             | WET          | PIT NOW  |  48.4 |  51.6
+  Hungarian Grand Prix           | SOFT         | STAY OUT |   3.4 |  96.6
+  Hungarian Grand Prix           | MEDIUM       | STAY OUT |   4.1 |  95.9
+  Hungarian Grand Prix           | HARD         | STAY OUT |   2.7 |  97.3
+  Hungarian Grand Prix           | INTERMEDIATE | PIT NOW  |  47.7 |  52.3
+  Hungarian Grand Prix           | WET          | PIT NOW  |  47.7 |  52.3
+  Belgian Grand Prix             | SOFT         | STAY OUT |   4.7 |  95.3
+  Belgian Grand Prix             | MEDIUM       | STAY OUT |   6.3 |  93.7
+  Belgian Grand Prix             | HARD         | STAY OUT |   5.0 |  95.0
+  Belgian Grand Prix             | INTERMEDIATE | PIT NOW  |  50.0 |  50.0
+  Belgian Grand Prix             | WET          | PIT NOW  |  50.0 |  50.0
+  Dutch Grand Prix               | SOFT         | STAY OUT |   3.4 |  96.6
+  Dutch Grand Prix               | MEDIUM       | STAY OUT |   4.1 |  95.9
+  Dutch Grand Prix               | HARD         | STAY OUT |   2.7 |  97.3
+  Dutch Grand Prix               | INTERMEDIATE | PIT NOW  |  47.7 |  52.3
+  Dutch Grand Prix               | WET          | PIT NOW  |  47.7 |  52.3
+  Italian Grand Prix             | SOFT         | STAY OUT |   5.0 |  95.0
+  Italian Grand Prix             | MEDIUM       | STAY OUT |   6.0 |  94.0
+  Italian Grand Prix             | HARD         | STAY OUT |   3.6 |  96.4
+  Italian Grand Prix             | INTERMEDIATE | PIT NOW  |  48.6 |  51.4
+  Italian Grand Prix             | WET          | PIT NOW  |  48.6 |  51.4
+  Azerbaijan Grand Prix          | SOFT         | STAY OUT |   5.0 |  95.0
+  Azerbaijan Grand Prix          | MEDIUM       | STAY OUT |   6.0 |  94.0
+  Azerbaijan Grand Prix          | HARD         | STAY OUT |   3.6 |  96.4
+  Azerbaijan Grand Prix          | INTERMEDIATE | PIT NOW  |  48.6 |  51.4
+  Azerbaijan Grand Prix          | WET          | PIT NOW  |  48.6 |  51.4
+  Singapore Grand Prix           | SOFT         | STAY OUT |   4.5 |  95.5
+  Singapore Grand Prix           | MEDIUM       | STAY OUT |   5.4 |  94.6
+  Singapore Grand Prix           | HARD         | STAY OUT |   3.1 |  96.9
+  Singapore Grand Prix           | INTERMEDIATE | PIT NOW  |  48.1 |  51.9
+  Singapore Grand Prix           | WET          | PIT NOW  |  48.1 |  51.9
+  United States Grand Prix       | SOFT         | STAY OUT |   4.5 |  95.5
+  United States Grand Prix       | MEDIUM       | STAY OUT |   5.4 |  94.6
+  United States Grand Prix       | HARD         | STAY OUT |   3.1 |  96.9
+  United States Grand Prix       | INTERMEDIATE | PIT NOW  |  48.1 |  51.9
+  United States Grand Prix       | WET          | PIT NOW  |  48.1 |  51.9
+  Mexico City Grand Prix         | SOFT         | STAY OUT |   3.4 |  96.6
+  Mexico City Grand Prix         | MEDIUM       | STAY OUT |   4.1 |  95.9
+  Mexico City Grand Prix         | HARD         | STAY OUT |   2.7 |  97.3
+  Mexico City Grand Prix         | INTERMEDIATE | PIT NOW  |  47.7 |  52.3
+  Mexico City Grand Prix         | WET          | PIT NOW  |  47.7 |  52.3
+  São Paulo Grand Prix           | SOFT         | STAY OUT |   3.4 |  96.6
+  São Paulo Grand Prix           | MEDIUM       | STAY OUT |   4.1 |  95.9
+  São Paulo Grand Prix           | HARD         | STAY OUT |   2.7 |  97.3
+  São Paulo Grand Prix           | INTERMEDIATE | PIT NOW  |  47.7 |  52.3
+  São Paulo Grand Prix           | WET          | PIT NOW  |  47.7 |  52.3
+  Las Vegas Grand Prix           | SOFT         | STAY OUT |   5.0 |  95.0
+  Las Vegas Grand Prix           | MEDIUM       | STAY OUT |   6.0 |  94.0
+  Las Vegas Grand Prix           | HARD         | STAY OUT |   3.6 |  96.4
+  Las Vegas Grand Prix           | INTERMEDIATE | PIT NOW  |  48.6 |  51.4
+  Las Vegas Grand Prix           | WET          | PIT NOW  |  48.6 |  51.4
+  Qatar Grand Prix               | SOFT         | STAY OUT |   4.5 |  95.5
+  Qatar Grand Prix               | MEDIUM       | STAY OUT |   5.4 |  94.6
+  Qatar Grand Prix               | HARD         | STAY OUT |   3.1 |  96.9
+  Qatar Grand Prix               | INTERMEDIATE | PIT NOW  |  48.1 |  51.9
+  Qatar Grand Prix               | WET          | PIT NOW  |  48.1 |  51.9
+  Abu Dhabi Grand Prix           | SOFT         | STAY OUT |   4.5 |  95.5
+  Abu Dhabi Grand Prix           | MEDIUM       | STAY OUT |   5.4 |  94.6
+  Abu Dhabi Grand Prix           | HARD         | STAY OUT |   3.1 |  96.9
+  Abu Dhabi Grand Prix           | INTERMEDIATE | PIT NOW  |  48.1 |  51.9
+  Abu Dhabi Grand Prix           | WET          | PIT NOW  |  48.1 |  51.9
 
---- HARD ---
-Age 10: STAY OUT (0.00)
-Age 15: STAY OUT (0.00)
-Age 18: STAY OUT (0.00)
-Age 20: STAY OUT (0.00)
-Age 22: STAY OUT (0.00)
-Age 25: STAY OUT (0.00)
-Age 30: STAY OUT (0.00)
-Age 35: STAY OUT (0.20)
-Age 40: PIT NOW (0.40)
+================================================================================
+  TAB 2: STRATEGY RECOMMENDER — All Circuits × All Starting Compounds
+================================================================================
+  Circuit | StartCpd | Rain | Rank1 Label | Rank1 Time(s) | Rank1 Pit Schedule | Rank2 Label | Rank2 Time(s)
+  ----------------------------------------------------------------------------
+  Bahrain Grand Prix        | SOFT         | R0.0 | 1-stop             | 5,400 | L20->H                         | 1-stop | 5,401
+  Bahrain Grand Prix        | SOFT         | R0.8 | 1-stop             | 5,848 | L26->H                         | 1-stop | 5,851
+  Bahrain Grand Prix        | MEDIUM       | R0.0 | 1-stop             | 5,394 | L26->H                         | 1-stop | 5,395
+  Bahrain Grand Prix        | MEDIUM       | R0.8 | 1-stop             | 5,848 | L26->H                         | 1-stop | 5,851
+  Bahrain Grand Prix        | HARD         | R0.0 | 1-stop             | 5,389 | L26->H                         | 1-stop | 5,393
+  Bahrain Grand Prix        | HARD         | R0.8 | 1-stop             | 5,848 | L26->H                         | 1-stop | 5,851
+  Bahrain Grand Prix        | INTERMEDIATE | R0.0 | 1-stop             | 5,396 | L26->H                         | 1-stop | 5,397
+  Bahrain Grand Prix        | INTERMEDIATE | R0.8 | 1-stop             | 5,852 | L26->H                         | 1-stop | 5,853
+  Bahrain Grand Prix        | WET          | R0.0 | 1-stop             | 5,392 | L26->H                         | 1-stop | 5,395
+  Bahrain Grand Prix        | WET          | R0.8 | 1-stop             | 5,848 | L26->H                         | 1-stop | 5,851
+  Saudi Arabian Grand Prix  | SOFT         | R0.0 | 1-stop             | 4,564 | L18->H                         | 1-stop | 4,564
+  Saudi Arabian Grand Prix  | SOFT         | R0.8 | 1-stop             | 4,958 | L22->H                         | 1-stop | 4,960
+  Saudi Arabian Grand Prix  | MEDIUM       | R0.0 | 1-stop             | 4,559 | L22->H                         | 1-stop | 4,560
+  Saudi Arabian Grand Prix  | MEDIUM       | R0.8 | 1-stop             | 4,958 | L22->H                         | 1-stop | 4,960
+  Saudi Arabian Grand Prix  | HARD         | R0.0 | 1-stop             | 4,556 | L22->H                         | 1-stop | 4,558
+  Saudi Arabian Grand Prix  | HARD         | R0.8 | 1-stop             | 4,958 | L22->H                         | 1-stop | 4,960
+  Saudi Arabian Grand Prix  | INTERMEDIATE | R0.0 | 1-stop             | 4,561 | L22->H                         | 1-stop | 4,562
+  Saudi Arabian Grand Prix  | INTERMEDIATE | R0.8 | 1-stop             | 4,961 | L22->H                         | 1-stop | 4,962
+  Saudi Arabian Grand Prix  | WET          | R0.0 | 1-stop             | 4,558 | L22->H                         | 1-stop | 4,560
+  Saudi Arabian Grand Prix  | WET          | R0.8 | 1-stop             | 4,958 | L22->H                         | 1-stop | 4,960
+  Australian Grand Prix     | SOFT         | R0.0 | 1-stop             | 4,723 | L20->H                         | 1-stop | 4,725
+  Australian Grand Prix     | SOFT         | R0.8 | 1-stop             | 5,180 | L26->H                         | 1-stop | 5,182
+  Australian Grand Prix     | MEDIUM       | R0.0 | 1-stop             | 4,717 | L26->H                         | 1-stop | 4,719
+  Australian Grand Prix     | MEDIUM       | R0.8 | 1-stop             | 5,180 | L26->H                         | 1-stop | 5,182
+  Australian Grand Prix     | HARD         | R0.0 | 1-stop             | 4,713 | L26->H                         | 1-stop | 4,717
+  Australian Grand Prix     | HARD         | R0.8 | 1-stop             | 5,180 | L26->H                         | 1-stop | 5,182
+  Australian Grand Prix     | INTERMEDIATE | R0.0 | 1-stop             | 4,720 | L26->H                         | 1-stop | 4,721
+  Australian Grand Prix     | INTERMEDIATE | R0.8 | 1-stop             | 5,184 | L26->H                         | 1-stop | 5,185
+  Australian Grand Prix     | WET          | R0.0 | 1-stop             | 4,716 | L26->H                         | 1-stop | 4,718
+  Australian Grand Prix     | WET          | R0.8 | 1-stop             | 5,180 | L26->H                         | 1-stop | 5,182
+  Japanese Grand Prix       | SOFT         | R0.0 | 1-stop             | 4,939 | L19->H                         | 1-stop | 4,940
+  Japanese Grand Prix       | SOFT         | R0.8 | 1-stop             | 5,357 | L24->H                         | 1-stop | 5,359
+  Japanese Grand Prix       | MEDIUM       | R0.0 | 1-stop             | 4,934 | L24->H                         | 1-stop | 4,936
+  Japanese Grand Prix       | MEDIUM       | R0.8 | 1-stop             | 5,357 | L24->H                         | 1-stop | 5,359
+  Japanese Grand Prix       | HARD         | R0.0 | 1-stop             | 4,930 | L24->H                         | 1-stop | 4,933
+  Japanese Grand Prix       | HARD         | R0.8 | 1-stop             | 5,357 | L24->H                         | 1-stop | 5,359
+  Japanese Grand Prix       | INTERMEDIATE | R0.0 | 1-stop             | 4,936 | L24->H                         | 1-stop | 4,937
+  Japanese Grand Prix       | INTERMEDIATE | R0.8 | 1-stop             | 5,360 | L24->H                         | 1-stop | 5,361
+  Japanese Grand Prix       | WET          | R0.0 | 1-stop             | 4,933 | L24->H                         | 1-stop | 4,935
+  Japanese Grand Prix       | WET          | R0.8 | 1-stop             | 5,357 | L24->H                         | 1-stop | 5,359
+  Chinese Grand Prix        | SOFT         | R0.0 | 1-stop             | 5,444 | L20->H                         | 1-stop | 5,445
+  Chinese Grand Prix        | SOFT         | R0.8 | 1-stop             | 5,885 | L25->H                         | 1-stop | 5,887
+  Chinese Grand Prix        | MEDIUM       | R0.0 | 1-stop             | 5,439 | L25->H                         | 1-stop | 5,440
+  Chinese Grand Prix        | MEDIUM       | R0.8 | 1-stop             | 5,885 | L25->H                         | 1-stop | 5,887
+  Chinese Grand Prix        | HARD         | R0.0 | 1-stop             | 5,434 | L25->H                         | 1-stop | 5,437
+  Chinese Grand Prix        | HARD         | R0.8 | 1-stop             | 5,885 | L25->H                         | 1-stop | 5,887
+  Chinese Grand Prix        | INTERMEDIATE | R0.0 | 1-stop             | 5,441 | L25->H                         | 1-stop | 5,442
+  Chinese Grand Prix        | INTERMEDIATE | R0.8 | 1-stop             | 5,889 | L25->H                         | 1-stop | 5,890
+  Chinese Grand Prix        | WET          | R0.0 | 1-stop             | 5,437 | L25->H                         | 1-stop | 5,439
+  Chinese Grand Prix        | WET          | R0.8 | 1-stop             | 5,885 | L25->H                         | 1-stop | 5,887
+  Miami Grand Prix          | SOFT         | R0.0 | 1-stop             | 5,257 | L20->H                         | 1-stop | 5,258
+  Miami Grand Prix          | SOFT         | R0.8 | 1-stop             | 5,706 | L26->H                         | 1-stop | 5,708
+  Miami Grand Prix          | MEDIUM       | R0.0 | 1-stop             | 5,251 | L26->H                         | 1-stop | 5,253
+  Miami Grand Prix          | MEDIUM       | R0.8 | 1-stop             | 5,706 | L26->H                         | 1-stop | 5,708
+  Miami Grand Prix          | HARD         | R0.0 | 1-stop             | 5,247 | L26->H                         | 1-stop | 5,250
+  Miami Grand Prix          | HARD         | R0.8 | 1-stop             | 5,706 | L26->H                         | 1-stop | 5,708
+  Miami Grand Prix          | INTERMEDIATE | R0.0 | 1-stop             | 5,254 | L26->H                         | 1-stop | 5,254
+  Miami Grand Prix          | INTERMEDIATE | R0.8 | 1-stop             | 5,710 | L26->H                         | 1-stop | 5,710
+  Miami Grand Prix          | WET          | R0.0 | 1-stop             | 5,250 | L26->H                         | 1-stop | 5,252
+  Miami Grand Prix          | WET          | R0.8 | 1-stop             | 5,706 | L26->H                         | 1-stop | 5,708
+  Emilia Romagna Grand Prix | SOFT         | R0.0 | 1-stop             | 5,026 | L22->H                         | 1-stop | 5,028
+  Emilia Romagna Grand Prix | SOFT         | R0.8 | 1-stop             | 5,522 | L28->H                         | 1-stop | 5,524
+  Emilia Romagna Grand Prix | MEDIUM       | R0.0 | 1-stop             | 5,019 | L28->H                         | 1-stop | 5,021
+  Emilia Romagna Grand Prix | MEDIUM       | R0.8 | 1-stop             | 5,522 | L28->H                         | 1-stop | 5,524
+  Emilia Romagna Grand Prix | HARD         | R0.0 | 1-stop             | 5,014 | L28->H                         | 1-stop | 5,018
+  Emilia Romagna Grand Prix | HARD         | R0.8 | 1-stop             | 5,522 | L28->H                         | 1-stop | 5,524
+  Emilia Romagna Grand Prix | INTERMEDIATE | R0.0 | 1-stop             | 5,022 | L28->H                         | 1-stop | 5,023
+  Emilia Romagna Grand Prix | INTERMEDIATE | R0.8 | 1-stop             | 5,526 | L28->H                         | 1-stop | 5,527
+  Emilia Romagna Grand Prix | WET          | R0.0 | 1-stop             | 5,018 | L28->H                         | 1-stop | 5,020
+  Emilia Romagna Grand Prix | WET          | R0.8 | 1-stop             | 5,522 | L28->H                         | 1-stop | 5,524
+  Monaco Grand Prix         | SOFT         | R0.0 | 2-stop             | 5,947 | L22->M, L45->H                 | 1-stop | 5,955
+  Monaco Grand Prix         | SOFT         | R0.8 | 2-stop             | 6,565 | L22->M, L45->H                 | 1-stop | 6,565
+  Monaco Grand Prix         | MEDIUM       | R0.0 | 2-stop             | 5,941 | L22->M, L45->H                 | 1-stop | 5,944
+  Monaco Grand Prix         | MEDIUM       | R0.8 | 2-stop             | 6,565 | L22->M, L45->H                 | 1-stop | 6,565
+  Monaco Grand Prix         | HARD         | R0.0 | 1-stop             | 5,935 | L35->H                         | 2-stop | 5,938
+  Monaco Grand Prix         | HARD         | R0.8 | 2-stop             | 6,565 | L22->M, L45->H                 | 1-stop | 6,565
+  Monaco Grand Prix         | INTERMEDIATE | R0.0 | 2-stop             | 5,943 | L22->M, L45->H                 | 1-stop | 5,949
+  Monaco Grand Prix         | INTERMEDIATE | R0.8 | 2-stop             | 6,567 | L22->M, L45->H                 | 1-stop | 6,573
+  Monaco Grand Prix         | WET          | R0.0 | 2-stop             | 5,941 | L22->M, L45->H                 | 1-stop | 5,941
+  Monaco Grand Prix         | WET          | R0.8 | 2-stop             | 6,565 | L22->M, L45->H                 | 1-stop | 6,565
+  Canadian Grand Prix       | SOFT         | R0.0 | 2-stop             | 5,391 | L20->M, L41->H                 | 1-stop | 5,394
+  Canadian Grand Prix       | SOFT         | R0.8 | 1-stop             | 5,943 | L32->H                         | 2-stop | 5,946
+  Canadian Grand Prix       | MEDIUM       | R0.0 | 1-stop             | 5,385 | L32->H                         | 2-stop | 5,387
+  Canadian Grand Prix       | MEDIUM       | R0.8 | 1-stop             | 5,943 | L32->H                         | 2-stop | 5,946
+  Canadian Grand Prix       | HARD         | R0.0 | 1-stop             | 5,378 | L32->H                         | 1-stop | 5,384
+  Canadian Grand Prix       | HARD         | R0.8 | 1-stop             | 5,943 | L32->H                         | 2-stop | 5,946
+  Canadian Grand Prix       | INTERMEDIATE | R0.0 | 2-stop             | 5,389 | L20->M, L41->H                 | 1-stop | 5,389
+  Canadian Grand Prix       | INTERMEDIATE | R0.8 | 2-stop             | 5,949 | L20->M, L41->H                 | 1-stop | 5,949
+  Canadian Grand Prix       | WET          | R0.0 | 1-stop             | 5,383 | L32->H                         | 2-stop | 5,386
+  Canadian Grand Prix       | WET          | R0.8 | 1-stop             | 5,943 | L32->H                         | 2-stop | 5,946
+  Spanish Grand Prix        | SOFT         | R0.0 | 1-stop             | 5,532 | L23->H                         | 2-stop | 5,532
+  Spanish Grand Prix        | SOFT         | R0.8 | 1-stop             | 6,050 | L30->H                         | 1-stop | 6,053
+  Spanish Grand Prix        | MEDIUM       | R0.0 | 1-stop             | 5,524 | L30->H                         | 1-stop | 5,526
+  Spanish Grand Prix        | MEDIUM       | R0.8 | 1-stop             | 6,050 | L30->H                         | 1-stop | 6,053
+  Spanish Grand Prix        | HARD         | R0.0 | 1-stop             | 5,518 | L30->H                         | 1-stop | 5,523
+  Spanish Grand Prix        | HARD         | R0.8 | 1-stop             | 6,050 | L30->H                         | 1-stop | 6,053
+  Spanish Grand Prix        | INTERMEDIATE | R0.0 | 1-stop             | 5,527 | L30->H                         | 1-stop | 5,528
+  Spanish Grand Prix        | INTERMEDIATE | R0.8 | 1-stop             | 6,055 | L30->H                         | 1-stop | 6,056
+  Spanish Grand Prix        | WET          | R0.0 | 1-stop             | 5,522 | L30->H                         | 1-stop | 5,525
+  Spanish Grand Prix        | WET          | R0.8 | 1-stop             | 6,050 | L30->H                         | 1-stop | 6,053
+  Austrian Grand Prix       | SOFT         | R0.0 | 2-stop             | 4,815 | L20->M, L41->H                 | 1-stop | 4,818
+  Austrian Grand Prix       | SOFT         | R0.8 | 1-stop             | 5,375 | L32->H                         | 2-stop | 5,378
+  Austrian Grand Prix       | MEDIUM       | R0.0 | 1-stop             | 4,809 | L32->H                         | 2-stop | 4,811
+  Austrian Grand Prix       | MEDIUM       | R0.8 | 1-stop             | 5,375 | L32->H                         | 2-stop | 5,378
+  Austrian Grand Prix       | HARD         | R0.0 | 1-stop             | 4,802 | L32->H                         | 1-stop | 4,808
+  Austrian Grand Prix       | HARD         | R0.8 | 1-stop             | 5,375 | L32->H                         | 2-stop | 5,378
+  Austrian Grand Prix       | INTERMEDIATE | R0.0 | 2-stop             | 4,813 | L20->M, L41->H                 | 1-stop | 4,813
+  Austrian Grand Prix       | INTERMEDIATE | R0.8 | 2-stop             | 5,381 | L20->M, L41->H                 | 1-stop | 5,381
+  Austrian Grand Prix       | WET          | R0.0 | 1-stop             | 4,807 | L32->H                         | 2-stop | 4,810
+  Austrian Grand Prix       | WET          | R0.8 | 1-stop             | 5,375 | L32->H                         | 2-stop | 5,378
+  British Grand Prix        | SOFT         | R0.0 | 1-stop             | 4,794 | L18->H                         | 1-stop | 4,795
+  British Grand Prix        | SOFT         | R0.8 | 1-stop             | 5,204 | L23->H                         | 1-stop | 5,206
+  British Grand Prix        | MEDIUM       | R0.0 | 1-stop             | 4,789 | L23->H                         | 1-stop | 4,791
+  British Grand Prix        | MEDIUM       | R0.8 | 1-stop             | 5,204 | L23->H                         | 1-stop | 5,206
+  British Grand Prix        | HARD         | R0.0 | 1-stop             | 4,785 | L23->H                         | 1-stop | 4,788
+  British Grand Prix        | HARD         | R0.8 | 1-stop             | 5,204 | L23->H                         | 1-stop | 5,206
+  British Grand Prix        | INTERMEDIATE | R0.0 | 1-stop             | 4,791 | L23->H                         | 1-stop | 4,792
+  British Grand Prix        | INTERMEDIATE | R0.8 | 1-stop             | 5,207 | L23->H                         | 1-stop | 5,208
+  British Grand Prix        | WET          | R0.0 | 1-stop             | 4,788 | L23->H                         | 1-stop | 4,790
+  British Grand Prix        | WET          | R0.8 | 1-stop             | 5,204 | L23->H                         | 1-stop | 5,206
+  Hungarian Grand Prix      | SOFT         | R0.0 | 2-stop             | 5,692 | L20->M, L41->H                 | 1-stop | 5,695
+  Hungarian Grand Prix      | SOFT         | R0.8 | 1-stop             | 6,244 | L32->H                         | 2-stop | 6,247
+  Hungarian Grand Prix      | MEDIUM       | R0.0 | 1-stop             | 5,686 | L32->H                         | 2-stop | 5,688
+  Hungarian Grand Prix      | MEDIUM       | R0.8 | 1-stop             | 6,244 | L32->H                         | 2-stop | 6,247
+  Hungarian Grand Prix      | HARD         | R0.0 | 1-stop             | 5,679 | L32->H                         | 1-stop | 5,685
+  Hungarian Grand Prix      | HARD         | R0.8 | 1-stop             | 6,244 | L32->H                         | 2-stop | 6,247
+  Hungarian Grand Prix      | INTERMEDIATE | R0.0 | 2-stop             | 5,690 | L20->M, L41->H                 | 1-stop | 5,690
+  Hungarian Grand Prix      | INTERMEDIATE | R0.8 | 2-stop             | 6,250 | L20->M, L41->H                 | 1-stop | 6,250
+  Hungarian Grand Prix      | WET          | R0.0 | 1-stop             | 5,684 | L32->H                         | 2-stop | 5,687
+  Hungarian Grand Prix      | WET          | R0.8 | 1-stop             | 6,244 | L32->H                         | 2-stop | 6,247
+  Belgian Grand Prix        | SOFT         | R0.0 | 1-stop             | 4,758 | L15->H                         | 1-stop | 4,759
+  Belgian Grand Prix        | SOFT         | R0.8 | 1-stop             | 5,106 | L20->H                         | 1-stop | 5,108
+  Belgian Grand Prix        | MEDIUM       | R0.0 | 1-stop             | 4,755 | L20->H                         | 1-stop | 4,756
+  Belgian Grand Prix        | MEDIUM       | R0.8 | 1-stop             | 5,106 | L20->H                         | 1-stop | 5,108
+  Belgian Grand Prix        | HARD         | R0.0 | 1-stop             | 4,752 | L20->H                         | No-stop | 4,753
+  Belgian Grand Prix        | HARD         | R0.8 | 1-stop             | 5,106 | L20->H                         | 1-stop | 5,108
+  Belgian Grand Prix        | INTERMEDIATE | R0.0 | 1-stop             | 4,756 | L20->H                         | 1-stop | 4,757
+  Belgian Grand Prix        | INTERMEDIATE | R0.8 | 1-stop             | 5,108 | L20->H                         | 1-stop | 5,109
+  Belgian Grand Prix        | WET          | R0.0 | 1-stop             | 4,754 | L20->H                         | 1-stop | 4,756
+  Belgian Grand Prix        | WET          | R0.8 | 1-stop             | 5,106 | L20->H                         | 1-stop | 5,108
+  Dutch Grand Prix          | SOFT         | R0.0 | 2-stop             | 5,279 | L20->M, L42->H                 | 1-stop | 5,283
+  Dutch Grand Prix          | SOFT         | R0.8 | 1-stop             | 5,848 | L32->H                         | 2-stop | 5,850
+  Dutch Grand Prix          | MEDIUM       | R0.0 | 1-stop             | 5,274 | L32->H                         | 2-stop | 5,275
+  Dutch Grand Prix          | MEDIUM       | R0.8 | 1-stop             | 5,848 | L32->H                         | 2-stop | 5,850
+  Dutch Grand Prix          | HARD         | R0.0 | 1-stop             | 5,267 | L32->H                         | 1-stop | 5,272
+  Dutch Grand Prix          | HARD         | R0.8 | 1-stop             | 5,848 | L32->H                         | 2-stop | 5,850
+  Dutch Grand Prix          | INTERMEDIATE | R0.0 | 2-stop             | 5,276 | L20->M, L42->H                 | 1-stop | 5,278
+  Dutch Grand Prix          | INTERMEDIATE | R0.8 | 2-stop             | 5,852 | L20->M, L42->H                 | 1-stop | 5,854
+  Dutch Grand Prix          | WET          | R0.0 | 1-stop             | 5,272 | L32->H                         | 2-stop | 5,274
+  Dutch Grand Prix          | WET          | R0.8 | 1-stop             | 5,848 | L32->H                         | 2-stop | 5,850
+  Italian Grand Prix        | SOFT         | R0.0 | 1-stop             | 4,242 | L18->H                         | 1-stop | 4,243
+  Italian Grand Prix        | SOFT         | R0.8 | 1-stop             | 4,645 | L23->H                         | 1-stop | 4,646
+  Italian Grand Prix        | MEDIUM       | R0.0 | 1-stop             | 4,238 | L23->H                         | 1-stop | 4,239
+  Italian Grand Prix        | MEDIUM       | R0.8 | 1-stop             | 4,645 | L23->H                         | 1-stop | 4,646
+  Italian Grand Prix        | HARD         | R0.0 | 1-stop             | 4,234 | L23->H                         | 1-stop | 4,237
+  Italian Grand Prix        | HARD         | R0.8 | 1-stop             | 4,645 | L23->H                         | 1-stop | 4,646
+  Italian Grand Prix        | INTERMEDIATE | R0.0 | 1-stop             | 4,239 | L23->H                         | 1-stop | 4,240
+  Italian Grand Prix        | INTERMEDIATE | R0.8 | 1-stop             | 4,647 | L23->H                         | 1-stop | 4,648
+  Italian Grand Prix        | WET          | R0.0 | 1-stop             | 4,237 | L23->H                         | 1-stop | 4,238
+  Italian Grand Prix        | WET          | R0.8 | 1-stop             | 4,645 | L23->H                         | 1-stop | 4,646
+  Azerbaijan Grand Prix     | SOFT         | R0.0 | 1-stop             | 5,313 | L18->H                         | 1-stop | 5,314
+  Azerbaijan Grand Prix     | SOFT         | R0.8 | 1-stop             | 5,716 | L23->H                         | 1-stop | 5,717
+  Azerbaijan Grand Prix     | MEDIUM       | R0.0 | 1-stop             | 5,309 | L23->H                         | 1-stop | 5,310
+  Azerbaijan Grand Prix     | MEDIUM       | R0.8 | 1-stop             | 5,716 | L23->H                         | 1-stop | 5,717
+  Azerbaijan Grand Prix     | HARD         | R0.0 | 1-stop             | 5,305 | L23->H                         | 1-stop | 5,308
+  Azerbaijan Grand Prix     | HARD         | R0.8 | 1-stop             | 5,716 | L23->H                         | 1-stop | 5,717
+  Azerbaijan Grand Prix     | INTERMEDIATE | R0.0 | 1-stop             | 5,310 | L23->H                         | 1-stop | 5,311
+  Azerbaijan Grand Prix     | INTERMEDIATE | R0.8 | 1-stop             | 5,718 | L23->H                         | 1-stop | 5,719
+  Azerbaijan Grand Prix     | WET          | R0.0 | 1-stop             | 5,308 | L23->H                         | 1-stop | 5,309
+  Azerbaijan Grand Prix     | WET          | R0.8 | 1-stop             | 5,716 | L23->H                         | 1-stop | 5,717
+  Singapore Grand Prix      | SOFT         | R0.0 | 1-stop             | 6,093 | L22->H                         | 1-stop | 6,095
+  Singapore Grand Prix      | SOFT         | R0.8 | 1-stop             | 6,580 | L28->H                         | 1-stop | 6,583
+  Singapore Grand Prix      | MEDIUM       | R0.0 | 1-stop             | 6,086 | L28->H                         | 1-stop | 6,088
+  Singapore Grand Prix      | MEDIUM       | R0.8 | 1-stop             | 6,580 | L28->H                         | 1-stop | 6,583
+  Singapore Grand Prix      | HARD         | R0.0 | 1-stop             | 6,081 | L28->H                         | 1-stop | 6,085
+  Singapore Grand Prix      | HARD         | R0.8 | 1-stop             | 6,580 | L28->H                         | 1-stop | 6,583
+  Singapore Grand Prix      | INTERMEDIATE | R0.0 | 1-stop             | 6,089 | L28->H                         | 1-stop | 6,090
+  Singapore Grand Prix      | INTERMEDIATE | R0.8 | 1-stop             | 6,585 | L28->H                         | 1-stop | 6,586
+  Singapore Grand Prix      | WET          | R0.0 | 1-stop             | 6,084 | L28->H                         | 1-stop | 6,087
+  Singapore Grand Prix      | WET          | R0.8 | 1-stop             | 6,580 | L28->H                         | 1-stop | 6,583
+  United States Grand Prix  | SOFT         | R0.0 | 1-stop             | 5,388 | L20->H                         | 1-stop | 5,389
+  United States Grand Prix  | SOFT         | R0.8 | 1-stop             | 5,829 | L25->H                         | 1-stop | 5,831
+  United States Grand Prix  | MEDIUM       | R0.0 | 1-stop             | 5,383 | L25->H                         | 1-stop | 5,384
+  United States Grand Prix  | MEDIUM       | R0.8 | 1-stop             | 5,829 | L25->H                         | 1-stop | 5,831
+  United States Grand Prix  | HARD         | R0.0 | 1-stop             | 5,378 | L25->H                         | 1-stop | 5,381
+  United States Grand Prix  | HARD         | R0.8 | 1-stop             | 5,829 | L25->H                         | 1-stop | 5,831
+  United States Grand Prix  | INTERMEDIATE | R0.0 | 1-stop             | 5,385 | L25->H                         | 1-stop | 5,386
+  United States Grand Prix  | INTERMEDIATE | R0.8 | 1-stop             | 5,833 | L25->H                         | 1-stop | 5,834
+  United States Grand Prix  | WET          | R0.0 | 1-stop             | 5,381 | L25->H                         | 1-stop | 5,383
+  United States Grand Prix  | WET          | R0.8 | 1-stop             | 5,829 | L25->H                         | 1-stop | 5,831
+  Mexico City Grand Prix    | SOFT         | R0.0 | 2-stop             | 5,703 | L20->M, L41->H                 | 1-stop | 5,706
+  Mexico City Grand Prix    | SOFT         | R0.8 | 1-stop             | 6,263 | L32->H                         | 2-stop | 6,266
+  Mexico City Grand Prix    | MEDIUM       | R0.0 | 1-stop             | 5,697 | L32->H                         | 2-stop | 5,699
+  Mexico City Grand Prix    | MEDIUM       | R0.8 | 1-stop             | 6,263 | L32->H                         | 2-stop | 6,266
+  Mexico City Grand Prix    | HARD         | R0.0 | 1-stop             | 5,690 | L32->H                         | 1-stop | 5,695
+  Mexico City Grand Prix    | HARD         | R0.8 | 1-stop             | 6,263 | L32->H                         | 2-stop | 6,266
+  Mexico City Grand Prix    | INTERMEDIATE | R0.0 | 2-stop             | 5,700 | L20->M, L41->H                 | 1-stop | 5,701
+  Mexico City Grand Prix    | INTERMEDIATE | R0.8 | 2-stop             | 6,268 | L20->M, L41->H                 | 1-stop | 6,269
+  Mexico City Grand Prix    | WET          | R0.0 | 1-stop             | 5,695 | L32->H                         | 2-stop | 5,698
+  Mexico City Grand Prix    | WET          | R0.8 | 1-stop             | 6,263 | L32->H                         | 2-stop | 6,266
+  São Paulo Grand Prix      | SOFT         | R0.0 | 2-stop             | 5,277 | L20->M, L41->H                 | 1-stop | 5,280
+  São Paulo Grand Prix      | SOFT         | R0.8 | 1-stop             | 5,837 | L32->H                         | 2-stop | 5,840
+  São Paulo Grand Prix      | MEDIUM       | R0.0 | 1-stop             | 5,271 | L32->H                         | 2-stop | 5,273
+  São Paulo Grand Prix      | MEDIUM       | R0.8 | 1-stop             | 5,837 | L32->H                         | 2-stop | 5,840
+  São Paulo Grand Prix      | HARD         | R0.0 | 1-stop             | 5,264 | L32->H                         | 1-stop | 5,269
+  São Paulo Grand Prix      | HARD         | R0.8 | 1-stop             | 5,837 | L32->H                         | 2-stop | 5,840
+  São Paulo Grand Prix      | INTERMEDIATE | R0.0 | 2-stop             | 5,274 | L20->M, L41->H                 | 1-stop | 5,275
+  São Paulo Grand Prix      | INTERMEDIATE | R0.8 | 2-stop             | 5,842 | L20->M, L41->H                 | 1-stop | 5,843
+  São Paulo Grand Prix      | WET          | R0.0 | 1-stop             | 5,269 | L32->H                         | 2-stop | 5,272
+  São Paulo Grand Prix      | WET          | R0.8 | 1-stop             | 5,837 | L32->H                         | 2-stop | 5,840
+  Las Vegas Grand Prix      | SOFT         | R0.0 | 1-stop             | 5,009 | L18->H                         | 1-stop | 5,009
+  Las Vegas Grand Prix      | SOFT         | R0.8 | 1-stop             | 5,403 | L22->H                         | 1-stop | 5,405
+  Las Vegas Grand Prix      | MEDIUM       | R0.0 | 1-stop             | 5,004 | L22->H                         | 1-stop | 5,005
+  Las Vegas Grand Prix      | MEDIUM       | R0.8 | 1-stop             | 5,403 | L22->H                         | 1-stop | 5,405
+  Las Vegas Grand Prix      | HARD         | R0.0 | 1-stop             | 5,001 | L22->H                         | 1-stop | 5,003
+  Las Vegas Grand Prix      | HARD         | R0.8 | 1-stop             | 5,403 | L22->H                         | 1-stop | 5,405
+  Las Vegas Grand Prix      | INTERMEDIATE | R0.0 | 1-stop             | 5,006 | L22->H                         | 1-stop | 5,007
+  Las Vegas Grand Prix      | INTERMEDIATE | R0.8 | 1-stop             | 5,406 | L22->H                         | 1-stop | 5,407
+  Las Vegas Grand Prix      | WET          | R0.0 | 1-stop             | 5,003 | L22->H                         | 1-stop | 5,005
+  Las Vegas Grand Prix      | WET          | R0.8 | 1-stop             | 5,403 | L22->H                         | 1-stop | 5,405
+  Qatar Grand Prix          | SOFT         | R0.0 | 1-stop             | 4,801 | L20->H                         | 1-stop | 4,802
+  Qatar Grand Prix          | SOFT         | R0.8 | 1-stop             | 5,250 | L26->H                         | 1-stop | 5,252
+  Qatar Grand Prix          | MEDIUM       | R0.0 | 1-stop             | 4,795 | L26->H                         | 1-stop | 4,797
+  Qatar Grand Prix          | MEDIUM       | R0.8 | 1-stop             | 5,250 | L26->H                         | 1-stop | 5,252
+  Qatar Grand Prix          | HARD         | R0.0 | 1-stop             | 4,791 | L26->H                         | 1-stop | 4,794
+  Qatar Grand Prix          | HARD         | R0.8 | 1-stop             | 5,250 | L26->H                         | 1-stop | 5,252
+  Qatar Grand Prix          | INTERMEDIATE | R0.0 | 1-stop             | 4,798 | L26->H                         | 1-stop | 4,798
+  Qatar Grand Prix          | INTERMEDIATE | R0.8 | 1-stop             | 5,254 | L26->H                         | 1-stop | 5,254
+  Qatar Grand Prix          | WET          | R0.0 | 1-stop             | 4,794 | L26->H                         | 1-stop | 4,796
+  Qatar Grand Prix          | WET          | R0.8 | 1-stop             | 5,250 | L26->H                         | 1-stop | 5,252
+  Abu Dhabi Grand Prix      | SOFT         | R0.0 | 1-stop             | 5,118 | L20->H                         | 1-stop | 5,119
+  Abu Dhabi Grand Prix      | SOFT         | R0.8 | 1-stop             | 5,574 | L26->H                         | 1-stop | 5,577
+  Abu Dhabi Grand Prix      | MEDIUM       | R0.0 | 1-stop             | 5,112 | L26->H                         | 1-stop | 5,114
+  Abu Dhabi Grand Prix      | MEDIUM       | R0.8 | 1-stop             | 5,574 | L26->H                         | 1-stop | 5,577
+  Abu Dhabi Grand Prix      | HARD         | R0.0 | 1-stop             | 5,107 | L26->H                         | 1-stop | 5,111
+  Abu Dhabi Grand Prix      | HARD         | R0.8 | 1-stop             | 5,574 | L26->H                         | 1-stop | 5,577
+  Abu Dhabi Grand Prix      | INTERMEDIATE | R0.0 | 1-stop             | 5,114 | L26->H                         | 1-stop | 5,115
+  Abu Dhabi Grand Prix      | INTERMEDIATE | R0.8 | 1-stop             | 5,578 | L26->H                         | 1-stop | 5,579
+  Abu Dhabi Grand Prix      | WET          | R0.0 | 1-stop             | 5,110 | L26->H                         | 1-stop | 5,113
+  Abu Dhabi Grand Prix      | WET          | R0.8 | 1-stop             | 5,574 | L26->H                         | 1-stop | 5,577
+
+================================================================================
+  TAB 3: LAP SIMULATOR — All Circuits × 4 Strategies × Dry/Wet
+================================================================================
+  Circuit | StartCpd | Rain | Strategy | TotalTime(s) | PitLaps | FastestLap(s)
+  ----------------------------------------------------------------------------
+  Bahrain Grand Prix        | SOFT   | R0.0 | No-stop        | 5,468.1 | none                 | 93.500
+  Bahrain Grand Prix        | SOFT   | R0.0 | 1-stop early   | 5,399.5 | 20                   | 93.500
+  Bahrain Grand Prix        | SOFT   | R0.0 | 1-stop late    | 5,402.5 | 28                   | 93.500
+  Bahrain Grand Prix        | SOFT   | R0.0 | 2-stop         | 5,405.2 | 16,33                | 93.500
+  Bahrain Grand Prix        | SOFT   | R0.8 | No-stop        | 5,877.9 | none                 | 101.500
+  Bahrain Grand Prix        | SOFT   | R0.8 | 1-stop early   | 5,850.6 | 20                   | 101.500
+  Bahrain Grand Prix        | SOFT   | R0.8 | 1-stop late    | 5,848.3 | 28                   | 101.500
+  Bahrain Grand Prix        | SOFT   | R0.8 | 2-stop         | 5,858.2 | 16,33                | 101.500
+  Bahrain Grand Prix        | MEDIUM | R0.0 | No-stop        | 5,428.7 | none                 | 93.500
+  Bahrain Grand Prix        | MEDIUM | R0.0 | 1-stop early   | 5,395.3 | 20                   | 93.500
+  Bahrain Grand Prix        | MEDIUM | R0.0 | 1-stop late    | 5,393.8 | 28                   | 93.500
+  Bahrain Grand Prix        | MEDIUM | R0.0 | 2-stop         | 5,402.6 | 16,33                | 93.500
+  Bahrain Grand Prix        | MEDIUM | R0.8 | No-stop        | 5,877.9 | none                 | 101.500
+  Bahrain Grand Prix        | MEDIUM | R0.8 | 1-stop early   | 5,850.6 | 20                   | 101.500
+  Bahrain Grand Prix        | MEDIUM | R0.8 | 1-stop late    | 5,848.3 | 28                   | 101.500
+  Bahrain Grand Prix        | MEDIUM | R0.8 | 2-stop         | 5,858.2 | 16,33                | 101.500
+  Bahrain Grand Prix        | HARD   | R0.0 | No-stop        | 5,404.8 | none                 | 93.500
+  Bahrain Grand Prix        | HARD   | R0.0 | 1-stop early   | 5,392.7 | 20                   | 93.500
+  Bahrain Grand Prix        | HARD   | R0.0 | 1-stop late    | 5,388.6 | 28                   | 93.500
+  Bahrain Grand Prix        | HARD   | R0.0 | 2-stop         | 5,401.1 | 16,33                | 93.500
+  Bahrain Grand Prix        | HARD   | R0.8 | No-stop        | 5,877.9 | none                 | 101.500
+  Bahrain Grand Prix        | HARD   | R0.8 | 1-stop early   | 5,850.6 | 20                   | 101.500
+  Bahrain Grand Prix        | HARD   | R0.8 | 1-stop late    | 5,848.3 | 28                   | 101.500
+  Bahrain Grand Prix        | HARD   | R0.8 | 2-stop         | 5,858.2 | 16,33                | 101.500
+  Saudi Arabian Grand Prix  | SOFT   | R0.0 | No-stop        | 4,611.4 | none                 | 90.100
+  Saudi Arabian Grand Prix  | SOFT   | R0.0 | 1-stop early   | 4,563.7 | 18                   | 90.100
+  Saudi Arabian Grand Prix  | SOFT   | R0.0 | 1-stop late    | 4,566.3 | 25                   | 90.100
+  Saudi Arabian Grand Prix  | SOFT   | R0.0 | 2-stop         | 4,573.2 | 14,29                | 90.100
+  Saudi Arabian Grand Prix  | SOFT   | R0.8 | No-stop        | 4,975.9 | none                 | 98.100
+  Saudi Arabian Grand Prix  | SOFT   | R0.8 | 1-stop early   | 4,959.8 | 18                   | 98.100
+  Saudi Arabian Grand Prix  | SOFT   | R0.8 | 1-stop late    | 4,958.3 | 25                   | 98.100
+  Saudi Arabian Grand Prix  | SOFT   | R0.8 | 2-stop         | 4,970.9 | 14,29                | 98.100
+  Saudi Arabian Grand Prix  | MEDIUM | R0.0 | No-stop        | 4,581.2 | none                 | 90.100
+  Saudi Arabian Grand Prix  | MEDIUM | R0.0 | 1-stop early   | 4,560.4 | 18                   | 90.100
+  Saudi Arabian Grand Prix  | MEDIUM | R0.0 | 1-stop late    | 4,559.5 | 25                   | 90.100
+  Saudi Arabian Grand Prix  | MEDIUM | R0.0 | 2-stop         | 4,571.3 | 14,29                | 90.100
+  Saudi Arabian Grand Prix  | MEDIUM | R0.8 | No-stop        | 4,975.9 | none                 | 98.100
+  Saudi Arabian Grand Prix  | MEDIUM | R0.8 | 1-stop early   | 4,959.8 | 18                   | 98.100
+  Saudi Arabian Grand Prix  | MEDIUM | R0.8 | 1-stop late    | 4,958.3 | 25                   | 98.100
+  Saudi Arabian Grand Prix  | MEDIUM | R0.8 | 2-stop         | 4,970.9 | 14,29                | 98.100
+  Saudi Arabian Grand Prix  | HARD   | R0.0 | No-stop        | 4,562.8 | none                 | 90.100
+  Saudi Arabian Grand Prix  | HARD   | R0.0 | 1-stop early   | 4,558.3 | 18                   | 90.100
+  Saudi Arabian Grand Prix  | HARD   | R0.0 | 1-stop late    | 4,555.3 | 25                   | 90.100
+  Saudi Arabian Grand Prix  | HARD   | R0.0 | 2-stop         | 4,570.1 | 14,29                | 90.100
+  Saudi Arabian Grand Prix  | HARD   | R0.8 | No-stop        | 4,975.9 | none                 | 98.100
+  Saudi Arabian Grand Prix  | HARD   | R0.8 | 1-stop early   | 4,959.8 | 18                   | 98.100
+  Saudi Arabian Grand Prix  | HARD   | R0.8 | 1-stop late    | 4,958.3 | 25                   | 98.100
+  Saudi Arabian Grand Prix  | HARD   | R0.8 | 2-stop         | 4,970.9 | 14,29                | 98.100
+  Australian Grand Prix     | SOFT   | R0.0 | No-stop        | 4,795.1 | none                 | 80.200
+  Australian Grand Prix     | SOFT   | R0.0 | 1-stop early   | 4,723.4 | 20                   | 80.200
+  Australian Grand Prix     | SOFT   | R0.0 | 1-stop late    | 4,726.9 | 29                   | 80.200
+  Australian Grand Prix     | SOFT   | R0.0 | 2-stop         | 4,728.4 | 16,34                | 80.200
+  Australian Grand Prix     | SOFT   | R0.8 | No-stop        | 5,211.3 | none                 | 88.200
+  Australian Grand Prix     | SOFT   | R0.8 | 1-stop early   | 5,182.4 | 20                   | 88.200
+  Australian Grand Prix     | SOFT   | R0.8 | 1-stop late    | 5,180.0 | 29                   | 88.200
+  Australian Grand Prix     | SOFT   | R0.8 | 2-stop         | 5,189.3 | 16,34                | 88.200
+  Australian Grand Prix     | MEDIUM | R0.0 | No-stop        | 4,754.4 | none                 | 80.200
+  Australian Grand Prix     | MEDIUM | R0.0 | 1-stop early   | 4,719.2 | 20                   | 80.200
+  Australian Grand Prix     | MEDIUM | R0.0 | 1-stop late    | 4,717.6 | 29                   | 80.200
+  Australian Grand Prix     | MEDIUM | R0.0 | 2-stop         | 4,725.8 | 16,34                | 80.200
+  Australian Grand Prix     | MEDIUM | R0.8 | No-stop        | 5,211.3 | none                 | 88.200
+  Australian Grand Prix     | MEDIUM | R0.8 | 1-stop early   | 5,182.4 | 20                   | 88.200
+  Australian Grand Prix     | MEDIUM | R0.8 | 1-stop late    | 5,180.0 | 29                   | 88.200
+  Australian Grand Prix     | MEDIUM | R0.8 | 2-stop         | 5,189.3 | 16,34                | 88.200
+  Australian Grand Prix     | HARD   | R0.0 | No-stop        | 4,729.6 | none                 | 80.200
+  Australian Grand Prix     | HARD   | R0.0 | 1-stop early   | 4,716.6 | 20                   | 80.200
+  Australian Grand Prix     | HARD   | R0.0 | 1-stop late    | 4,711.9 | 29                   | 80.200
+  Australian Grand Prix     | HARD   | R0.0 | 2-stop         | 4,724.2 | 16,34                | 80.200
+  Australian Grand Prix     | HARD   | R0.8 | No-stop        | 5,211.3 | none                 | 88.200
+  Australian Grand Prix     | HARD   | R0.8 | 1-stop early   | 5,182.4 | 20                   | 88.200
+  Australian Grand Prix     | HARD   | R0.8 | 1-stop late    | 5,180.0 | 29                   | 88.200
+  Australian Grand Prix     | HARD   | R0.8 | 2-stop         | 5,189.3 | 16,34                | 88.200
+  Japanese Grand Prix       | SOFT   | R0.0 | No-stop        | 4,995.7 | none                 | 92.000
+  Japanese Grand Prix       | SOFT   | R0.0 | 1-stop early   | 4,939.4 | 19                   | 92.000
+  Japanese Grand Prix       | SOFT   | R0.0 | 1-stop late    | 4,941.9 | 26                   | 92.000
+  Japanese Grand Prix       | SOFT   | R0.0 | 2-stop         | 4,947.3 | 15,31                | 92.000
+  Japanese Grand Prix       | SOFT   | R0.8 | No-stop        | 5,379.8 | none                 | 100.000
+  Japanese Grand Prix       | SOFT   | R0.8 | 1-stop early   | 5,358.9 | 19                   | 100.000
+  Japanese Grand Prix       | SOFT   | R0.8 | 1-stop late    | 5,357.2 | 26                   | 100.000
+  Japanese Grand Prix       | SOFT   | R0.8 | 2-stop         | 5,368.7 | 15,31                | 100.000
+  Japanese Grand Prix       | MEDIUM | R0.0 | No-stop        | 4,961.7 | none                 | 92.000
+  Japanese Grand Prix       | MEDIUM | R0.0 | 1-stop early   | 4,935.6 | 19                   | 92.000
+  Japanese Grand Prix       | MEDIUM | R0.0 | 1-stop late    | 4,934.5 | 26                   | 92.000
+  Japanese Grand Prix       | MEDIUM | R0.0 | 2-stop         | 4,945.1 | 15,31                | 92.000
+  Japanese Grand Prix       | MEDIUM | R0.8 | No-stop        | 5,379.8 | none                 | 100.000
+  Japanese Grand Prix       | MEDIUM | R0.8 | 1-stop early   | 5,358.9 | 19                   | 100.000
+  Japanese Grand Prix       | MEDIUM | R0.8 | 1-stop late    | 5,357.2 | 26                   | 100.000
+  Japanese Grand Prix       | MEDIUM | R0.8 | 2-stop         | 5,368.7 | 15,31                | 100.000
+  Japanese Grand Prix       | HARD   | R0.0 | No-stop        | 4,941.0 | none                 | 92.000
+  Japanese Grand Prix       | HARD   | R0.0 | 1-stop early   | 4,933.3 | 19                   | 92.000
+  Japanese Grand Prix       | HARD   | R0.0 | 1-stop late    | 4,930.0 | 26                   | 92.000
+  Japanese Grand Prix       | HARD   | R0.0 | 2-stop         | 4,943.7 | 15,31                | 92.000
+  Japanese Grand Prix       | HARD   | R0.8 | No-stop        | 5,379.8 | none                 | 100.000
+  Japanese Grand Prix       | HARD   | R0.8 | 1-stop early   | 5,358.9 | 19                   | 100.000
+  Japanese Grand Prix       | HARD   | R0.8 | 1-stop late    | 5,357.2 | 26                   | 100.000
+  Japanese Grand Prix       | HARD   | R0.8 | 2-stop         | 5,368.7 | 15,31                | 100.000
+  Chinese Grand Prix        | SOFT   | R0.0 | No-stop        | 5,509.7 | none                 | 96.000
+  Chinese Grand Prix        | SOFT   | R0.0 | 1-stop early   | 5,444.3 | 20                   | 96.000
+  Chinese Grand Prix        | SOFT   | R0.0 | 1-stop late    | 5,447.6 | 28                   | 96.000
+  Chinese Grand Prix        | SOFT   | R0.0 | 2-stop         | 5,450.7 | 16,32                | 96.000
+  Chinese Grand Prix        | SOFT   | R0.8 | No-stop        | 5,913.1 | none                 | 104.000
+  Chinese Grand Prix        | SOFT   | R0.8 | 1-stop early   | 5,887.3 | 20                   | 104.000
+  Chinese Grand Prix        | SOFT   | R0.8 | 1-stop late    | 5,885.5 | 28                   | 104.000
+  Chinese Grand Prix        | SOFT   | R0.8 | 2-stop         | 5,895.7 | 16,32                | 104.000
+  Chinese Grand Prix        | MEDIUM | R0.0 | No-stop        | 5,471.8 | none                 | 96.000
+  Chinese Grand Prix        | MEDIUM | R0.0 | 1-stop early   | 5,440.0 | 20                   | 96.000
+  Chinese Grand Prix        | MEDIUM | R0.0 | 1-stop late    | 5,439.0 | 28                   | 96.000
+  Chinese Grand Prix        | MEDIUM | R0.0 | 2-stop         | 5,448.1 | 16,32                | 96.000
+  Chinese Grand Prix        | MEDIUM | R0.8 | No-stop        | 5,913.1 | none                 | 104.000
+  Chinese Grand Prix        | MEDIUM | R0.8 | 1-stop early   | 5,887.3 | 20                   | 104.000
+  Chinese Grand Prix        | MEDIUM | R0.8 | 1-stop late    | 5,885.5 | 28                   | 104.000
+  Chinese Grand Prix        | MEDIUM | R0.8 | 2-stop         | 5,895.7 | 16,32                | 104.000
+  Chinese Grand Prix        | HARD   | R0.0 | No-stop        | 5,448.6 | none                 | 96.000
+  Chinese Grand Prix        | HARD   | R0.0 | 1-stop early   | 5,437.5 | 20                   | 96.000
+  Chinese Grand Prix        | HARD   | R0.0 | 1-stop late    | 5,433.7 | 28                   | 96.000
+  Chinese Grand Prix        | HARD   | R0.0 | 2-stop         | 5,446.6 | 16,32                | 96.000
+  Chinese Grand Prix        | HARD   | R0.8 | No-stop        | 5,913.1 | none                 | 104.000
+  Chinese Grand Prix        | HARD   | R0.8 | 1-stop early   | 5,887.3 | 20                   | 104.000
+  Chinese Grand Prix        | HARD   | R0.8 | 1-stop late    | 5,885.5 | 28                   | 104.000
+  Chinese Grand Prix        | HARD   | R0.8 | 2-stop         | 5,895.7 | 16,32                | 104.000
+  Miami Grand Prix          | SOFT   | R0.0 | No-stop        | 5,325.6 | none                 | 91.000
+  Miami Grand Prix          | SOFT   | R0.0 | 1-stop early   | 5,257.0 | 20                   | 91.000
+  Miami Grand Prix          | SOFT   | R0.0 | 1-stop late    | 5,260.0 | 28                   | 91.000
+  Miami Grand Prix          | SOFT   | R0.0 | 2-stop         | 5,262.7 | 16,33                | 91.000
+  Miami Grand Prix          | SOFT   | R0.8 | No-stop        | 5,735.4 | none                 | 99.000
+  Miami Grand Prix          | SOFT   | R0.8 | 1-stop early   | 5,708.1 | 20                   | 99.000
+  Miami Grand Prix          | SOFT   | R0.8 | 1-stop late    | 5,705.8 | 28                   | 99.000
+  Miami Grand Prix          | SOFT   | R0.8 | 2-stop         | 5,715.7 | 16,33                | 99.000
+  Miami Grand Prix          | MEDIUM | R0.0 | No-stop        | 5,286.2 | none                 | 91.000
+  Miami Grand Prix          | MEDIUM | R0.0 | 1-stop early   | 5,252.8 | 20                   | 91.000
+  Miami Grand Prix          | MEDIUM | R0.0 | 1-stop late    | 5,251.3 | 28                   | 91.000
+  Miami Grand Prix          | MEDIUM | R0.0 | 2-stop         | 5,260.1 | 16,33                | 91.000
+  Miami Grand Prix          | MEDIUM | R0.8 | No-stop        | 5,735.4 | none                 | 99.000
+  Miami Grand Prix          | MEDIUM | R0.8 | 1-stop early   | 5,708.1 | 20                   | 99.000
+  Miami Grand Prix          | MEDIUM | R0.8 | 1-stop late    | 5,705.8 | 28                   | 99.000
+  Miami Grand Prix          | MEDIUM | R0.8 | 2-stop         | 5,715.7 | 16,33                | 99.000
+  Miami Grand Prix          | HARD   | R0.0 | No-stop        | 5,262.3 | none                 | 91.000
+  Miami Grand Prix          | HARD   | R0.0 | 1-stop early   | 5,250.2 | 20                   | 91.000
+  Miami Grand Prix          | HARD   | R0.0 | 1-stop late    | 5,246.1 | 28                   | 91.000
+  Miami Grand Prix          | HARD   | R0.0 | 2-stop         | 5,258.6 | 16,33                | 91.000
+  Miami Grand Prix          | HARD   | R0.8 | No-stop        | 5,735.4 | none                 | 99.000
+  Miami Grand Prix          | HARD   | R0.8 | 1-stop early   | 5,708.1 | 20                   | 99.000
+  Miami Grand Prix          | HARD   | R0.8 | 1-stop late    | 5,705.8 | 28                   | 99.000
+  Miami Grand Prix          | HARD   | R0.8 | 2-stop         | 5,715.7 | 16,33                | 99.000
+  Emilia Romagna Grand Prix | SOFT   | R0.0 | No-stop        | 5,115.1 | none                 | 78.500
+  Emilia Romagna Grand Prix | SOFT   | R0.0 | 1-stop early   | 5,026.3 | 22                   | 78.500
+  Emilia Romagna Grand Prix | SOFT   | R0.0 | 1-stop late    | 5,031.3 | 32                   | 78.500
+  Emilia Romagna Grand Prix | SOFT   | R0.0 | 2-stop         | 5,028.5 | 18,37                | 78.500
+  Emilia Romagna Grand Prix | SOFT   | R0.8 | No-stop        | 5,562.6 | none                 | 86.500
+  Emilia Romagna Grand Prix | SOFT   | R0.8 | 1-stop early   | 5,524.3 | 22                   | 86.500
+  Emilia Romagna Grand Prix | SOFT   | R0.8 | 1-stop late    | 5,521.8 | 32                   | 86.500
+  Emilia Romagna Grand Prix | SOFT   | R0.8 | 2-stop         | 5,528.6 | 18,37                | 86.500
+  Emilia Romagna Grand Prix | MEDIUM | R0.0 | No-stop        | 5,066.9 | none                 | 78.500
+  Emilia Romagna Grand Prix | MEDIUM | R0.0 | 1-stop early   | 5,021.2 | 22                   | 78.500
+  Emilia Romagna Grand Prix | MEDIUM | R0.0 | 1-stop late    | 5,019.8 | 32                   | 78.500
+  Emilia Romagna Grand Prix | MEDIUM | R0.0 | 2-stop         | 5,025.1 | 18,37                | 78.500
+  Emilia Romagna Grand Prix | MEDIUM | R0.8 | No-stop        | 5,562.6 | none                 | 86.500
+  Emilia Romagna Grand Prix | MEDIUM | R0.8 | 1-stop early   | 5,524.3 | 22                   | 86.500
+  Emilia Romagna Grand Prix | MEDIUM | R0.8 | 1-stop late    | 5,521.8 | 32                   | 86.500
+  Emilia Romagna Grand Prix | MEDIUM | R0.8 | 2-stop         | 5,528.6 | 18,37                | 86.500
+  Emilia Romagna Grand Prix | HARD   | R0.0 | No-stop        | 5,037.6 | none                 | 78.500
+  Emilia Romagna Grand Prix | HARD   | R0.0 | 1-stop early   | 5,018.0 | 22                   | 78.500
+  Emilia Romagna Grand Prix | HARD   | R0.0 | 1-stop late    | 5,012.8 | 32                   | 78.500
+  Emilia Romagna Grand Prix | HARD   | R0.0 | 2-stop         | 5,023.1 | 18,37                | 78.500
+  Emilia Romagna Grand Prix | HARD   | R0.8 | No-stop        | 5,562.6 | none                 | 86.500
+  Emilia Romagna Grand Prix | HARD   | R0.8 | 1-stop early   | 5,524.3 | 22                   | 86.500
+  Emilia Romagna Grand Prix | HARD   | R0.8 | 1-stop late    | 5,521.8 | 32                   | 86.500
+  Emilia Romagna Grand Prix | HARD   | R0.8 | 2-stop         | 5,528.6 | 18,37                | 86.500
+  Monaco Grand Prix         | SOFT   | R0.0 | No-stop        | 6,103.0 | none                 | 74.900
+  Monaco Grand Prix         | SOFT   | R0.0 | 1-stop early   | 5,955.0 | 27                   | 74.900
+  Monaco Grand Prix         | SOFT   | R0.0 | 1-stop late    | 5,962.0 | 39                   | 74.900
+  Monaco Grand Prix         | SOFT   | R0.0 | 2-stop         | 5,946.6 | 22,45                | 74.900
+  Monaco Grand Prix         | SOFT   | R0.8 | No-stop        | 6,640.0 | none                 | 82.900
+  Monaco Grand Prix         | SOFT   | R0.8 | 1-stop early   | 6,569.6 | 27                   | 82.900
+  Monaco Grand Prix         | SOFT   | R0.8 | 1-stop late    | 6,565.7 | 39                   | 82.900
+  Monaco Grand Prix         | SOFT   | R0.8 | 2-stop         | 6,564.5 | 22,45                | 82.900
+  Monaco Grand Prix         | MEDIUM | R0.0 | No-stop        | 6,028.9 | none                 | 74.900
+  Monaco Grand Prix         | MEDIUM | R0.0 | 1-stop early   | 5,947.0 | 27                   | 74.900
+  Monaco Grand Prix         | MEDIUM | R0.0 | 1-stop late    | 5,944.7 | 39                   | 74.900
+  Monaco Grand Prix         | MEDIUM | R0.0 | 2-stop         | 5,941.4 | 22,45                | 74.900
+  Monaco Grand Prix         | MEDIUM | R0.8 | No-stop        | 6,640.0 | none                 | 82.900
+  Monaco Grand Prix         | MEDIUM | R0.8 | 1-stop early   | 6,569.6 | 27                   | 82.900
+  Monaco Grand Prix         | MEDIUM | R0.8 | 1-stop late    | 6,565.7 | 39                   | 82.900
+  Monaco Grand Prix         | MEDIUM | R0.8 | 2-stop         | 6,564.5 | 22,45                | 82.900
+  Monaco Grand Prix         | HARD   | R0.0 | No-stop        | 5,983.8 | none                 | 74.900
+  Monaco Grand Prix         | HARD   | R0.0 | 1-stop early   | 5,942.1 | 27                   | 74.900
+  Monaco Grand Prix         | HARD   | R0.0 | 1-stop late    | 5,934.1 | 39                   | 74.900
+  Monaco Grand Prix         | HARD   | R0.0 | 2-stop         | 5,938.3 | 22,45                | 74.900
+  Monaco Grand Prix         | HARD   | R0.8 | No-stop        | 6,640.0 | none                 | 82.900
+  Monaco Grand Prix         | HARD   | R0.8 | 1-stop early   | 6,569.6 | 27                   | 82.900
+  Monaco Grand Prix         | HARD   | R0.8 | 1-stop late    | 6,565.7 | 39                   | 82.900
+  Monaco Grand Prix         | HARD   | R0.8 | 2-stop         | 6,564.5 | 22,45                | 82.900
+  Canadian Grand Prix       | SOFT   | R0.0 | No-stop        | 5,508.7 | none                 | 75.700
+  Canadian Grand Prix       | SOFT   | R0.0 | 1-stop early   | 5,394.0 | 24                   | 75.700
+  Canadian Grand Prix       | SOFT   | R0.0 | 1-stop late    | 5,399.4 | 35                   | 75.700
+  Canadian Grand Prix       | SOFT   | R0.0 | 2-stop         | 5,391.4 | 20,41                | 75.700
+  Canadian Grand Prix       | SOFT   | R0.8 | No-stop        | 5,998.8 | none                 | 83.700
+  Canadian Grand Prix       | SOFT   | R0.8 | 1-stop early   | 5,946.6 | 24                   | 83.700
+  Canadian Grand Prix       | SOFT   | R0.8 | 1-stop late    | 5,943.2 | 35                   | 83.700
+  Canadian Grand Prix       | SOFT   | R0.8 | 2-stop         | 5,946.5 | 20,41                | 83.700
+  Canadian Grand Prix       | MEDIUM | R0.0 | No-stop        | 5,449.2 | none                 | 75.700
+  Canadian Grand Prix       | MEDIUM | R0.0 | 1-stop early   | 5,387.7 | 24                   | 75.700
+  Canadian Grand Prix       | MEDIUM | R0.0 | 1-stop late    | 5,385.6 | 35                   | 75.700
+  Canadian Grand Prix       | MEDIUM | R0.0 | 2-stop         | 5,387.2 | 20,41                | 75.700
+  Canadian Grand Prix       | MEDIUM | R0.8 | No-stop        | 5,998.8 | none                 | 83.700
+  Canadian Grand Prix       | MEDIUM | R0.8 | 1-stop early   | 5,946.6 | 24                   | 83.700
+  Canadian Grand Prix       | MEDIUM | R0.8 | 1-stop late    | 5,943.2 | 35                   | 83.700
+  Canadian Grand Prix       | MEDIUM | R0.8 | 2-stop         | 5,946.5 | 20,41                | 83.700
+  Canadian Grand Prix       | HARD   | R0.0 | No-stop        | 5,412.9 | none                 | 75.700
+  Canadian Grand Prix       | HARD   | R0.0 | 1-stop early   | 5,383.9 | 24                   | 75.700
+  Canadian Grand Prix       | HARD   | R0.0 | 1-stop late    | 5,377.2 | 35                   | 75.700
+  Canadian Grand Prix       | HARD   | R0.0 | 2-stop         | 5,384.6 | 20,41                | 75.700
+  Canadian Grand Prix       | HARD   | R0.8 | No-stop        | 5,998.8 | none                 | 83.700
+  Canadian Grand Prix       | HARD   | R0.8 | 1-stop early   | 5,946.6 | 24                   | 83.700
+  Canadian Grand Prix       | HARD   | R0.8 | 1-stop late    | 5,943.2 | 35                   | 83.700
+  Canadian Grand Prix       | HARD   | R0.8 | 2-stop         | 5,946.5 | 20,41                | 83.700
+  Spanish Grand Prix        | SOFT   | R0.0 | No-stop        | 5,631.3 | none                 | 82.500
+  Spanish Grand Prix        | SOFT   | R0.0 | 1-stop early   | 5,531.7 | 23                   | 82.500
+  Spanish Grand Prix        | SOFT   | R0.0 | 1-stop late    | 5,536.5 | 33                   | 82.500
+  Spanish Grand Prix        | SOFT   | R0.0 | 2-stop         | 5,531.8 | 18,38                | 82.500
+  Spanish Grand Prix        | SOFT   | R0.8 | No-stop        | 6,097.2 | none                 | 90.500
+  Spanish Grand Prix        | SOFT   | R0.8 | 1-stop early   | 6,053.0 | 23                   | 90.500
+  Spanish Grand Prix        | SOFT   | R0.8 | 1-stop late    | 6,050.2 | 33                   | 90.500
+  Spanish Grand Prix        | SOFT   | R0.8 | 2-stop         | 6,055.8 | 18,38                | 90.500
+  Spanish Grand Prix        | MEDIUM | R0.0 | No-stop        | 5,578.4 | none                 | 82.500
+  Spanish Grand Prix        | MEDIUM | R0.0 | 1-stop early   | 5,526.0 | 23                   | 82.500
+  Spanish Grand Prix        | MEDIUM | R0.0 | 1-stop late    | 5,524.3 | 33                   | 82.500
+  Spanish Grand Prix        | MEDIUM | R0.0 | 2-stop         | 5,528.4 | 18,38                | 82.500
+  Spanish Grand Prix        | MEDIUM | R0.8 | No-stop        | 6,097.2 | none                 | 90.500
+  Spanish Grand Prix        | MEDIUM | R0.8 | 1-stop early   | 6,053.0 | 23                   | 90.500
+  Spanish Grand Prix        | MEDIUM | R0.8 | 1-stop late    | 6,050.2 | 33                   | 90.500
+  Spanish Grand Prix        | MEDIUM | R0.8 | 2-stop         | 6,055.8 | 18,38                | 90.500
+  Spanish Grand Prix        | HARD   | R0.0 | No-stop        | 5,546.2 | none                 | 82.500
+  Spanish Grand Prix        | HARD   | R0.0 | 1-stop early   | 5,522.5 | 23                   | 82.500
+  Spanish Grand Prix        | HARD   | R0.0 | 1-stop late    | 5,516.9 | 33                   | 82.500
+  Spanish Grand Prix        | HARD   | R0.0 | 2-stop         | 5,526.4 | 18,38                | 82.500
+  Spanish Grand Prix        | HARD   | R0.8 | No-stop        | 6,097.2 | none                 | 90.500
+  Spanish Grand Prix        | HARD   | R0.8 | 1-stop early   | 6,053.0 | 23                   | 90.500
+  Spanish Grand Prix        | HARD   | R0.8 | 1-stop late    | 6,050.2 | 33                   | 90.500
+  Spanish Grand Prix        | HARD   | R0.8 | 2-stop         | 6,055.8 | 18,38                | 90.500
+  Austrian Grand Prix       | SOFT   | R0.0 | No-stop        | 4,937.3 | none                 | 66.500
+  Austrian Grand Prix       | SOFT   | R0.0 | 1-stop early   | 4,818.5 | 25                   | 66.500
+  Austrian Grand Prix       | SOFT   | R0.0 | 1-stop late    | 4,824.9 | 36                   | 66.500
+  Austrian Grand Prix       | SOFT   | R0.0 | 2-stop         | 4,815.3 | 20,41                | 66.500
+  Austrian Grand Prix       | SOFT   | R0.8 | No-stop        | 5,433.4 | none                 | 74.500
+  Austrian Grand Prix       | SOFT   | R0.8 | 1-stop early   | 5,378.5 | 25                   | 74.500
+  Austrian Grand Prix       | SOFT   | R0.8 | 1-stop late    | 5,375.7 | 36                   | 74.500
+  Austrian Grand Prix       | SOFT   | R0.8 | 2-stop         | 5,378.4 | 20,41                | 74.500
+  Austrian Grand Prix       | MEDIUM | R0.0 | No-stop        | 4,876.0 | none                 | 66.500
+  Austrian Grand Prix       | MEDIUM | R0.0 | 1-stop early   | 4,811.6 | 25                   | 66.500
+  Austrian Grand Prix       | MEDIUM | R0.0 | 1-stop late    | 4,810.2 | 36                   | 66.500
+  Austrian Grand Prix       | MEDIUM | R0.0 | 2-stop         | 4,811.1 | 20,41                | 66.500
+  Austrian Grand Prix       | MEDIUM | R0.8 | No-stop        | 5,433.4 | none                 | 74.500
+  Austrian Grand Prix       | MEDIUM | R0.8 | 1-stop early   | 5,378.5 | 25                   | 74.500
+  Austrian Grand Prix       | MEDIUM | R0.8 | 1-stop late    | 5,375.7 | 36                   | 74.500
+  Austrian Grand Prix       | MEDIUM | R0.8 | 2-stop         | 5,378.4 | 20,41                | 74.500
+  Austrian Grand Prix       | HARD   | R0.0 | No-stop        | 4,838.7 | none                 | 66.500
+  Austrian Grand Prix       | HARD   | R0.0 | 1-stop early   | 4,807.5 | 25                   | 66.500
+  Austrian Grand Prix       | HARD   | R0.0 | 1-stop late    | 4,801.3 | 36                   | 66.500
+  Austrian Grand Prix       | HARD   | R0.0 | 2-stop         | 4,808.6 | 20,41                | 66.500
+  Austrian Grand Prix       | HARD   | R0.8 | No-stop        | 5,433.4 | none                 | 74.500
+  Austrian Grand Prix       | HARD   | R0.8 | 1-stop early   | 5,378.5 | 25                   | 74.500
+  Austrian Grand Prix       | HARD   | R0.8 | 1-stop late    | 5,375.7 | 36                   | 74.500
+  Austrian Grand Prix       | HARD   | R0.8 | 2-stop         | 5,378.4 | 20,41                | 74.500
+  British Grand Prix        | SOFT   | R0.0 | No-stop        | 4,847.1 | none                 | 91.000
+  British Grand Prix        | SOFT   | R0.0 | 1-stop early   | 4,793.9 | 18                   | 91.000
+  British Grand Prix        | SOFT   | R0.0 | 1-stop late    | 4,796.6 | 26                   | 91.000
+  British Grand Prix        | SOFT   | R0.0 | 2-stop         | 4,802.4 | 15,30                | 91.000
+  British Grand Prix        | SOFT   | R0.8 | No-stop        | 5,224.8 | none                 | 99.000
+  British Grand Prix        | SOFT   | R0.8 | 1-stop early   | 5,205.9 | 18                   | 99.000
+  British Grand Prix        | SOFT   | R0.8 | 1-stop late    | 5,203.9 | 26                   | 99.000
+  British Grand Prix        | SOFT   | R0.8 | 2-stop         | 5,215.7 | 15,30                | 99.000
+  British Grand Prix        | MEDIUM | R0.0 | No-stop        | 4,814.4 | none                 | 91.000
+  British Grand Prix        | MEDIUM | R0.0 | 1-stop early   | 4,790.5 | 18                   | 91.000
+  British Grand Prix        | MEDIUM | R0.0 | 1-stop late    | 4,789.2 | 26                   | 91.000
+  British Grand Prix        | MEDIUM | R0.0 | 2-stop         | 4,800.1 | 15,30                | 91.000
+  British Grand Prix        | MEDIUM | R0.8 | No-stop        | 5,224.8 | none                 | 99.000
+  British Grand Prix        | MEDIUM | R0.8 | 1-stop early   | 5,205.9 | 18                   | 99.000
+  British Grand Prix        | MEDIUM | R0.8 | 1-stop late    | 5,203.9 | 26                   | 99.000
+  British Grand Prix        | MEDIUM | R0.8 | 2-stop         | 5,215.7 | 15,30                | 99.000
+  British Grand Prix        | HARD   | R0.0 | No-stop        | 4,794.5 | none                 | 91.000
+  British Grand Prix        | HARD   | R0.0 | 1-stop early   | 4,788.5 | 18                   | 91.000
+  British Grand Prix        | HARD   | R0.0 | 1-stop late    | 4,784.7 | 26                   | 91.000
+  British Grand Prix        | HARD   | R0.0 | 2-stop         | 4,798.8 | 15,30                | 91.000
+  British Grand Prix        | HARD   | R0.8 | No-stop        | 5,224.8 | none                 | 99.000
+  British Grand Prix        | HARD   | R0.8 | 1-stop early   | 5,205.9 | 18                   | 99.000
+  British Grand Prix        | HARD   | R0.8 | 1-stop late    | 5,203.9 | 26                   | 99.000
+  British Grand Prix        | HARD   | R0.8 | 2-stop         | 5,215.7 | 15,30                | 99.000
+  Hungarian Grand Prix      | SOFT   | R0.0 | No-stop        | 5,809.7 | none                 | 80.000
+  Hungarian Grand Prix      | SOFT   | R0.0 | 1-stop early   | 5,695.0 | 24                   | 80.000
+  Hungarian Grand Prix      | SOFT   | R0.0 | 1-stop late    | 5,700.4 | 35                   | 80.000
+  Hungarian Grand Prix      | SOFT   | R0.0 | 2-stop         | 5,692.4 | 20,41                | 80.000
+  Hungarian Grand Prix      | SOFT   | R0.8 | No-stop        | 6,299.8 | none                 | 88.000
+  Hungarian Grand Prix      | SOFT   | R0.8 | 1-stop early   | 6,247.6 | 24                   | 88.000
+  Hungarian Grand Prix      | SOFT   | R0.8 | 1-stop late    | 6,244.2 | 35                   | 88.000
+  Hungarian Grand Prix      | SOFT   | R0.8 | 2-stop         | 6,247.5 | 20,41                | 88.000
+  Hungarian Grand Prix      | MEDIUM | R0.0 | No-stop        | 5,750.2 | none                 | 80.000
+  Hungarian Grand Prix      | MEDIUM | R0.0 | 1-stop early   | 5,688.7 | 24                   | 80.000
+  Hungarian Grand Prix      | MEDIUM | R0.0 | 1-stop late    | 5,686.6 | 35                   | 80.000
+  Hungarian Grand Prix      | MEDIUM | R0.0 | 2-stop         | 5,688.2 | 20,41                | 80.000
+  Hungarian Grand Prix      | MEDIUM | R0.8 | No-stop        | 6,299.8 | none                 | 88.000
+  Hungarian Grand Prix      | MEDIUM | R0.8 | 1-stop early   | 6,247.6 | 24                   | 88.000
+  Hungarian Grand Prix      | MEDIUM | R0.8 | 1-stop late    | 6,244.2 | 35                   | 88.000
+  Hungarian Grand Prix      | MEDIUM | R0.8 | 2-stop         | 6,247.5 | 20,41                | 88.000
+  Hungarian Grand Prix      | HARD   | R0.0 | No-stop        | 5,713.9 | none                 | 80.000
+  Hungarian Grand Prix      | HARD   | R0.0 | 1-stop early   | 5,684.9 | 24                   | 80.000
+  Hungarian Grand Prix      | HARD   | R0.0 | 1-stop late    | 5,678.2 | 35                   | 80.000
+  Hungarian Grand Prix      | HARD   | R0.0 | 2-stop         | 5,685.6 | 20,41                | 80.000
+  Hungarian Grand Prix      | HARD   | R0.8 | No-stop        | 6,299.8 | none                 | 88.000
+  Hungarian Grand Prix      | HARD   | R0.8 | 1-stop early   | 6,247.6 | 24                   | 88.000
+  Hungarian Grand Prix      | HARD   | R0.8 | 1-stop late    | 6,244.2 | 35                   | 88.000
+  Hungarian Grand Prix      | HARD   | R0.8 | 2-stop         | 6,247.5 | 20,41                | 88.000
+  Belgian Grand Prix        | SOFT   | R0.0 | No-stop        | 4,790.1 | none                 | 107.000
+  Belgian Grand Prix        | SOFT   | R0.0 | 1-stop early   | 4,758.4 | 15                   | 107.000
+  Belgian Grand Prix        | SOFT   | R0.0 | 1-stop late    | 4,760.2 | 22                   | 107.000
+  Belgian Grand Prix        | SOFT   | R0.0 | 2-stop         | 4,770.5 | 12,26                | 107.000
+  Belgian Grand Prix        | SOFT   | R0.8 | No-stop        | 5,114.8 | none                 | 115.000
+  Belgian Grand Prix        | SOFT   | R0.8 | 1-stop early   | 5,107.8 | 15                   | 115.000
+  Belgian Grand Prix        | SOFT   | R0.8 | 1-stop late    | 5,106.1 | 22                   | 115.000
+  Belgian Grand Prix        | SOFT   | R0.8 | 2-stop         | 5,120.9 | 12,26                | 115.000
+  Belgian Grand Prix        | MEDIUM | R0.0 | No-stop        | 4,766.8 | none                 | 107.000
+  Belgian Grand Prix        | MEDIUM | R0.0 | 1-stop early   | 4,756.2 | 15                   | 107.000
+  Belgian Grand Prix        | MEDIUM | R0.0 | 1-stop late    | 4,755.0 | 22                   | 107.000
+  Belgian Grand Prix        | MEDIUM | R0.0 | 2-stop         | 4,769.1 | 12,26                | 107.000
+  Belgian Grand Prix        | MEDIUM | R0.8 | No-stop        | 5,114.8 | none                 | 115.000
+  Belgian Grand Prix        | MEDIUM | R0.8 | 1-stop early   | 5,107.8 | 15                   | 115.000
+  Belgian Grand Prix        | MEDIUM | R0.8 | 1-stop late    | 5,106.1 | 22                   | 115.000
+  Belgian Grand Prix        | MEDIUM | R0.8 | 2-stop         | 5,120.9 | 12,26                | 115.000
+  Belgian Grand Prix        | HARD   | R0.0 | No-stop        | 4,752.6 | none                 | 107.000
+  Belgian Grand Prix        | HARD   | R0.0 | 1-stop early   | 4,754.8 | 15                   | 107.000
+  Belgian Grand Prix        | HARD   | R0.0 | 1-stop late    | 4,751.8 | 22                   | 107.000
+  Belgian Grand Prix        | HARD   | R0.0 | 2-stop         | 4,768.3 | 12,26                | 107.000
+  Belgian Grand Prix        | HARD   | R0.8 | No-stop        | 5,114.8 | none                 | 115.000
+  Belgian Grand Prix        | HARD   | R0.8 | 1-stop early   | 5,107.8 | 15                   | 115.000
+  Belgian Grand Prix        | HARD   | R0.8 | 1-stop late    | 5,106.1 | 22                   | 115.000
+  Belgian Grand Prix        | HARD   | R0.8 | 2-stop         | 5,120.9 | 12,26                | 115.000
+  Dutch Grand Prix          | SOFT   | R0.0 | No-stop        | 5,405.9 | none                 | 72.000
+  Dutch Grand Prix          | SOFT   | R0.0 | 1-stop early   | 5,283.2 | 25                   | 72.000
+  Dutch Grand Prix          | SOFT   | R0.0 | 1-stop late    | 5,289.1 | 36                   | 72.000
+  Dutch Grand Prix          | SOFT   | R0.0 | 2-stop         | 5,279.1 | 20,42                | 72.000
+  Dutch Grand Prix          | SOFT   | R0.8 | No-stop        | 5,908.0 | none                 | 80.000
+  Dutch Grand Prix          | SOFT   | R0.8 | 1-stop early   | 5,851.2 | 25                   | 80.000
+  Dutch Grand Prix          | SOFT   | R0.8 | 1-stop late    | 5,847.9 | 36                   | 80.000
+  Dutch Grand Prix          | SOFT   | R0.8 | 2-stop         | 5,850.2 | 20,42                | 80.000
+  Dutch Grand Prix          | MEDIUM | R0.0 | No-stop        | 5,342.9 | none                 | 72.000
+  Dutch Grand Prix          | MEDIUM | R0.0 | 1-stop early   | 5,276.4 | 25                   | 72.000
+  Dutch Grand Prix          | MEDIUM | R0.0 | 1-stop late    | 5,274.4 | 36                   | 72.000
+  Dutch Grand Prix          | MEDIUM | R0.0 | 2-stop         | 5,274.9 | 20,42                | 72.000
+  Dutch Grand Prix          | MEDIUM | R0.8 | No-stop        | 5,908.0 | none                 | 80.000
+  Dutch Grand Prix          | MEDIUM | R0.8 | 1-stop early   | 5,851.2 | 25                   | 80.000
+  Dutch Grand Prix          | MEDIUM | R0.8 | 1-stop late    | 5,847.9 | 36                   | 80.000
+  Dutch Grand Prix          | MEDIUM | R0.8 | 2-stop         | 5,850.2 | 20,42                | 80.000
+  Dutch Grand Prix          | HARD   | R0.0 | No-stop        | 5,304.6 | none                 | 72.000
+  Dutch Grand Prix          | HARD   | R0.0 | 1-stop early   | 5,272.2 | 25                   | 72.000
+  Dutch Grand Prix          | HARD   | R0.0 | 1-stop late    | 5,265.5 | 36                   | 72.000
+  Dutch Grand Prix          | HARD   | R0.0 | 2-stop         | 5,272.4 | 20,42                | 72.000
+  Dutch Grand Prix          | HARD   | R0.8 | No-stop        | 5,908.0 | none                 | 80.000
+  Dutch Grand Prix          | HARD   | R0.8 | 1-stop early   | 5,851.2 | 25                   | 80.000
+  Dutch Grand Prix          | HARD   | R0.8 | 1-stop late    | 5,847.9 | 36                   | 80.000
+  Dutch Grand Prix          | HARD   | R0.8 | 2-stop         | 5,850.2 | 20,42                | 80.000
+  Italian Grand Prix        | SOFT   | R0.0 | No-stop        | 4,292.7 | none                 | 82.000
+  Italian Grand Prix        | SOFT   | R0.0 | 1-stop early   | 4,242.3 | 18                   | 82.000
+  Italian Grand Prix        | SOFT   | R0.0 | 1-stop late    | 4,245.4 | 26                   | 82.000
+  Italian Grand Prix        | SOFT   | R0.0 | 2-stop         | 4,251.1 | 14,30                | 82.000
+  Italian Grand Prix        | SOFT   | R0.8 | No-stop        | 4,663.8 | none                 | 90.000
+  Italian Grand Prix        | SOFT   | R0.8 | 1-stop early   | 4,646.3 | 18                   | 90.000
+  Italian Grand Prix        | SOFT   | R0.8 | 1-stop late    | 4,644.7 | 26                   | 90.000
+  Italian Grand Prix        | SOFT   | R0.8 | 2-stop         | 4,656.9 | 14,30                | 90.000
+  Italian Grand Prix        | MEDIUM | R0.0 | No-stop        | 4,261.3 | none                 | 82.000
+  Italian Grand Prix        | MEDIUM | R0.0 | 1-stop early   | 4,238.9 | 18                   | 82.000
+  Italian Grand Prix        | MEDIUM | R0.0 | 1-stop late    | 4,238.0 | 26                   | 82.000
+  Italian Grand Prix        | MEDIUM | R0.0 | 2-stop         | 4,249.2 | 14,30                | 82.000
+  Italian Grand Prix        | MEDIUM | R0.8 | No-stop        | 4,663.8 | none                 | 90.000
+  Italian Grand Prix        | MEDIUM | R0.8 | 1-stop early   | 4,646.3 | 18                   | 90.000
+  Italian Grand Prix        | MEDIUM | R0.8 | 1-stop late    | 4,644.7 | 26                   | 90.000
+  Italian Grand Prix        | MEDIUM | R0.8 | 2-stop         | 4,656.9 | 14,30                | 90.000
+  Italian Grand Prix        | HARD   | R0.0 | No-stop        | 4,242.1 | none                 | 82.000
+  Italian Grand Prix        | HARD   | R0.0 | 1-stop early   | 4,236.9 | 18                   | 82.000
+  Italian Grand Prix        | HARD   | R0.0 | 1-stop late    | 4,233.5 | 26                   | 82.000
+  Italian Grand Prix        | HARD   | R0.0 | 2-stop         | 4,248.0 | 14,30                | 82.000
+  Italian Grand Prix        | HARD   | R0.8 | No-stop        | 4,663.8 | none                 | 90.000
+  Italian Grand Prix        | HARD   | R0.8 | 1-stop early   | 4,646.3 | 18                   | 90.000
+  Italian Grand Prix        | HARD   | R0.8 | 1-stop late    | 4,644.7 | 26                   | 90.000
+  Italian Grand Prix        | HARD   | R0.8 | 2-stop         | 4,656.9 | 14,30                | 90.000
+  Azerbaijan Grand Prix     | SOFT   | R0.0 | No-stop        | 5,363.7 | none                 | 103.000
+  Azerbaijan Grand Prix     | SOFT   | R0.0 | 1-stop early   | 5,313.3 | 18                   | 103.000
+  Azerbaijan Grand Prix     | SOFT   | R0.0 | 1-stop late    | 5,316.4 | 26                   | 103.000
+  Azerbaijan Grand Prix     | SOFT   | R0.0 | 2-stop         | 5,322.1 | 14,30                | 103.000
+  Azerbaijan Grand Prix     | SOFT   | R0.8 | No-stop        | 5,734.8 | none                 | 111.000
+  Azerbaijan Grand Prix     | SOFT   | R0.8 | 1-stop early   | 5,717.3 | 18                   | 111.000
+  Azerbaijan Grand Prix     | SOFT   | R0.8 | 1-stop late    | 5,715.7 | 26                   | 111.000
+  Azerbaijan Grand Prix     | SOFT   | R0.8 | 2-stop         | 5,727.9 | 14,30                | 111.000
+  Azerbaijan Grand Prix     | MEDIUM | R0.0 | No-stop        | 5,332.3 | none                 | 103.000
+  Azerbaijan Grand Prix     | MEDIUM | R0.0 | 1-stop early   | 5,309.9 | 18                   | 103.000
+  Azerbaijan Grand Prix     | MEDIUM | R0.0 | 1-stop late    | 5,309.0 | 26                   | 103.000
+  Azerbaijan Grand Prix     | MEDIUM | R0.0 | 2-stop         | 5,320.2 | 14,30                | 103.000
+  Azerbaijan Grand Prix     | MEDIUM | R0.8 | No-stop        | 5,734.8 | none                 | 111.000
+  Azerbaijan Grand Prix     | MEDIUM | R0.8 | 1-stop early   | 5,717.3 | 18                   | 111.000
+  Azerbaijan Grand Prix     | MEDIUM | R0.8 | 1-stop late    | 5,715.7 | 26                   | 111.000
+  Azerbaijan Grand Prix     | MEDIUM | R0.8 | 2-stop         | 5,727.9 | 14,30                | 111.000
+  Azerbaijan Grand Prix     | HARD   | R0.0 | No-stop        | 5,313.1 | none                 | 103.000
+  Azerbaijan Grand Prix     | HARD   | R0.0 | 1-stop early   | 5,307.9 | 18                   | 103.000
+  Azerbaijan Grand Prix     | HARD   | R0.0 | 1-stop late    | 5,304.5 | 26                   | 103.000
+  Azerbaijan Grand Prix     | HARD   | R0.0 | 2-stop         | 5,319.0 | 14,30                | 103.000
+  Azerbaijan Grand Prix     | HARD   | R0.8 | No-stop        | 5,734.8 | none                 | 111.000
+  Azerbaijan Grand Prix     | HARD   | R0.8 | 1-stop early   | 5,717.3 | 18                   | 111.000
+  Azerbaijan Grand Prix     | HARD   | R0.8 | 1-stop late    | 5,715.7 | 26                   | 111.000
+  Azerbaijan Grand Prix     | HARD   | R0.8 | 2-stop         | 5,727.9 | 14,30                | 111.000
+  Singapore Grand Prix      | SOFT   | R0.0 | No-stop        | 6,178.2 | none                 | 97.000
+  Singapore Grand Prix      | SOFT   | R0.0 | 1-stop early   | 6,092.9 | 22                   | 97.000
+  Singapore Grand Prix      | SOFT   | R0.0 | 1-stop late    | 6,097.2 | 31                   | 97.000
+  Singapore Grand Prix      | SOFT   | R0.0 | 2-stop         | 6,095.6 | 17,36                | 97.000
+  Singapore Grand Prix      | SOFT   | R0.8 | No-stop        | 6,619.5 | none                 | 105.000
+  Singapore Grand Prix      | SOFT   | R0.8 | 1-stop early   | 6,582.8 | 22                   | 105.000
+  Singapore Grand Prix      | SOFT   | R0.8 | 1-stop late    | 6,580.6 | 31                   | 105.000
+  Singapore Grand Prix      | SOFT   | R0.8 | 2-stop         | 6,588.1 | 17,36                | 105.000
+  Singapore Grand Prix      | MEDIUM | R0.0 | No-stop        | 6,131.6 | none                 | 97.000
+  Singapore Grand Prix      | MEDIUM | R0.0 | 1-stop early   | 6,087.7 | 22                   | 97.000
+  Singapore Grand Prix      | MEDIUM | R0.0 | 1-stop late    | 6,086.4 | 31                   | 97.000
+  Singapore Grand Prix      | MEDIUM | R0.0 | 2-stop         | 6,092.6 | 17,36                | 97.000
+  Singapore Grand Prix      | MEDIUM | R0.8 | No-stop        | 6,619.5 | none                 | 105.000
+  Singapore Grand Prix      | MEDIUM | R0.8 | 1-stop early   | 6,582.8 | 22                   | 105.000
+  Singapore Grand Prix      | MEDIUM | R0.8 | 1-stop late    | 6,580.6 | 31                   | 105.000
+  Singapore Grand Prix      | MEDIUM | R0.8 | 2-stop         | 6,588.1 | 17,36                | 105.000
+  Singapore Grand Prix      | HARD   | R0.0 | No-stop        | 6,103.2 | none                 | 97.000
+  Singapore Grand Prix      | HARD   | R0.0 | 1-stop early   | 6,084.6 | 22                   | 97.000
+  Singapore Grand Prix      | HARD   | R0.0 | 1-stop late    | 6,079.9 | 31                   | 97.000
+  Singapore Grand Prix      | HARD   | R0.0 | 2-stop         | 6,090.8 | 17,36                | 97.000
+  Singapore Grand Prix      | HARD   | R0.8 | No-stop        | 6,619.5 | none                 | 105.000
+  Singapore Grand Prix      | HARD   | R0.8 | 1-stop early   | 6,582.8 | 22                   | 105.000
+  Singapore Grand Prix      | HARD   | R0.8 | 1-stop late    | 6,580.6 | 31                   | 105.000
+  Singapore Grand Prix      | HARD   | R0.8 | 2-stop         | 6,588.1 | 17,36                | 105.000
+  United States Grand Prix  | SOFT   | R0.0 | No-stop        | 5,453.7 | none                 | 95.000
+  United States Grand Prix  | SOFT   | R0.0 | 1-stop early   | 5,388.3 | 20                   | 95.000
+  United States Grand Prix  | SOFT   | R0.0 | 1-stop late    | 5,391.6 | 28                   | 95.000
+  United States Grand Prix  | SOFT   | R0.0 | 2-stop         | 5,394.7 | 16,32                | 95.000
+  United States Grand Prix  | SOFT   | R0.8 | No-stop        | 5,857.1 | none                 | 103.000
+  United States Grand Prix  | SOFT   | R0.8 | 1-stop early   | 5,831.3 | 20                   | 103.000
+  United States Grand Prix  | SOFT   | R0.8 | 1-stop late    | 5,829.5 | 28                   | 103.000
+  United States Grand Prix  | SOFT   | R0.8 | 2-stop         | 5,839.7 | 16,32                | 103.000
+  United States Grand Prix  | MEDIUM | R0.0 | No-stop        | 5,415.8 | none                 | 95.000
+  United States Grand Prix  | MEDIUM | R0.0 | 1-stop early   | 5,384.0 | 20                   | 95.000
+  United States Grand Prix  | MEDIUM | R0.0 | 1-stop late    | 5,383.0 | 28                   | 95.000
+  United States Grand Prix  | MEDIUM | R0.0 | 2-stop         | 5,392.1 | 16,32                | 95.000
+  United States Grand Prix  | MEDIUM | R0.8 | No-stop        | 5,857.1 | none                 | 103.000
+  United States Grand Prix  | MEDIUM | R0.8 | 1-stop early   | 5,831.3 | 20                   | 103.000
+  United States Grand Prix  | MEDIUM | R0.8 | 1-stop late    | 5,829.5 | 28                   | 103.000
+  United States Grand Prix  | MEDIUM | R0.8 | 2-stop         | 5,839.7 | 16,32                | 103.000
+  United States Grand Prix  | HARD   | R0.0 | No-stop        | 5,392.6 | none                 | 95.000
+  United States Grand Prix  | HARD   | R0.0 | 1-stop early   | 5,381.5 | 20                   | 95.000
+  United States Grand Prix  | HARD   | R0.0 | 1-stop late    | 5,377.7 | 28                   | 95.000
+  United States Grand Prix  | HARD   | R0.0 | 2-stop         | 5,390.6 | 16,32                | 95.000
+  United States Grand Prix  | HARD   | R0.8 | No-stop        | 5,857.1 | none                 | 103.000
+  United States Grand Prix  | HARD   | R0.8 | 1-stop early   | 5,831.3 | 20                   | 103.000
+  United States Grand Prix  | HARD   | R0.8 | 1-stop late    | 5,829.5 | 28                   | 103.000
+  United States Grand Prix  | HARD   | R0.8 | 2-stop         | 5,839.7 | 16,32                | 103.000
+  Mexico City Grand Prix    | SOFT   | R0.0 | No-stop        | 5,824.8 | none                 | 79.000
+  Mexico City Grand Prix    | SOFT   | R0.0 | 1-stop early   | 5,706.0 | 25                   | 79.000
+  Mexico City Grand Prix    | SOFT   | R0.0 | 1-stop late    | 5,712.4 | 36                   | 79.000
+  Mexico City Grand Prix    | SOFT   | R0.0 | 2-stop         | 5,702.8 | 20,41                | 79.000
+  Mexico City Grand Prix    | SOFT   | R0.8 | No-stop        | 6,320.9 | none                 | 87.000
+  Mexico City Grand Prix    | SOFT   | R0.8 | 1-stop early   | 6,266.0 | 25                   | 87.000
+  Mexico City Grand Prix    | SOFT   | R0.8 | 1-stop late    | 6,263.2 | 36                   | 87.000
+  Mexico City Grand Prix    | SOFT   | R0.8 | 2-stop         | 6,265.9 | 20,41                | 87.000
+  Mexico City Grand Prix    | MEDIUM | R0.0 | No-stop        | 5,763.5 | none                 | 79.000
+  Mexico City Grand Prix    | MEDIUM | R0.0 | 1-stop early   | 5,699.1 | 25                   | 79.000
+  Mexico City Grand Prix    | MEDIUM | R0.0 | 1-stop late    | 5,697.7 | 36                   | 79.000
+  Mexico City Grand Prix    | MEDIUM | R0.0 | 2-stop         | 5,698.6 | 20,41                | 79.000
+  Mexico City Grand Prix    | MEDIUM | R0.8 | No-stop        | 6,320.9 | none                 | 87.000
+  Mexico City Grand Prix    | MEDIUM | R0.8 | 1-stop early   | 6,266.0 | 25                   | 87.000
+  Mexico City Grand Prix    | MEDIUM | R0.8 | 1-stop late    | 6,263.2 | 36                   | 87.000
+  Mexico City Grand Prix    | MEDIUM | R0.8 | 2-stop         | 6,265.9 | 20,41                | 87.000
+  Mexico City Grand Prix    | HARD   | R0.0 | No-stop        | 5,726.2 | none                 | 79.000
+  Mexico City Grand Prix    | HARD   | R0.0 | 1-stop early   | 5,695.0 | 25                   | 79.000
+  Mexico City Grand Prix    | HARD   | R0.0 | 1-stop late    | 5,688.8 | 36                   | 79.000
+  Mexico City Grand Prix    | HARD   | R0.0 | 2-stop         | 5,696.1 | 20,41                | 79.000
+  Mexico City Grand Prix    | HARD   | R0.8 | No-stop        | 6,320.9 | none                 | 87.000
+  Mexico City Grand Prix    | HARD   | R0.8 | 1-stop early   | 6,266.0 | 25                   | 87.000
+  Mexico City Grand Prix    | HARD   | R0.8 | 1-stop late    | 6,263.2 | 36                   | 87.000
+  Mexico City Grand Prix    | HARD   | R0.8 | 2-stop         | 6,265.9 | 20,41                | 87.000
+  São Paulo Grand Prix      | SOFT   | R0.0 | No-stop        | 5,398.8 | none                 | 73.000
+  São Paulo Grand Prix      | SOFT   | R0.0 | 1-stop early   | 5,280.0 | 25                   | 73.000
+  São Paulo Grand Prix      | SOFT   | R0.0 | 1-stop late    | 5,286.4 | 36                   | 73.000
+  São Paulo Grand Prix      | SOFT   | R0.0 | 2-stop         | 5,276.8 | 20,41                | 73.000
+  São Paulo Grand Prix      | SOFT   | R0.8 | No-stop        | 5,894.9 | none                 | 81.000
+  São Paulo Grand Prix      | SOFT   | R0.8 | 1-stop early   | 5,840.0 | 25                   | 81.000
+  São Paulo Grand Prix      | SOFT   | R0.8 | 1-stop late    | 5,837.2 | 36                   | 81.000
+  São Paulo Grand Prix      | SOFT   | R0.8 | 2-stop         | 5,839.9 | 20,41                | 81.000
+  São Paulo Grand Prix      | MEDIUM | R0.0 | No-stop        | 5,337.5 | none                 | 73.000
+  São Paulo Grand Prix      | MEDIUM | R0.0 | 1-stop early   | 5,273.1 | 25                   | 73.000
+  São Paulo Grand Prix      | MEDIUM | R0.0 | 1-stop late    | 5,271.7 | 36                   | 73.000
+  São Paulo Grand Prix      | MEDIUM | R0.0 | 2-stop         | 5,272.6 | 20,41                | 73.000
+  São Paulo Grand Prix      | MEDIUM | R0.8 | No-stop        | 5,894.9 | none                 | 81.000
+  São Paulo Grand Prix      | MEDIUM | R0.8 | 1-stop early   | 5,840.0 | 25                   | 81.000
+  São Paulo Grand Prix      | MEDIUM | R0.8 | 1-stop late    | 5,837.2 | 36                   | 81.000
+  São Paulo Grand Prix      | MEDIUM | R0.8 | 2-stop         | 5,839.9 | 20,41                | 81.000
+  São Paulo Grand Prix      | HARD   | R0.0 | No-stop        | 5,300.2 | none                 | 73.000
+  São Paulo Grand Prix      | HARD   | R0.0 | 1-stop early   | 5,269.0 | 25                   | 73.000
+  São Paulo Grand Prix      | HARD   | R0.0 | 1-stop late    | 5,262.8 | 36                   | 73.000
+  São Paulo Grand Prix      | HARD   | R0.0 | 2-stop         | 5,270.1 | 20,41                | 73.000
+  São Paulo Grand Prix      | HARD   | R0.8 | No-stop        | 5,894.9 | none                 | 81.000
+  São Paulo Grand Prix      | HARD   | R0.8 | 1-stop early   | 5,840.0 | 25                   | 81.000
+  São Paulo Grand Prix      | HARD   | R0.8 | 1-stop late    | 5,837.2 | 36                   | 81.000
+  São Paulo Grand Prix      | HARD   | R0.8 | 2-stop         | 5,839.9 | 20,41                | 81.000
+  Las Vegas Grand Prix      | SOFT   | R0.0 | No-stop        | 5,056.4 | none                 | 99.000
+  Las Vegas Grand Prix      | SOFT   | R0.0 | 1-stop early   | 5,008.7 | 18                   | 99.000
+  Las Vegas Grand Prix      | SOFT   | R0.0 | 1-stop late    | 5,011.3 | 25                   | 99.000
+  Las Vegas Grand Prix      | SOFT   | R0.0 | 2-stop         | 5,018.2 | 14,29                | 99.000
+  Las Vegas Grand Prix      | SOFT   | R0.8 | No-stop        | 5,420.9 | none                 | 107.000
+  Las Vegas Grand Prix      | SOFT   | R0.8 | 1-stop early   | 5,404.8 | 18                   | 107.000
+  Las Vegas Grand Prix      | SOFT   | R0.8 | 1-stop late    | 5,403.3 | 25                   | 107.000
+  Las Vegas Grand Prix      | SOFT   | R0.8 | 2-stop         | 5,415.9 | 14,29                | 107.000
+  Las Vegas Grand Prix      | MEDIUM | R0.0 | No-stop        | 5,026.2 | none                 | 99.000
+  Las Vegas Grand Prix      | MEDIUM | R0.0 | 1-stop early   | 5,005.4 | 18                   | 99.000
+  Las Vegas Grand Prix      | MEDIUM | R0.0 | 1-stop late    | 5,004.5 | 25                   | 99.000
+  Las Vegas Grand Prix      | MEDIUM | R0.0 | 2-stop         | 5,016.3 | 14,29                | 99.000
+  Las Vegas Grand Prix      | MEDIUM | R0.8 | No-stop        | 5,420.9 | none                 | 107.000
+  Las Vegas Grand Prix      | MEDIUM | R0.8 | 1-stop early   | 5,404.8 | 18                   | 107.000
+  Las Vegas Grand Prix      | MEDIUM | R0.8 | 1-stop late    | 5,403.3 | 25                   | 107.000
+  Las Vegas Grand Prix      | MEDIUM | R0.8 | 2-stop         | 5,415.9 | 14,29                | 107.000
+  Las Vegas Grand Prix      | HARD   | R0.0 | No-stop        | 5,007.8 | none                 | 99.000
+  Las Vegas Grand Prix      | HARD   | R0.0 | 1-stop early   | 5,003.3 | 18                   | 99.000
+  Las Vegas Grand Prix      | HARD   | R0.0 | 1-stop late    | 5,000.3 | 25                   | 99.000
+  Las Vegas Grand Prix      | HARD   | R0.0 | 2-stop         | 5,015.1 | 14,29                | 99.000
+  Las Vegas Grand Prix      | HARD   | R0.8 | No-stop        | 5,420.9 | none                 | 107.000
+  Las Vegas Grand Prix      | HARD   | R0.8 | 1-stop early   | 5,404.8 | 18                   | 107.000
+  Las Vegas Grand Prix      | HARD   | R0.8 | 1-stop late    | 5,403.3 | 25                   | 107.000
+  Las Vegas Grand Prix      | HARD   | R0.8 | 2-stop         | 5,415.9 | 14,29                | 107.000
+  Qatar Grand Prix          | SOFT   | R0.0 | No-stop        | 4,869.6 | none                 | 83.000
+  Qatar Grand Prix          | SOFT   | R0.0 | 1-stop early   | 4,801.0 | 20                   | 83.000
+  Qatar Grand Prix          | SOFT   | R0.0 | 1-stop late    | 4,804.0 | 28                   | 83.000
+  Qatar Grand Prix          | SOFT   | R0.0 | 2-stop         | 4,806.7 | 16,33                | 83.000
+  Qatar Grand Prix          | SOFT   | R0.8 | No-stop        | 5,279.4 | none                 | 91.000
+  Qatar Grand Prix          | SOFT   | R0.8 | 1-stop early   | 5,252.1 | 20                   | 91.000
+  Qatar Grand Prix          | SOFT   | R0.8 | 1-stop late    | 5,249.8 | 28                   | 91.000
+  Qatar Grand Prix          | SOFT   | R0.8 | 2-stop         | 5,259.7 | 16,33                | 91.000
+  Qatar Grand Prix          | MEDIUM | R0.0 | No-stop        | 4,830.2 | none                 | 83.000
+  Qatar Grand Prix          | MEDIUM | R0.0 | 1-stop early   | 4,796.8 | 20                   | 83.000
+  Qatar Grand Prix          | MEDIUM | R0.0 | 1-stop late    | 4,795.3 | 28                   | 83.000
+  Qatar Grand Prix          | MEDIUM | R0.0 | 2-stop         | 4,804.1 | 16,33                | 83.000
+  Qatar Grand Prix          | MEDIUM | R0.8 | No-stop        | 5,279.4 | none                 | 91.000
+  Qatar Grand Prix          | MEDIUM | R0.8 | 1-stop early   | 5,252.1 | 20                   | 91.000
+  Qatar Grand Prix          | MEDIUM | R0.8 | 1-stop late    | 5,249.8 | 28                   | 91.000
+  Qatar Grand Prix          | MEDIUM | R0.8 | 2-stop         | 5,259.7 | 16,33                | 91.000
+  Qatar Grand Prix          | HARD   | R0.0 | No-stop        | 4,806.3 | none                 | 83.000
+  Qatar Grand Prix          | HARD   | R0.0 | 1-stop early   | 4,794.2 | 20                   | 83.000
+  Qatar Grand Prix          | HARD   | R0.0 | 1-stop late    | 4,790.1 | 28                   | 83.000
+  Qatar Grand Prix          | HARD   | R0.0 | 2-stop         | 4,802.6 | 16,33                | 83.000
+  Qatar Grand Prix          | HARD   | R0.8 | No-stop        | 5,279.4 | none                 | 91.000
+  Qatar Grand Prix          | HARD   | R0.8 | 1-stop early   | 5,252.1 | 20                   | 91.000
+  Qatar Grand Prix          | HARD   | R0.8 | 1-stop late    | 5,249.8 | 28                   | 91.000
+  Qatar Grand Prix          | HARD   | R0.8 | 2-stop         | 5,259.7 | 16,33                | 91.000
+  Abu Dhabi Grand Prix      | SOFT   | R0.0 | No-stop        | 5,189.5 | none                 | 87.000
+  Abu Dhabi Grand Prix      | SOFT   | R0.0 | 1-stop early   | 5,117.8 | 20                   | 87.000
+  Abu Dhabi Grand Prix      | SOFT   | R0.0 | 1-stop late    | 5,121.3 | 29                   | 87.000
+  Abu Dhabi Grand Prix      | SOFT   | R0.0 | 2-stop         | 5,122.8 | 16,34                | 87.000
+  Abu Dhabi Grand Prix      | SOFT   | R0.8 | No-stop        | 5,605.7 | none                 | 95.000
+  Abu Dhabi Grand Prix      | SOFT   | R0.8 | 1-stop early   | 5,576.9 | 20                   | 95.000
+  Abu Dhabi Grand Prix      | SOFT   | R0.8 | 1-stop late    | 5,574.4 | 29                   | 95.000
+  Abu Dhabi Grand Prix      | SOFT   | R0.8 | 2-stop         | 5,583.7 | 16,34                | 95.000
+  Abu Dhabi Grand Prix      | MEDIUM | R0.0 | No-stop        | 5,148.8 | none                 | 87.000
+  Abu Dhabi Grand Prix      | MEDIUM | R0.0 | 1-stop early   | 5,113.6 | 20                   | 87.000
+  Abu Dhabi Grand Prix      | MEDIUM | R0.0 | 1-stop late    | 5,112.0 | 29                   | 87.000
+  Abu Dhabi Grand Prix      | MEDIUM | R0.0 | 2-stop         | 5,120.2 | 16,34                | 87.000
+  Abu Dhabi Grand Prix      | MEDIUM | R0.8 | No-stop        | 5,605.7 | none                 | 95.000
+  Abu Dhabi Grand Prix      | MEDIUM | R0.8 | 1-stop early   | 5,576.9 | 20                   | 95.000
+  Abu Dhabi Grand Prix      | MEDIUM | R0.8 | 1-stop late    | 5,574.4 | 29                   | 95.000
+  Abu Dhabi Grand Prix      | MEDIUM | R0.8 | 2-stop         | 5,583.7 | 16,34                | 95.000
+  Abu Dhabi Grand Prix      | HARD   | R0.0 | No-stop        | 5,124.0 | none                 | 87.000
+  Abu Dhabi Grand Prix      | HARD   | R0.0 | 1-stop early   | 5,111.0 | 20                   | 87.000
+  Abu Dhabi Grand Prix      | HARD   | R0.0 | 1-stop late    | 5,106.3 | 29                   | 87.000
+  Abu Dhabi Grand Prix      | HARD   | R0.0 | 2-stop         | 5,118.6 | 16,34                | 87.000
+  Abu Dhabi Grand Prix      | HARD   | R0.8 | No-stop        | 5,605.7 | none                 | 95.000
+  Abu Dhabi Grand Prix      | HARD   | R0.8 | 1-stop early   | 5,576.9 | 20                   | 95.000
+  Abu Dhabi Grand Prix      | HARD   | R0.8 | 1-stop late    | 5,574.4 | 29                   | 95.000
+  Abu Dhabi Grand Prix      | HARD   | R0.8 | 2-stop         | 5,583.7 | 16,34                | 95.000
+
+================================================================================
+  TAB 4: LIVE SCOREBOARD — API Responses
+================================================================================
+
+--- Driver Standings ---
+  Season: 2025 (final — new season not started)  |  Drivers returned: 21
+  Pos | Code | Driver | Team | Points | Wins
+  ----------------------------------------------------------------------------
+  1 | NOR | Lando Norris | McLaren | 423.0 | 7
+  2 | VER | Max Verstappen | Red Bull | 421.0 | 8
+  3 | PIA | Oscar Piastri | McLaren | 410.0 | 7
+  4 | RUS | George Russell | Mercedes | 319.0 | 2
+  5 | LEC | Charles Leclerc | Ferrari | 242.0 | 0
+  6 | HAM | Lewis Hamilton | Ferrari | 156.0 | 0
+  7 | ANT | Andrea Kimi Antonell | Mercedes | 150.0 | 0
+  8 | ALB | Alexander Albon | Williams | 73.0 | 0
+  9 | SAI | Carlos Sainz | Williams | 64.0 | 0
+  10 | ALO | Fernando Alonso | Aston Martin | 56.0 | 0
+  11 | HUL | Nico Hülkenberg | Sauber | 51.0 | 0
+  12 | HAD | Isack Hadjar | RB F1 Team | 51.0 | 0
+  13 | BEA | Oliver Bearman | Haas F1 Team | 41.0 | 0
+  14 | LAW | Liam Lawson | Red Bull | 38.0 | 0
+  15 | OCO | Esteban Ocon | Haas F1 Team | 38.0 | 0
+  16 | STR | Lance Stroll | Aston Martin | 33.0 | 0
+  17 | TSU | Yuki Tsunoda | RB F1 Team | 33.0 | 0
+  18 | GAS | Pierre Gasly | Alpine F1 Team | 22.0 | 0
+  19 | BOR | Gabriel Bortoleto | Sauber | 19.0 | 0
+  20 | COL | Franco Colapinto | Alpine F1 Team | 0.0 | 0
+  21 | DOO | Jack Doohan | Alpine F1 Team | 0.0 | 0
+
+--- Constructor Standings ---
+  Season: 2025 (final — new season not started)  |  Teams returned: 10
+  Pos | Team | Points | Wins
+  ----------------------------------------------------------------------------
+  1 | McLaren | 833.0 | 14
+  2 | Mercedes | 469.0 | 2
+  3 | Red Bull | 451.0 | 8
+  4 | Ferrari | 398.0 | 0
+  5 | Williams | 137.0 | 0
+  6 | RB F1 Team | 92.0 | 0
+  7 | Aston Martin | 89.0 | 0
+  8 | Haas F1 Team | 79.0 | 0
+  9 | Sauber | 70.0 | 0
+  10 | Alpine F1 Team | 22.0 | 0
+
+--- Last Race Results ---
+  No last race data available (pre-season or API offline)
+
+--- Season Calendar ---
+  Rounds returned: 24
+  Rd | Race | Country | Date | Status
+  ----------------------------------------------------------------------------
+  1 | Australian Grand Prix | Australia | 2026-03-08 | next
+  2 | Chinese Grand Prix | China | 2026-03-15 | upcoming
+  3 | Japanese Grand Prix | Japan | 2026-03-29 | upcoming
+  4 | Bahrain Grand Prix | Bahrain | 2026-04-12 | upcoming
+  5 | Saudi Arabian Grand Prix | Saudi Arabia | 2026-04-19 | upcoming
+  6 | Miami Grand Prix | USA | 2026-05-03 | upcoming
+  7 | Canadian Grand Prix | Canada | 2026-05-24 | upcoming
+  8 | Monaco Grand Prix | Monaco | 2026-06-07 | upcoming
+  9 | Barcelona Grand Prix | Spain | 2026-06-14 | upcoming
+  10 | Austrian Grand Prix | Austria | 2026-06-28 | upcoming
+  11 | British Grand Prix | UK | 2026-07-05 | upcoming
+  12 | Belgian Grand Prix | Belgium | 2026-07-19 | upcoming
+  13 | Hungarian Grand Prix | Hungary | 2026-07-26 | upcoming
+  14 | Dutch Grand Prix | Netherlands | 2026-08-23 | upcoming
+  15 | Italian Grand Prix | Italy | 2026-09-06 | upcoming
+  16 | Spanish Grand Prix | Spain | 2026-09-13 | upcoming
+  17 | Azerbaijan Grand Prix | Azerbaijan | 2026-09-26 | upcoming
+  18 | Singapore Grand Prix | Singapore | 2026-10-11 | upcoming
+  19 | United States Grand Prix | USA | 2026-10-25 | upcoming
+  20 | Mexico City Grand Prix | Mexico | 2026-11-01 | upcoming
+  21 | Brazilian Grand Prix | Brazil | 2026-11-08 | upcoming
+  22 | Las Vegas Grand Prix | USA | 2026-11-22 | upcoming
+  23 | Qatar Grand Prix | Qatar | 2026-11-29 | upcoming
+  24 | Abu Dhabi Grand Prix | UAE | 2026-12-06 | upcoming
+
+--- Live Session Check (OpenF1) ---
+  No live session active right now (outside race weekend window)
+
+================================================================================
+  TEST SUMMARY
+================================================================================
+  Generated: 2026-02-27 22:12:31
+  Total output lines: 1637
+  Lines with errors:  0
