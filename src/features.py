@@ -117,14 +117,10 @@ def build_features(df: pd.DataFrame) -> pd.DataFrame:
             df.groupby(grp)["Stint"].diff().shift(-1).fillna(0) > 0
         ).astype(int)
         
-    # ── Calculate and Save Historical Performance Metrics ─────────────────────
-    # We only want to calculate this once when preprocessing the whole dataset
-    _compute_and_save_historical_factors(df)
-
     return df
 
 
-def _compute_and_save_historical_factors(df: pd.DataFrame):
+def _compute_and_save_historical_factors(df: pd.DataFrame, out_path: Path | None = None):
     """
     Computes team pace offsets and driver tyre preservation factors
     from the historical dataset and saves them to a JSON file for the simulator.
@@ -170,7 +166,9 @@ def _compute_and_save_historical_factors(df: pd.DataFrame):
         "driver_tyre_factors": driver_factors
     }
     
-    out_path = Path(__file__).parent.parent / "data" / "processed" / "historical_metrics.json"
+    if out_path is None:
+        out_path = Path(__file__).parent.parent / "data" / "processed" / "historical_metrics.json"
+
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with open(out_path, "w") as f:
         json.dump(metrics, f, indent=2)

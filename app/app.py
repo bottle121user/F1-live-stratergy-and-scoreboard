@@ -142,11 +142,12 @@ available_teams   = sorted(list(HISTORICAL_METRICS_CACHE.get("team_pace_offsets"
 available_drivers = sorted(list(HISTORICAL_METRICS_CACHE.get("driver_tyre_factors", {}).keys())) or ["VER", "HAM", "LEC", "NOR", "ALO"]
 
 # ── Tabs ───────────────────────────────────────────────────────────────────────
-tab1, tab2, tab3, tab4 = st.tabs([
+tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "🛞  Live Pit Decision",
     "🗺️  Strategy Recommender",
     "📈  Lap Simulator",
     "🏆  Live Scoreboard",
+    "🏅  Previous Champions",
 ])
 
 
@@ -617,10 +618,12 @@ with tab4:
     else:
         st.info("Last race results not available — try refreshing.")
 
+
     # ── Season Calendar ────────────────────────────────────────────────────────
     st.markdown("---")
     st.markdown("### 🗓️ Season Calendar")
     if schedule:
+
         STATUS_ICON   = {"done": "✅", "next": "⏭️", "upcoming": "🔜"}
         STATUS_COLOR  = {"done": "#2a2a35", "next": "#3a1500", "upcoming": "#18181f"}
         STATUS_BORDER = {"done": "#3a3a4a", "next": "#e10600",  "upcoming": "#2a2a35"}
@@ -642,6 +645,152 @@ with tab4:
                     """, unsafe_allow_html=True)
     else:
         st.info("Season calendar not available — try refreshing.")
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# TAB 5 — PREVIOUS CHAMPIONS
+# ══════════════════════════════════════════════════════════════════════════════
+with tab5:
+    st.subheader("F1 Previous Champions")
+    st.markdown("Select a season to view the final World Drivers' and Constructors' Championship standings.")
+
+    CHAMP_YEARS = list(range(2025, 1999, -1))  # 2025 → 2000
+
+    champ_year = st.selectbox(
+        "Season",
+        options=CHAMP_YEARS,
+        format_func=lambda y: f"🏁 {y} Season",
+        index=0,
+        key="champ_year",
+    )
+
+    load_champ_btn = st.button("📊  Load Standings", key="btn_champ")
+
+    champ_cache_key = f"champ_{champ_year}"
+    if load_champ_btn or champ_cache_key not in st.session_state:
+        with st.spinner(f"Fetching {champ_year} championship standings…"):
+            drv_data, _ = live_data.get_driver_standings(str(champ_year))
+            con_data, _ = live_data.get_constructor_standings(str(champ_year))
+            st.session_state[champ_cache_key] = {
+                "drivers":      drv_data,
+                "constructors": con_data,
+            }
+
+    champ_sb = st.session_state.get(champ_cache_key, {})
+    drv_champ = champ_sb.get("drivers", [])
+    con_champ = champ_sb.get("constructors", [])
+
+    if drv_champ or con_champ:
+        # ── Champion banner ──────────────────────────────────────────────────
+        if drv_champ:
+            wdc = drv_champ[0]
+            wcc = con_champ[0] if con_champ else {}
+            st.markdown(f"""
+            <div style="background:linear-gradient(135deg,#2a1f00,#4a3600); border:2px solid #f5c518;
+                        border-radius:16px; padding:20px 28px; margin:16px 0; display:flex;
+                        justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+              <div>
+                <p style="margin:0; font-size:0.75rem; text-transform:uppercase; letter-spacing:2px;
+                          color:#f5c518; font-weight:700;">🏆 {champ_year} World Champion</p>
+                <p style="margin:6px 0 2px; font-size:2rem; font-weight:900; color:#fff;">
+                  {wdc.get('driver_name','—')}
+                </p>
+                <p style="margin:0; font-size:0.9rem; color:#aaa;">{wdc.get('team','—')}</p>
+              </div>
+              <div style="text-align:right;">
+                <p style="margin:0; font-size:2.8rem; font-weight:900; color:#f5c518;">
+                  {wdc.get('points',0):.0f} <span style="font-size:1rem; color:#aaa;">pts</span>
+                </p>
+                <p style="margin:4px 0 0; font-size:0.85rem; color:#aaa;">{wdc.get('wins',0)} wins</p>
+              </div>
+              {f'<div><p style="margin:0; font-size:0.75rem; color:#f5c518; letter-spacing:2px; text-transform:uppercase; font-weight:700;">🏭 WCC</p><p style="margin:4px 0 2px; font-size:1.2rem; font-weight:900; color:#fff;">{wcc.get("team","—")}</p><p style="font-size:0.85rem; color:#aaa; margin:0;">{wcc.get("points",0):.0f} pts</p></div>' if wcc else ''}
+            </div>
+            """, unsafe_allow_html=True)
+
+        # ── Sub-tabs: Drivers | Constructors ─────────────────────────────────
+        ct_drv, ct_con = st.tabs(["🧑\u200d🏎️  Drivers Championship", "🏭  Constructors Championship"])
+
+        with ct_drv:
+            if drv_champ:
+                df_drv_c = pd.DataFrame([{
+                    "Pos":    d["pos"],
+                    "Driver": d["driver_name"],
+                    "Code":   d["driver_code"],
+                    "Team":   d["team"],
+                    "Points": d["points"],
+                    "Wins":   d["wins"],
+                } for d in drv_champ])
+
+                # Bar chart
+                fig_dc = go.Figure(go.Bar(
+                    x=df_drv_c["Points"],
+                    y=df_drv_c["Code"],
+                    orientation="h",
+                    marker_color=["#f5c518" if i==0 else ("#aaa" if i==1 else ("#c86a2a" if i==2 else "#e10600"))
+                                  for i in range(len(df_drv_c))],
+                    text=df_drv_c["Points"].apply(lambda p: f"{p:.0f}"),
+                    textposition="outside",
+                    textfont={"color": "#d0d0d8", "size": 11},
+                    hovertemplate="%{y}<br>%{x:.0f} pts<extra></extra>",
+                ))
+                fig_dc.update_layout(
+                    paper_bgcolor="#0d0d0f", plot_bgcolor="#18181f",
+                    xaxis=dict(title="Championship Points", color="#888", gridcolor="#2a2a35"),
+                    yaxis=dict(color="#d0d0d8", autorange="reversed", tickfont={"size": 10}),
+                    height=max(300, len(df_drv_c) * 26 + 60),
+                    margin=dict(t=10, b=30, l=50, r=70),
+                    font={"color": "#d0d0d8"},
+                )
+                st.plotly_chart(fig_dc, use_container_width=True, key=f"prev_champ_drv_chart_{champ_year}")
+
+                st.dataframe(df_drv_c, use_container_width=True, hide_index=True,
+                             column_config={
+                                 "Pos":    st.column_config.NumberColumn("#",      format="%d",   width="small"),
+                                 "Points": st.column_config.NumberColumn("Points", format="%.0f", width="small"),
+                                 "Wins":   st.column_config.NumberColumn("Wins",   format="%d",   width="small"),
+                             })
+            else:
+                st.warning(f"No driver standings found for {champ_year}.")
+
+        with ct_con:
+            if con_champ:
+                df_con_c = pd.DataFrame([{
+                    "Pos":    c["pos"],
+                    "Team":   c["team"],
+                    "Points": c["points"],
+                    "Wins":   c["wins"],
+                } for c in con_champ])
+
+                fig_cc = go.Figure(go.Bar(
+                    x=df_con_c["Points"],
+                    y=df_con_c["Team"],
+                    orientation="h",
+                    marker_color=["#f5c518" if i==0 else "#e10600" for i in range(len(df_con_c))],
+                    text=df_con_c["Points"].apply(lambda p: f"{p:.0f}"),
+                    textposition="outside",
+                    textfont={"color": "#d0d0d8"},
+                    hovertemplate="%{y}<br>%{x:.0f} pts<extra></extra>",
+                ))
+                fig_cc.update_layout(
+                    paper_bgcolor="#0d0d0f", plot_bgcolor="#18181f",
+                    xaxis=dict(title="Points", color="#888", gridcolor="#2a2a35"),
+                    yaxis=dict(color="#d0d0d8", autorange="reversed"),
+                    height=max(200, len(df_con_c) * 36 + 50),
+                    margin=dict(t=10, b=30, l=160, r=70),
+                    font={"color": "#d0d0d8"},
+                )
+                st.plotly_chart(fig_cc, use_container_width=True, key=f"prev_champ_con_chart_{champ_year}")
+
+                st.dataframe(df_con_c, use_container_width=True, hide_index=True,
+                             column_config={
+                                 "Pos":    st.column_config.NumberColumn("#",      format="%d",   width="small"),
+                                 "Points": st.column_config.NumberColumn("Points", format="%.0f", width="small"),
+                                 "Wins":   st.column_config.NumberColumn("Wins",   format="%d",   width="small"),
+                             })
+            else:
+                st.warning(f"No constructor standings found for {champ_year}.")
+    else:
+        st.info("Select a season above and click **Load Standings** to view.")
 
 
 # ── Footer ─────────────────────────────────────────────────────────────────────

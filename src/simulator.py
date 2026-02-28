@@ -244,3 +244,6 @@ if __name__ == "__main__":
     print("─" * 50)
     for r in compare_strategies(circuit, strategies, weather):
         print(f"#{r['rank']:<4} {r['label']:<10} {r['total_time']:>15,.1f}   {r['pit_laps']}")
+
+# Trigger streamlit hot reload
+

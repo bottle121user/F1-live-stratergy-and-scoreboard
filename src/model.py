@@ -24,7 +24,7 @@ PROC_DIR  = BASE_DIR / "data" / "processed"
 MODEL_DIR = BASE_DIR / "models"
 MODEL_DIR.mkdir(exist_ok=True)
 
-from features import FEATURE_COLS, TARGET_COL, build_features
+from features import FEATURE_COLS, TARGET_COL, build_features, _compute_and_save_historical_factors
 
 
 # ── Model definitions ─────────────────────────────────────────────────────────
@@ -62,6 +62,10 @@ def train(data_path: Path | None = None) -> None:
     print(f"Loading data from {data_path} …")
     raw = pd.read_csv(data_path)
     df  = build_features(raw)
+    
+    # Calculate and Save Historical Performance Metrics
+    # We only want to calculate this once when preprocessing the whole training dataset
+    _compute_and_save_historical_factors(df, out_path=data_path.parent / "historical_metrics.json")
 
     # Keep only rows with all feature columns present
     df = df.dropna(subset=FEATURE_COLS + [TARGET_COL])
