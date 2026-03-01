@@ -154,6 +154,8 @@ def get_last_race_results() -> dict:
         return {}
 
 
+
+
 # ── Season Race Schedule ──────────────────────────────────────────────────────
 def get_season_schedule(season: str = "current") -> list[dict]:
     """

@@ -1,0 +1,33 @@
+F1 Strategy AI: How the Model Works (Simplified! 🏎️🧠)
+
+At its core, the AI in this app answers one big question for every lap of the race:
+"Should the driver PIT for new tyres RIGHT NOW?"
+
+To answer that, the model looks at the exact same data a real F1 team strategist looks at. Instead of magic, it uses patterns from 5+ years of real historical F1 race data.
+
+Here are the 4 main things it cares about, ranked by importance:
+
+1. Tyre Age & Compound (The Rubber) 🛞
+----------------------------------------
+Soft tyres wear out quickly, Hards last a long time. The AI checks how many laps you've driven on your current set. If you've done 20 laps on Softs, the AI will scream "PIT NOW!" But 20 laps on Hards? It'll say "Keep going."
+
+2. Pace Drop-off (The Stopwatch) ⏱️
+-----------------------------------
+The AI calculates your "Lap Time Delta." It compares your massive latest lap against your average pace from the last 5 laps. If you suddenly start losing 1.5 seconds a lap because your tyres are sliding around, the AI notices and drastically increases the chance it'll recommend a pit stop.
+
+3. Weather (The Sky) 🌧️☀️
+---------------------------
+F1 cars use slick tyres in the dry, and grooved tyres in the rain.
+If the AI sees it started raining (Rainfall > 0) but you are still on dry tyres (Soft/Medium/Hard), the chance of a "PIT NOW" recommendation skyrockets to nearly 100%. Driving slicks in the rain is like driving on ice!
+It also looks at Track Temperature. Hotter tracks melt tyres faster, so it tells you to pit slightly earlier on 45°C tracks compared to 25°C tracks.
+
+4. The Safety Car (The Opportunity) 🟡
+--------------------------------------
+A normal pit stop costs about 22 seconds under green flags. But if a Safety Car or Virtual Safety Car (VSC) is deployed, everyone else on track has to drive slowly. This means a pit stop effectively costs only ~12 seconds. The AI loves cheap pit stops and will often recommend pitting if a Safety Car comes out, as long as your tyres aren't brand new.
+
+---
+
+How does it give you a "Recommendation"?
+The model calculates a percentage score, for example: "80% chance you should pit, 20% chance you shouldn't."
+
+Because the AI was trained on real data, and real F1 drivers stay out on track for 98% of the laps and only pit on 2% of the laps, the AI is naturally cautious. To balance this, we've tuned the "Threshold". If the AI is more than 30% sure you should pit based on the 4 things above, it flashes the red "PIT NOW" banner!
