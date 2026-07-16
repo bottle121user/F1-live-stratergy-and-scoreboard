@@ -31,84 +31,211 @@ st.set_page_config(
 # ── Custom CSS — dark F1 theme ─────────────────────────────────────────────────
 st.markdown("""
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Titillium+Web:wght@300;400;600;700;900&display=swap');
 
   html, body, [class*="css"] { font-family: 'Titillium Web', sans-serif; }
+  h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif !important; }
 
-  .stApp { background-color: #0d0d0f; color: #f0f0f0; }
-  .stApp::before {
-    content: "";
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-image: linear-gradient(to bottom, rgba(13,13,15,0.85), rgba(13,13,15,0.95)),
-                      url('https://images.unsplash.com/photo-1541348109677-add26aa7ebcc?q=80&w=2000&auto=format&fit=crop');
-    background-size: cover; background-position: center; background-attachment: fixed;
-    pointer-events: none; z-index: -2;
+  /* Main Background */
+  [data-testid="stAppViewContainer"] { 
+    background-color: #0b0b0e !important;
+    background-image: 
+      radial-gradient(circle at 15% 50%, rgba(225, 6, 0, 0.12), transparent 30%),
+      radial-gradient(circle at 85% 20%, rgba(0, 210, 255, 0.12), transparent 30%),
+      radial-gradient(circle at 50% 90%, rgba(255, 65, 54, 0.08), transparent 40%),
+      linear-gradient(135deg, rgba(15,15,20,1) 0%, rgba(10,10,12,1) 100%) !important;
+    background-attachment: fixed !important;
   }
-  .stApp::after {
+  
+  [data-testid="stHeader"] {
+    background: transparent !important;
+  }
+
+  [data-testid="stAppViewContainer"]::before {
     content: "";
     position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-image: radial-gradient(circle at 50% 0%, rgba(225,6,0,0.18), transparent 70%);
+    top: -20%; left: -10%; width: 50%; height: 50%;
+    background: radial-gradient(circle, rgba(0, 210, 255, 0.15) 0%, transparent 70%);
     pointer-events: none; z-index: -1;
   }
+  
+  /* Staggered Animations */
+  @keyframes slideInUp {
+    0% { transform: translateY(30px) scale(0.98); opacity: 0; }
+    100% { transform: translateY(0) scale(1); opacity: 1; }
+  }
 
-  /* Rain */
-  .rain-container { position: fixed; top:0; left:0; width:100vw; height:100vh; pointer-events:none; z-index:9999; overflow:hidden; }
-  .drop { position:absolute; bottom:100%; width:2px; height:120px; pointer-events:none; animation:drop 0.5s linear infinite; background:linear-gradient(to bottom, transparent, rgba(200,220,255,0.6)); }
-  @keyframes drop { 0%{transform:translateY(0vh) scaleY(1);opacity:0} 10%{opacity:1} 80%{transform:translateY(100vh) scaleY(1);opacity:1} 100%{transform:translateY(100vh) scaleY(0.5);opacity:0} }
+  [data-testid="stVerticalBlock"] > div > div {
+    animation: slideInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  }
+  [data-testid="stVerticalBlock"] > div:nth-child(1) > div { animation-delay: 0.05s; }
+  [data-testid="stVerticalBlock"] > div:nth-child(2) > div { animation-delay: 0.15s; }
+  [data-testid="stVerticalBlock"] > div:nth-child(3) > div { animation-delay: 0.25s; }
+  [data-testid="stVerticalBlock"] > div:nth-child(4) > div { animation-delay: 0.35s; }
+  [data-testid="stVerticalBlock"] > div:nth-child(5) > div { animation-delay: 0.45s; }
+  [data-testid="stVerticalBlock"] > div:nth-child(6) > div { animation-delay: 0.55s; }
+
+  /* Glass classes */
+  .glass-panel, [data-testid="stVerticalBlock"] > div > div {
+    background: rgba(25, 25, 35, 0.2) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 16px !important;
+  }
+
+  /* F1 Lights */
+  .f1-light-box { display:flex; gap:16px; margin-top:16px; padding:10px 20px; background:#111; border-radius:12px; border:2px solid #222; width:fit-content; box-shadow:inset 0 4px 10px rgba(0,0,0,0.8); }
+  .f1-light { width:24px; height:24px; border-radius:50%; background:#2a0000; border:2px solid #000; }
+  .light-1 { animation: l1 4s infinite; }
+  .light-2 { animation: l2 4s infinite; }
+  .light-3 { animation: l3 4s infinite; }
+  .light-4 { animation: l4 4s infinite; }
+  .light-5 { animation: l5 4s infinite; }
+  
+  @keyframes l1 { 20%, 50% { background: #ff1a1a; box-shadow: 0 0 20px #ff0000; } 0%, 19.9%, 50.1%, 100% { background: #2a0000; box-shadow: none; } }
+  @keyframes l2 { 26%, 50% { background: #ff1a1a; box-shadow: 0 0 20px #ff0000; } 0%, 25.9%, 50.1%, 100% { background: #2a0000; box-shadow: none; } }
+  @keyframes l3 { 32%, 50% { background: #ff1a1a; box-shadow: 0 0 20px #ff0000; } 0%, 31.9%, 50.1%, 100% { background: #2a0000; box-shadow: none; } }
+  @keyframes l4 { 38%, 50% { background: #ff1a1a; box-shadow: 0 0 20px #ff0000; } 0%, 37.9%, 50.1%, 100% { background: #2a0000; box-shadow: none; } }
+  @keyframes l5 { 44%, 50% { background: #ff1a1a; box-shadow: 0 0 20px #ff0000; } 0%, 43.9%, 50.1%, 100% { background: #2a0000; box-shadow: none; } }
+
 
   /* Sidebar */
-  section[data-testid="stSidebar"] { background:#131318; border-right:1px solid #2a2a35; }
-  section[data-testid="stSidebar"] * { color:#d0d0d8 !important; }
+  section[data-testid="stSidebar"] { 
+    background: rgba(15, 15, 20, 0.5) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+  }
+  section[data-testid="stSidebar"] * { color:#e0e0e0 !important; }
 
   /* Metrics */
-  div[data-testid="metric-container"] { background:#18181f; border:1px solid #2a2a35; border-radius:12px; padding:16px; }
+  div[data-testid="metric-container"] { 
+    background: rgba(30, 30, 45, 0.35); 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    border-radius: 12px; 
+    padding: 16px; 
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.02);
+  }
 
   /* Tabs */
-  .stTabs [data-baseweb="tab-list"] { gap:8px; background:transparent; border-bottom:1px solid #2a2a35; padding-bottom:4px; }
-  .stTabs [data-baseweb="tab"] { background:#18181f; border-radius:8px 8px 0 0; border:1px solid #2a2a35; color:#888; padding:8px 20px; font-weight:600; }
-  .stTabs [aria-selected="true"] { background:#e10600 !important; color:#fff !important; border-color:#e10600 !important; }
+  .stTabs [data-baseweb="tab-list"] { gap:8px; background:transparent; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:4px; }
+  .stTabs [data-baseweb="tab"] { 
+    background: rgba(25, 25, 35, 0.4); 
+    backdrop-filter: blur(8px);
+    border-radius: 12px 12px 0 0; 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    border-bottom: none;
+    color: #999; 
+    padding: 10px 24px; 
+    font-weight: 600; 
+    transition: all 0.3s ease;
+  }
+  .stTabs [aria-selected="true"] { 
+    background: rgba(255, 255, 255, 0.1) !important; 
+    color: #fff !important; 
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 -4px 12px rgba(255,255,255,0.05);
+  }
 
   /* Buttons */
-  .stButton > button { background:linear-gradient(135deg,#e10600,#c00500); color:white; border:none; border-radius:8px; padding:10px 28px; font-weight:700; font-size:15px; letter-spacing:0.5px; transition:all 0.2s ease; width:100%; }
-  .stButton > button:hover { background:linear-gradient(135deg,#ff1a18,#e10600); transform:translateY(-1px); box-shadow:0 4px 20px rgba(225,6,0,0.4); }
+  .stButton > button { 
+    background: linear-gradient(135deg, rgba(225,6,0,0.8), rgba(255,65,54,0.6)); 
+    backdrop-filter: blur(4px);
+    color: white; 
+    border: 1px solid rgba(255,255,255,0.2); 
+    border-radius: 12px; 
+    padding: 10px 28px; 
+    font-weight: 700; 
+    font-size: 15px; 
+    letter-spacing: 0.5px; 
+    transition: all 0.3s ease; 
+    width: 100%; 
+  }
+  .stButton > button:hover { 
+    background: linear-gradient(135deg, rgba(255,26,24,0.9), rgba(225,6,0,0.9)); 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 24px rgba(225,6,0,0.5); 
+    border-color: rgba(255,255,255,0.4);
+  }
 
   /* Inputs */
-  .stSlider > div > div { accent-color:#e10600; }
-  .stSelectbox div[data-baseweb="select"] > div { background:#18181f; border-color:#2a2a35; }
-
+  .stSlider > div > div { accent-color: #00d2ff; }
+  .stSelectbox div[data-baseweb="select"] > div { 
+    background: rgba(30, 30, 45, 0.3); 
+    backdrop-filter: blur(8px);
+    border-color: rgba(255, 255, 255, 0.15); 
+    border-radius: 8px;
+  }
+  
   /* Decision banners */
-  .pit-now { background:linear-gradient(135deg,#e10600,#ff4136); border-radius:16px; padding:28px 32px; text-align:center; animation:pulse 1.5s ease-in-out infinite; }
-  .stay-out { background:linear-gradient(135deg,#1a7a2e,#22a83c); border-radius:16px; padding:28px 32px; text-align:center; }
-  @keyframes pulse { 0%,100%{box-shadow:0 0 0 0 rgba(225,6,0,0.5)} 50%{box-shadow:0 0 0 16px rgba(225,6,0,0)} }
-  .decision-label { font-size:2.4rem; font-weight:900; color:white; letter-spacing:2px; margin:0; }
-  .decision-sub { font-size:1rem; color:rgba(255,255,255,0.85); margin-top:6px; }
+  .pit-now { 
+    background: linear-gradient(135deg, rgba(225,6,0,0.6), rgba(255,65,54,0.4)); 
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,100,100,0.3);
+    border-radius: 16px; padding: 28px 32px; text-align: center; 
+    animation: pulse 2s ease-in-out infinite; 
+    box-shadow: 0 8px 32px rgba(225,6,0,0.2);
+  }
+  .stay-out { 
+    background: linear-gradient(135deg, rgba(26,122,46,0.6), rgba(34,168,60,0.4)); 
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(100,255,100,0.3);
+    border-radius: 16px; padding: 28px 32px; text-align: center; 
+    box-shadow: 0 8px 32px rgba(26,122,46,0.2);
+  }
+  @keyframes pulse { 0%,100%{box-shadow:0 0 0 0 rgba(225,6,0,0.4)} 50%{box-shadow:0 0 0 16px rgba(225,6,0,0)} }
 
   /* Strategy cards */
-  .strat-card { background:#18181f; border:1px solid #2a2a35; border-radius:12px; padding:18px 20px; margin-bottom:10px; transition:border-color 0.2s; }
-  .strat-card:hover { border-color:#e10600; }
-  .rank-badge { display:inline-block; background:#e10600; color:white; font-weight:900; font-size:0.85rem; padding:2px 10px; border-radius:20px; margin-right:10px; }
+  .strat-card { 
+    background: rgba(30, 30, 40, 0.35); 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 16px; 
+    padding: 18px 20px; 
+    margin-bottom: 10px; 
+    transition: all 0.3s; 
+  }
+  .strat-card:hover { 
+    border-color: rgba(0, 210, 255, 0.5); 
+    box-shadow: 0 8px 24px rgba(0, 210, 255, 0.15);
+    transform: translateY(-2px);
+  }
+  .rank-badge { 
+    display: inline-block; 
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5); 
+    color: white; 
+    font-weight: 900; 
+    font-size: 0.85rem; 
+    padding: 4px 12px; 
+    border-radius: 20px; 
+    margin-right: 10px; 
+    box-shadow: 0 4px 10px rgba(0,210,255,0.3);
+  }
 
-  h1 { color:#fff !important; font-weight:900 !important; }
-  h2, h3 { color:#e0e0e8 !important; font-weight:700 !important; }
-  .stMarkdown p { color:#a0a0b0; }
-  hr { border-color:#2a2a35; }
+  h1 { color: #fff !important; font-weight: 900 !important; }
+  h2, h3 { color: #f0f0f0 !important; font-weight: 700 !important; }
+  .stMarkdown p { color: #b0b0c0; }
+  hr { border-color: rgba(255,255,255,0.1); }
 </style>
 """, unsafe_allow_html=True)
 
 # ── Header ─────────────────────────────────────────────────────────────────────
 st.markdown("""
-<div style="display:flex; align-items:center; gap:16px; margin-bottom:8px;">
-  <div style="background:#e10600; border-radius:10px; padding:10px 16px; font-size:2rem; box-shadow:0 4px 15px rgba(225,6,0,0.4);">🏎️</div>
+<div style="display:flex; align-items:center; gap:24px; margin-bottom:24px; padding:32px; background:rgba(20,20,30,0.4); border:1px solid rgba(255,255,255,0.05); border-radius:24px; backdrop-filter:blur(16px); box-shadow:0 12px 40px rgba(0,0,0,0.5);">
+  <div style="background:linear-gradient(135deg, #e10600, #ff4136); border-radius:20px; padding:20px 28px; font-size:3rem; box-shadow:0 8px 24px rgba(225,6,0,0.4); transform:rotate(-5deg);">🏎️</div>
   <div>
-    <h1 style="margin:0; font-size:2.5rem; text-transform:uppercase; font-style:italic; letter-spacing:1px; text-shadow:2px 2px 4px rgba(0,0,0,0.5);">F1 Pit Strategy AI</h1>
-    <p style="margin:0; color:#888; font-size:0.9rem; text-transform:uppercase; letter-spacing:2px; font-weight:600;">
-      Powered by FastF1 · LightGBM · Streamlit
-    </p>
+    <h1 style="margin:0; font-size:3.6rem; text-transform:uppercase; font-style:italic; letter-spacing:2px; font-weight:900; background:linear-gradient(135deg, #ffffff, #aaaaaa); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">F1 Pit Strategy AI</h1>
+    <div class="f1-light-box">
+      <div class="f1-light light-1"></div>
+      <div class="f1-light light-2"></div>
+      <div class="f1-light light-3"></div>
+      <div class="f1-light light-4"></div>
+      <div class="f1-light light-5"></div>
+    </div>
   </div>
 </div>
-<hr style="margin:8px 0 24px 0;">
 """, unsafe_allow_html=True)
 
 # ── Load model (cached) ────────────────────────────────────────────────────────
@@ -142,12 +269,13 @@ available_teams   = sorted(list(HISTORICAL_METRICS_CACHE.get("team_pace_offsets"
 available_drivers = sorted(list(HISTORICAL_METRICS_CACHE.get("driver_tyre_factors", {}).keys())) or ["VER", "HAM", "LEC", "NOR", "ALO"]
 
 # ── Tabs ───────────────────────────────────────────────────────────────────────
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "🛞  Live Pit Decision",
     "🗺️  Strategy Recommender",
     "📈  Lap Simulator",
     "🏆  Live Scoreboard",
     "🏅  Previous Champions",
+    "📍  Live Track Map",
 ])
 
 
@@ -772,8 +900,8 @@ with tab5:
                     hovertemplate="%{y}<br>%{x:.0f} pts<extra></extra>",
                 ))
                 fig_cc.update_layout(
-                    paper_bgcolor="#0d0d0f", plot_bgcolor="#18181f",
-                    xaxis=dict(title="Points", color="#888", gridcolor="#2a2a35"),
+                    paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+                    xaxis=dict(title="Points", color="#888", gridcolor="rgba(255,255,255,0.1)"),
                     yaxis=dict(color="#d0d0d8", autorange="reversed"),
                     height=max(200, len(df_con_c) * 36 + 50),
                     margin=dict(t=10, b=30, l=160, r=70),
@@ -791,6 +919,91 @@ with tab5:
                 st.warning(f"No constructor standings found for {champ_year}.")
     else:
         st.info("Select a season above and click **Load Standings** to view.")
+
+# ══════════════════════════════════════════════════════════════════════════════
+# TAB 6 — LIVE TRACK MAP
+# ══════════════════════════════════════════════════════════════════════════════
+with tab6:
+    st.subheader("📍 Live Track Map")
+    st.markdown("Real-time car positions from the OpenF1 telemetry feed.")
+
+    # Refresh toggle
+    auto_refresh = st.toggle("Auto-Refresh (every 5s)", value=False)
+    if auto_refresh:
+        import time
+        time.sleep(5)
+        st.rerun()
+    
+    with st.spinner("Fetching live telemetry..."):
+        sess = live_data.get_live_session()
+        if not sess:
+            st.info("No live session currently active (within the last 4 hours).")
+            
+            # Display countdown to next race
+            import datetime
+            now_utc = datetime.datetime.now(datetime.timezone.utc)
+            schedule = live_data.get_season_schedule()
+            next_race = next((r for r in schedule if r["status"] == "next"), None)
+            
+            if next_race:
+                try:
+                    race_date = datetime.datetime.strptime(next_race["date"], "%Y-%m-%d").replace(tzinfo=datetime.timezone.utc)
+                    delta = race_date - now_utc
+                    days = delta.days
+                    if days > 0:
+                        st.info(f"⏳ Next Race: **{next_race['race_name']}** ({next_race['country']}) in **{days} days**.")
+                    else:
+                        st.info(f"⏳ Next Race: **{next_race['race_name']}** is happening soon!")
+                except Exception:
+                    st.info(f"⏳ Next Race: **{next_race['race_name']}** on {next_race['date']}")
+            else:
+                st.info("No upcoming races found in the schedule.")
+            
+        else:
+            session_key = sess["session_key"]
+            st.markdown(f"**Session:** {sess['meeting_name']} - {sess['country']}")
+            
+            locations = live_data.get_live_locations(session_key)
+            drivers = live_data.get_live_drivers(session_key)
+            
+            if not locations:
+                st.warning("No location data available for this session yet.")
+            else:
+                x_vals = []
+                y_vals = []
+                colors = []
+                texts = []
+                
+                for drv_num, loc in locations.items():
+                    x_vals.append(loc["x"])
+                    y_vals.append(loc["y"])
+                    drv_info = drivers.get(drv_num, {})
+                    colors.append(drv_info.get("team_colour", "#ffffff"))
+                    code = drv_info.get("code", str(drv_num))
+                    texts.append(code)
+                
+                fig_map = go.Figure(go.Scatter(
+                    x=x_vals,
+                    y=y_vals,
+                    mode="markers+text",
+                    marker=dict(size=14, color=colors, line=dict(width=2, color="white")),
+                    text=texts,
+                    textposition="top center",
+                    textfont=dict(color="white", size=10)
+                ))
+                
+                fig_map.update_layout(
+                    paper_bgcolor="rgba(0,0,0,0)",
+                    plot_bgcolor="rgba(0,0,0,0)",
+                    xaxis=dict(showgrid=False, zeroline=False, visible=False),
+                    yaxis=dict(showgrid=False, zeroline=False, visible=False),
+                    height=600,
+                    margin=dict(l=0, r=0, t=0, b=0),
+                    showlegend=False
+                )
+                
+                fig_map.update_yaxes(scaleanchor="x", scaleratio=1)
+                st.plotly_chart(fig_map, use_container_width=True)
 
 
 # ── Footer ─────────────────────────────────────────────────────────────────────

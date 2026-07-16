@@ -289,3 +289,26 @@ def get_live_drivers(session_key: int) -> dict[int, dict]:
                 "team_colour": "#" + (d.get("team_colour") or "888888"),
             }
     return result
+
+
+def get_live_locations(session_key: int) -> dict[int, dict]:
+    """
+    Fetch the latest driver locations (x, y coordinates) from a session.
+    Returns {driver_number: {"x": x_val, "y": y_val, "date": date_val}}
+    """
+    data = _get(
+        f"{_OPENF1_BASE}/location",
+        params={"session_key": session_key},
+    )
+    if not data or not isinstance(data, list):
+        return {}
+    
+    # Keep only the latest location per driver
+    latest: dict[int, dict] = {}
+    for entry in data:
+        drv = entry.get("driver_number")
+        if drv is None:
+            continue
+        if drv not in latest or entry["date"] > latest[drv]["date"]:
+            latest[drv] = entry
+    return latest
