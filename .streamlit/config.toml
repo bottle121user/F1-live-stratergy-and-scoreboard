@@ -1,6 +1,7 @@
 [server]
 headless = true
 port = 8501
+runOnSave = true
 
 [theme]
 base = "dark"
@@ -8,6 +9,9 @@ primaryColor = "#E10600"
 backgroundColor = "#0B0D12"
 secondaryBackgroundColor = "#161922"
 textColor = "#FFFFFF"
+
+[browser]
+gatherUsageStats = false
 
 [runner]
 fastReruns = true
