@@ -500,6 +500,110 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
 .light-3 { animation: lightSeq 4s infinite 0.6s; }
 .light-4 { animation: lightSeq 4s infinite 0.8s; }
 .light-5 { animation: lightSeq 4s infinite 1.0s; }
+
+/* Responsive Fluid Layout & Breakpoints */
+@media (max-width: 1024px) {
+    .block-container {
+        padding-top: 1.5rem !important;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+    [data-testid="column"] {
+        padding: 1.5rem !important;
+        border-radius: 28px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .block-container {
+        padding-top: 1rem !important;
+        padding-left: 0.8rem !important;
+        padding-right: 0.8rem !important;
+    }
+
+    [data-testid="column"] {
+        padding: 1.25rem !important;
+        border-radius: 24px !important;
+        margin-bottom: 1rem !important;
+    }
+
+    /* Scrollable horizontal pill tab bar on mobile */
+    .stTabs [data-baseweb="tab-list"] {
+        overflow-x: auto !important;
+        flex-wrap: nowrap !important;
+        -webkit-overflow-scrolling: touch !important;
+        scrollbar-width: none !important;
+        padding: 6px !important;
+    }
+    .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar {
+        display: none !important;
+    }
+    .stTabs [data-baseweb="tab"] {
+        height: 42px !important;
+        padding: 0 16px !important;
+        font-size: 0.95rem !important;
+        white-space: nowrap !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* Responsive Decision Pill */
+    .pit-now, .stay-out {
+        padding: 1.8rem 1.2rem !important;
+        border-radius: 32px !important;
+    }
+    .decision-label {
+        font-size: clamp(2rem, 6vw, 2.5rem) !important;
+        letter-spacing: 0.05em !important;
+    }
+    .decision-sub {
+        font-size: 1.05rem !important;
+    }
+
+    /* Strategy cards and banners */
+    .strat-card {
+        border-radius: 24px !important;
+        padding: 1rem 1.4rem !important;
+    }
+    .champion-banner {
+        border-radius: 28px !important;
+        padding: 1.2rem 1.4rem !important;
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+    .champion-banner > div {
+        text-align: center !important;
+    }
+    .f1-live-banner {
+        border-radius: 28px !important;
+        padding: 1rem 1.4rem !important;
+        text-align: center !important;
+    }
+
+    /* Full width buttons on mobile */
+    .stButton > button {
+        width: 100% !important;
+        padding: 0.85rem 1.5rem !important;
+    }
+
+    /* Responsive Metrics */
+    [data-testid="stMetric"] {
+        border-radius: 24px !important;
+        padding: 1rem 1.2rem !important;
+        text-align: center !important;
+    }
+    [data-testid="stMetricValue"] {
+        font-size: 1.7rem !important;
+    }
+
+    /* Hero header on mobile */
+    .f1-hero-header {
+        flex-direction: column !important;
+        gap: 16px !important;
+        padding: 1.5rem 1rem !important;
+        border-radius: 28px !important;
+    }
+}
+
 </style>
 """,
     unsafe_allow_html=True,
@@ -511,11 +615,11 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
 # ----------------------------------------------------------------------------
 st.markdown(
     """
-<div style="display:flex; align-items:center; justify-content:center; gap:32px; margin-bottom:3rem; padding:3rem; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.08); border-radius:9999px; backdrop-filter:blur(30px); -webkit-backdrop-filter:blur(30px); box-shadow:inset 0 2px 10px rgba(255,255,255,0.02), 0 20px 40px rgba(0,0,0,0.4); transform: translateZ(0);">
-<div style="display:flex; align-items:center; justify-content:center; width:80px; height:80px; background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:50%; font-size:2.5rem; box-shadow:inset 0 2px 10px rgba(255,255,255,0.05);">🏎️</div>
+<div class="f1-hero-header" style="display:flex; align-items:center; justify-content:center; gap:clamp(16px, 3vw, 32px); margin-bottom:clamp(1.5rem, 3vw, 3rem); padding:clamp(1.5rem, 3vw, 3rem); background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.08); border-radius:clamp(24px, 5vw, 9999px); backdrop-filter:blur(30px); -webkit-backdrop-filter:blur(30px); box-shadow:inset 0 2px 10px rgba(255,255,255,0.02), 0 20px 40px rgba(0,0,0,0.4); transform: translateZ(0); flex-wrap:wrap; text-align:center;">
+<div style="display:flex; align-items:center; justify-content:center; width:clamp(60px, 8vw, 80px); height:clamp(60px, 8vw, 80px); background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:50%; font-size:clamp(1.8rem, 3vw, 2.5rem); box-shadow:inset 0 2px 10px rgba(255,255,255,0.05);">🏎️</div>
 <div style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
-<h1 style="margin:0; font-size:3.2rem; font-family:'Outfit', sans-serif; font-weight:800; letter-spacing:4px; color:#FFFFFF; text-transform:uppercase; line-height:1;">F1 PIT STRATEGY AI</h1>
-<div class="f1-light-box" style="margin-top:16px; transform: scale(0.9); transform-origin: center; align-self: center;">
+<h1 style="margin:0; font-size:clamp(1.8rem, 4.5vw, 3.2rem); font-family:'Outfit', sans-serif; font-weight:800; letter-spacing:clamp(1px, 0.4vw, 4px); color:#FFFFFF; text-transform:uppercase; line-height:1.1;">F1 PIT STRATEGY AI</h1>
+<div class="f1-light-box" style="margin-top:14px; transform:scale(clamp(0.75, 1vw, 0.95)); transform-origin:center; align-self:center;">
 <div class="f1-light light-1"></div>
 <div class="f1-light light-2"></div>
 <div class="f1-light light-3"></div>
