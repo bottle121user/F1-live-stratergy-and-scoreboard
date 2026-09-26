@@ -29,3 +29,7 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# Testing & Tools
+.pytest_cache/
+.ruff_cache/

@@ -16,10 +16,10 @@
   Bahrain Grand Prix        | SOFT         | 30 |  20 |  27 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  20.1 |  79.9 |  79.9
   Bahrain Grand Prix        | SOFT         | 30 |  20 |  27 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  20.1 |  79.9 |  79.9
   Bahrain Grand Prix        | SOFT         | 30 |  20 |  27 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  20.1 |  79.9 |  79.9
-  Bahrain Grand Prix        | SOFT         | 40 |  30 |  17 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.1 |  60.0 |  60.0
-  Bahrain Grand Prix        | SOFT         | 40 |  30 |  17 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.1 |  60.0 |  60.0
+  Bahrain Grand Prix        | SOFT         | 40 |  30 |  17 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.1 |  59.9 |  59.9
+  Bahrain Grand Prix        | SOFT         | 40 |  30 |  17 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.1 |  59.9 |  59.9
   Bahrain Grand Prix        | SOFT         | 40 |  30 |  17 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.1 |  60.0 |  60.0
-  Bahrain Grand Prix        | SOFT         | 40 |  30 |  17 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.1 |  60.0 |  60.0
+  Bahrain Grand Prix        | SOFT         | 40 |  30 |  17 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.1 |  59.9 |  59.9
   Bahrain Grand Prix        | SOFT         | 50 |  40 |   7 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
   Bahrain Grand Prix        | SOFT         | 50 |  40 |   7 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
   Bahrain Grand Prix        | SOFT         | 50 |  40 |   7 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
@@ -38,7 +38,7 @@
   Bahrain Grand Prix        | SOFT         | 25 |   5 |  32 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
   Bahrain Grand Prix        | SOFT         | 30 |  15 |  27 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
   Bahrain Grand Prix        | SOFT         | 30 |  15 |  27 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.6 |  54.4 |  54.4
-  Bahrain Grand Prix        | SOFT         | 30 |  15 |  27 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Bahrain Grand Prix        | SOFT         | 30 |  15 |  27 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
   Bahrain Grand Prix        | SOFT         | 30 |  15 |  27 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
   Bahrain Grand Prix        | SOFT         | 35 |  10 |  22 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
   Bahrain Grand Prix        | SOFT         | 35 |  10 |  22 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
@@ -48,18 +48,18 @@
   Bahrain Grand Prix        | MEDIUM       |  1 |   1 |  56 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Bahrain Grand Prix        | MEDIUM       |  1 |   1 |  56 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Bahrain Grand Prix        | MEDIUM       |  1 |   1 |  56 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
-  Bahrain Grand Prix        | MEDIUM       | 20 |  10 |  37 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
+  Bahrain Grand Prix        | MEDIUM       | 20 |  10 |  37 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
   Bahrain Grand Prix        | MEDIUM       | 20 |  10 |  37 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
-  Bahrain Grand Prix        | MEDIUM       | 20 |  10 |  37 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
-  Bahrain Grand Prix        | MEDIUM       | 20 |  10 |  37 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
+  Bahrain Grand Prix        | MEDIUM       | 20 |  10 |  37 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
+  Bahrain Grand Prix        | MEDIUM       | 20 |  10 |  37 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
   Bahrain Grand Prix        | MEDIUM       | 30 |  20 |  27 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
   Bahrain Grand Prix        | MEDIUM       | 30 |  20 |  27 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Bahrain Grand Prix        | MEDIUM       | 30 |  20 |  27 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
   Bahrain Grand Prix        | MEDIUM       | 30 |  20 |  27 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Bahrain Grand Prix        | MEDIUM       | 40 |  30 |  17 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.1 |  59.9 |  59.9
-  Bahrain Grand Prix        | MEDIUM       | 40 |  30 |  17 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.1 |  60.0 |  60.0
+  Bahrain Grand Prix        | MEDIUM       | 40 |  30 |  17 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.1 |  59.9 |  59.9
   Bahrain Grand Prix        | MEDIUM       | 40 |  30 |  17 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.1 |  59.9 |  59.9
-  Bahrain Grand Prix        | MEDIUM       | 40 |  30 |  17 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.1 |  60.0 |  60.0
+  Bahrain Grand Prix        | MEDIUM       | 40 |  30 |  17 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.1 |  59.9 |  59.9
   Bahrain Grand Prix        | MEDIUM       | 50 |  40 |   7 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
   Bahrain Grand Prix        | MEDIUM       | 50 |  40 |   7 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
   Bahrain Grand Prix        | MEDIUM       | 50 |  40 |   7 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
@@ -73,17 +73,17 @@
   Bahrain Grand Prix        | MEDIUM       | 57 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
   Bahrain Grand Prix        | MEDIUM       | 57 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
   Bahrain Grand Prix        | MEDIUM       | 25 |   5 |  32 | SC | R0.0 | Alfa Romeo   | ALB   | STAY OUT |  15.1 |  84.9 |  84.9
-  Bahrain Grand Prix        | MEDIUM       | 25 |   5 |  32 | SC | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
+  Bahrain Grand Prix        | MEDIUM       | 25 |   5 |  32 | SC | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  15.0 |  85.0 |  85.0
   Bahrain Grand Prix        | MEDIUM       | 25 |   5 |  32 | SC | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  15.1 |  84.9 |  84.9
   Bahrain Grand Prix        | MEDIUM       | 25 |   5 |  32 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
-  Bahrain Grand Prix        | MEDIUM       | 30 |  15 |  27 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
-  Bahrain Grand Prix        | MEDIUM       | 30 |  15 |  27 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.6 |  54.4 |  54.4
+  Bahrain Grand Prix        | MEDIUM       | 30 |  15 |  27 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
+  Bahrain Grand Prix        | MEDIUM       | 30 |  15 |  27 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
   Bahrain Grand Prix        | MEDIUM       | 30 |  15 |  27 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
   Bahrain Grand Prix        | MEDIUM       | 30 |  15 |  27 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
-  Bahrain Grand Prix        | MEDIUM       | 35 |  10 |  22 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
-  Bahrain Grand Prix        | MEDIUM       | 35 |  10 |  22 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Bahrain Grand Prix        | MEDIUM       | 35 |  10 |  22 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Bahrain Grand Prix        | MEDIUM       | 35 |  10 |  22 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
   Bahrain Grand Prix        | MEDIUM       | 35 |  10 |  22 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
-  Bahrain Grand Prix        | MEDIUM       | 35 |  10 |  22 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Bahrain Grand Prix        | MEDIUM       | 35 |  10 |  22 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
   Bahrain Grand Prix        | HARD         |  1 |   1 |  56 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Bahrain Grand Prix        | HARD         |  1 |   1 |  56 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Bahrain Grand Prix        | HARD         |  1 |   1 |  56 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
@@ -92,7 +92,7 @@
   Bahrain Grand Prix        | HARD         | 20 |  10 |  37 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Bahrain Grand Prix        | HARD         | 20 |  10 |  37 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Bahrain Grand Prix        | HARD         | 20 |  10 |  37 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
-  Bahrain Grand Prix        | HARD         | 30 |  20 |  27 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
+  Bahrain Grand Prix        | HARD         | 30 |  20 |  27 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
   Bahrain Grand Prix        | HARD         | 30 |  20 |  27 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Bahrain Grand Prix        | HARD         | 30 |  20 |  27 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Bahrain Grand Prix        | HARD         | 30 |  20 |  27 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
@@ -120,10 +120,10 @@
   Bahrain Grand Prix        | HARD         | 30 |  15 |  27 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
   Bahrain Grand Prix        | HARD         | 30 |  15 |  27 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
   Bahrain Grand Prix        | HARD         | 30 |  15 |  27 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Bahrain Grand Prix        | HARD         | 35 |  10 |  22 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.2 |  54.8 |  54.8
-  Bahrain Grand Prix        | HARD         | 35 |  10 |  22 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Bahrain Grand Prix        | HARD         | 35 |  10 |  22 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.2 |  54.8 |  54.8
-  Bahrain Grand Prix        | HARD         | 35 |  10 |  22 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
+  Bahrain Grand Prix        | HARD         | 35 |  10 |  22 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
+  Bahrain Grand Prix        | HARD         | 35 |  10 |  22 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
+  Bahrain Grand Prix        | HARD         | 35 |  10 |  22 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
+  Bahrain Grand Prix        | HARD         | 35 |  10 |  22 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
   Bahrain Grand Prix        | INTERMEDIATE |  1 |   1 |  56 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
   Bahrain Grand Prix        | INTERMEDIATE |  1 |   1 |  56 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
   Bahrain Grand Prix        | INTERMEDIATE |  1 |   1 |  56 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
@@ -140,18 +140,18 @@
   Bahrain Grand Prix        | INTERMEDIATE | 40 |  30 |  17 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Bahrain Grand Prix        | INTERMEDIATE | 40 |  30 |  17 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Bahrain Grand Prix        | INTERMEDIATE | 40 |  30 |  17 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
-  Bahrain Grand Prix        | INTERMEDIATE | 50 |  40 |   7 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Bahrain Grand Prix        | INTERMEDIATE | 50 |  40 |   7 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Bahrain Grand Prix        | INTERMEDIATE | 50 |  40 |   7 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
+  Bahrain Grand Prix        | INTERMEDIATE | 50 |  40 |   7 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Bahrain Grand Prix        | INTERMEDIATE | 50 |  40 |   7 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Bahrain Grand Prix        | INTERMEDIATE | 50 |  40 |   7 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Bahrain Grand Prix        | INTERMEDIATE | 57 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Bahrain Grand Prix        | INTERMEDIATE | 57 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
   Bahrain Grand Prix        | INTERMEDIATE | 57 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Bahrain Grand Prix        | INTERMEDIATE | 57 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Bahrain Grand Prix        | INTERMEDIATE | 57 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Bahrain Grand Prix        | INTERMEDIATE | 57 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Bahrain Grand Prix        | INTERMEDIATE | 57 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Bahrain Grand Prix        | INTERMEDIATE | 57 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Bahrain Grand Prix        | INTERMEDIATE | 57 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Bahrain Grand Prix        | INTERMEDIATE | 57 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Bahrain Grand Prix        | INTERMEDIATE | 57 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Bahrain Grand Prix        | INTERMEDIATE | 25 |   5 |  32 | SC | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
   Bahrain Grand Prix        | INTERMEDIATE | 25 |   5 |  32 | SC | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  60.1 |  39.9 |  60.1
   Bahrain Grand Prix        | INTERMEDIATE | 25 |   5 |  32 | SC | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
@@ -161,7 +161,7 @@
   Bahrain Grand Prix        | INTERMEDIATE | 30 |  15 |  27 |    | R0.5 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
   Bahrain Grand Prix        | INTERMEDIATE | 30 |  15 |  27 |    | R0.5 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
   Bahrain Grand Prix        | INTERMEDIATE | 35 |  10 |  22 |    | R1.0 | Alfa Romeo   | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
-  Bahrain Grand Prix        | INTERMEDIATE | 35 |  10 |  22 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
+  Bahrain Grand Prix        | INTERMEDIATE | 35 |  10 |  22 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Bahrain Grand Prix        | INTERMEDIATE | 35 |  10 |  22 |    | R1.0 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
   Bahrain Grand Prix        | INTERMEDIATE | 35 |  10 |  22 |    | R1.0 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
   Bahrain Grand Prix        | WET          |  1 |   1 |  56 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
@@ -169,27 +169,27 @@
   Bahrain Grand Prix        | WET          |  1 |   1 |  56 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
   Bahrain Grand Prix        | WET          |  1 |   1 |  56 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
   Bahrain Grand Prix        | WET          | 20 |  10 |  37 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.0 |  55.0 |  55.0
-  Bahrain Grand Prix        | WET          | 20 |  10 |  37 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.0 |  55.0 |  55.0
+  Bahrain Grand Prix        | WET          | 20 |  10 |  37 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
   Bahrain Grand Prix        | WET          | 20 |  10 |  37 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.0 |  55.0 |  55.0
-  Bahrain Grand Prix        | WET          | 20 |  10 |  37 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.0 |  55.0 |  55.0
+  Bahrain Grand Prix        | WET          | 20 |  10 |  37 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
   Bahrain Grand Prix        | WET          | 30 |  20 |  27 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  65.1 |  34.9 |  65.1
-  Bahrain Grand Prix        | WET          | 30 |  20 |  27 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  65.0 |  34.9 |  65.0
+  Bahrain Grand Prix        | WET          | 30 |  20 |  27 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  65.1 |  34.9 |  65.1
   Bahrain Grand Prix        | WET          | 30 |  20 |  27 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  65.1 |  34.9 |  65.1
-  Bahrain Grand Prix        | WET          | 30 |  20 |  27 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  65.0 |  34.9 |  65.0
+  Bahrain Grand Prix        | WET          | 30 |  20 |  27 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  65.1 |  34.9 |  65.1
   Bahrain Grand Prix        | WET          | 40 |  30 |  17 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Bahrain Grand Prix        | WET          | 40 |  30 |  17 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Bahrain Grand Prix        | WET          | 40 |  30 |  17 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Bahrain Grand Prix        | WET          | 40 |  30 |  17 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
-  Bahrain Grand Prix        | WET          | 50 |  40 |   7 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Bahrain Grand Prix        | WET          | 50 |  40 |   7 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Bahrain Grand Prix        | WET          | 50 |  40 |   7 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
+  Bahrain Grand Prix        | WET          | 50 |  40 |   7 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Bahrain Grand Prix        | WET          | 50 |  40 |   7 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Bahrain Grand Prix        | WET          | 50 |  40 |   7 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Bahrain Grand Prix        | WET          | 50 |  40 |   7 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Bahrain Grand Prix        | WET          | 57 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Bahrain Grand Prix        | WET          | 57 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Bahrain Grand Prix        | WET          | 57 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Bahrain Grand Prix        | WET          | 57 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Bahrain Grand Prix        | WET          | 57 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Bahrain Grand Prix        | WET          | 57 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Bahrain Grand Prix        | WET          | 57 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Bahrain Grand Prix        | WET          | 57 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Bahrain Grand Prix        | WET          | 57 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Bahrain Grand Prix        | WET          | 25 |   5 |  32 | SC | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
@@ -207,17 +207,17 @@
   Saudi Arabian Grand Prix  | SOFT         |  1 |   1 |  49 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | SOFT         |  1 |   1 |  49 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | SOFT         |  1 |   1 |  49 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
-  Saudi Arabian Grand Prix  | SOFT         |  1 |   1 |  49 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
+  Saudi Arabian Grand Prix  | SOFT         |  1 |   1 |  49 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | SOFT         | 20 |  10 |  30 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
   Saudi Arabian Grand Prix  | SOFT         | 20 |  10 |  30 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
-  Saudi Arabian Grand Prix  | SOFT         | 20 |  10 |  30 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
+  Saudi Arabian Grand Prix  | SOFT         | 20 |  10 |  30 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
   Saudi Arabian Grand Prix  | SOFT         | 20 |  10 |  30 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | SOFT         | 30 |  20 |  20 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |  20.1 |  79.9 |  79.9
   Saudi Arabian Grand Prix  | SOFT         | 30 |  20 |  20 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  20.1 |  79.9 |  79.9
   Saudi Arabian Grand Prix  | SOFT         | 30 |  20 |  20 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  20.1 |  79.9 |  79.9
   Saudi Arabian Grand Prix  | SOFT         | 30 |  20 |  20 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  20.1 |  79.9 |  79.9
   Saudi Arabian Grand Prix  | SOFT         | 40 |  30 |  10 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
-  Saudi Arabian Grand Prix  | SOFT         | 40 |  30 |  10 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
+  Saudi Arabian Grand Prix  | SOFT         | 40 |  30 |  10 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.1 |  60.0 |  60.0
   Saudi Arabian Grand Prix  | SOFT         | 40 |  30 |  10 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
   Saudi Arabian Grand Prix  | SOFT         | 40 |  30 |  10 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
   Saudi Arabian Grand Prix  | SOFT         | 50 |  40 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
@@ -241,23 +241,23 @@
   Saudi Arabian Grand Prix  | SOFT         | 30 |  15 |  20 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
   Saudi Arabian Grand Prix  | SOFT         | 30 |  15 |  20 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
   Saudi Arabian Grand Prix  | SOFT         | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Saudi Arabian Grand Prix  | SOFT         | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
+  Saudi Arabian Grand Prix  | SOFT         | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
   Saudi Arabian Grand Prix  | SOFT         | 35 |  10 |  15 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Saudi Arabian Grand Prix  | SOFT         | 35 |  10 |  15 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
+  Saudi Arabian Grand Prix  | SOFT         | 35 |  10 |  15 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
   Saudi Arabian Grand Prix  | MEDIUM       |  1 |   1 |  49 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | MEDIUM       |  1 |   1 |  49 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | MEDIUM       |  1 |   1 |  49 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | MEDIUM       |  1 |   1 |  49 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
-  Saudi Arabian Grand Prix  | MEDIUM       | 20 |  10 |  30 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
+  Saudi Arabian Grand Prix  | MEDIUM       | 20 |  10 |  30 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
   Saudi Arabian Grand Prix  | MEDIUM       | 20 |  10 |  30 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
-  Saudi Arabian Grand Prix  | MEDIUM       | 20 |  10 |  30 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
-  Saudi Arabian Grand Prix  | MEDIUM       | 20 |  10 |  30 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
+  Saudi Arabian Grand Prix  | MEDIUM       | 20 |  10 |  30 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
+  Saudi Arabian Grand Prix  | MEDIUM       | 20 |  10 |  30 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | MEDIUM       | 30 |  20 |  20 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
   Saudi Arabian Grand Prix  | MEDIUM       | 30 |  20 |  20 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Saudi Arabian Grand Prix  | MEDIUM       | 30 |  20 |  20 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
   Saudi Arabian Grand Prix  | MEDIUM       | 30 |  20 |  20 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Saudi Arabian Grand Prix  | MEDIUM       | 40 |  30 |  10 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
-  Saudi Arabian Grand Prix  | MEDIUM       | 40 |  30 |  10 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
+  Saudi Arabian Grand Prix  | MEDIUM       | 40 |  30 |  10 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.1 |  60.0 |  60.0
   Saudi Arabian Grand Prix  | MEDIUM       | 40 |  30 |  10 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
   Saudi Arabian Grand Prix  | MEDIUM       | 40 |  30 |  10 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
   Saudi Arabian Grand Prix  | MEDIUM       | 50 |  40 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
@@ -273,17 +273,17 @@
   Saudi Arabian Grand Prix  | MEDIUM       | 50 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
   Saudi Arabian Grand Prix  | MEDIUM       | 50 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
   Saudi Arabian Grand Prix  | MEDIUM       | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo   | ALB   | STAY OUT |  15.1 |  84.9 |  84.9
-  Saudi Arabian Grand Prix  | MEDIUM       | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
-  Saudi Arabian Grand Prix  | MEDIUM       | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  15.0 |  85.0 |  85.0
-  Saudi Arabian Grand Prix  | MEDIUM       | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
+  Saudi Arabian Grand Prix  | MEDIUM       | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  15.0 |  85.0 |  85.0
+  Saudi Arabian Grand Prix  | MEDIUM       | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  15.1 |  84.9 |  84.9
+  Saudi Arabian Grand Prix  | MEDIUM       | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.0 |  85.0 |  85.0
   Saudi Arabian Grand Prix  | MEDIUM       | 30 |  15 |  20 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
-  Saudi Arabian Grand Prix  | MEDIUM       | 30 |  15 |  20 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
-  Saudi Arabian Grand Prix  | MEDIUM       | 30 |  15 |  20 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
+  Saudi Arabian Grand Prix  | MEDIUM       | 30 |  15 |  20 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
+  Saudi Arabian Grand Prix  | MEDIUM       | 30 |  15 |  20 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
   Saudi Arabian Grand Prix  | MEDIUM       | 30 |  15 |  20 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
   Saudi Arabian Grand Prix  | MEDIUM       | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Saudi Arabian Grand Prix  | MEDIUM       | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
+  Saudi Arabian Grand Prix  | MEDIUM       | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
   Saudi Arabian Grand Prix  | MEDIUM       | 35 |  10 |  15 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Saudi Arabian Grand Prix  | MEDIUM       | 35 |  10 |  15 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
+  Saudi Arabian Grand Prix  | MEDIUM       | 35 |  10 |  15 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
   Saudi Arabian Grand Prix  | HARD         |  1 |   1 |  49 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | HARD         |  1 |   1 |  49 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | HARD         |  1 |   1 |  49 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
@@ -292,7 +292,7 @@
   Saudi Arabian Grand Prix  | HARD         | 20 |  10 |  30 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | HARD         | 20 |  10 |  30 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | HARD         | 20 |  10 |  30 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
-  Saudi Arabian Grand Prix  | HARD         | 30 |  20 |  20 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
+  Saudi Arabian Grand Prix  | HARD         | 30 |  20 |  20 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | HARD         | 30 |  20 |  20 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | HARD         | 30 |  20 |  20 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Saudi Arabian Grand Prix  | HARD         | 30 |  20 |  20 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
@@ -317,8 +317,8 @@
   Saudi Arabian Grand Prix  | HARD         | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  15.0 |  85.0 |  85.0
   Saudi Arabian Grand Prix  | HARD         | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.0 |  85.0 |  85.0
   Saudi Arabian Grand Prix  | HARD         | 30 |  15 |  20 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Saudi Arabian Grand Prix  | HARD         | 30 |  15 |  20 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Saudi Arabian Grand Prix  | HARD         | 30 |  15 |  20 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.2 |  54.8 |  54.8
+  Saudi Arabian Grand Prix  | HARD         | 30 |  15 |  20 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
+  Saudi Arabian Grand Prix  | HARD         | 30 |  15 |  20 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
   Saudi Arabian Grand Prix  | HARD         | 30 |  15 |  20 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
   Saudi Arabian Grand Prix  | HARD         | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.2 |  54.8 |  54.8
   Saudi Arabian Grand Prix  | HARD         | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
@@ -336,7 +336,7 @@
   Saudi Arabian Grand Prix  | INTERMEDIATE | 30 |  20 |  20 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  65.1 |  34.9 |  65.1
   Saudi Arabian Grand Prix  | INTERMEDIATE | 30 |  20 |  20 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  65.1 |  34.9 |  65.1
   Saudi Arabian Grand Prix  | INTERMEDIATE | 30 |  20 |  20 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  65.1 |  34.9 |  65.1
-  Saudi Arabian Grand Prix  | INTERMEDIATE | 40 |  30 |  10 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 40 |  30 |  10 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Saudi Arabian Grand Prix  | INTERMEDIATE | 40 |  30 |  10 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Saudi Arabian Grand Prix  | INTERMEDIATE | 40 |  30 |  10 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
   Saudi Arabian Grand Prix  | INTERMEDIATE | 40 |  30 |  10 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
@@ -344,30 +344,30 @@
   Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  40 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  40 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  40 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
   Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 50 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Saudi Arabian Grand Prix  | INTERMEDIATE | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
   Saudi Arabian Grand Prix  | INTERMEDIATE | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  60.1 |  39.9 |  60.1
   Saudi Arabian Grand Prix  | INTERMEDIATE | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
   Saudi Arabian Grand Prix  | INTERMEDIATE | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  60.1 |  39.9 |  60.1
   Saudi Arabian Grand Prix  | INTERMEDIATE | 30 |  15 |  20 |    | R0.5 | Alfa Romeo   | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
-  Saudi Arabian Grand Prix  | INTERMEDIATE | 30 |  15 |  20 |    | R0.5 | Alfa Romeo   | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 30 |  15 |  20 |    | R0.5 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Saudi Arabian Grand Prix  | INTERMEDIATE | 30 |  15 |  20 |    | R0.5 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
   Saudi Arabian Grand Prix  | INTERMEDIATE | 30 |  15 |  20 |    | R0.5 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
-  Saudi Arabian Grand Prix  | INTERMEDIATE | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
-  Saudi Arabian Grand Prix  | INTERMEDIATE | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Saudi Arabian Grand Prix  | INTERMEDIATE | 35 |  10 |  15 |    | R1.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
-  Saudi Arabian Grand Prix  | INTERMEDIATE | 35 |  10 |  15 |    | R1.0 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
-  Saudi Arabian Grand Prix  | WET          |  1 |   1 |  49 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
+  Saudi Arabian Grand Prix  | INTERMEDIATE | 35 |  10 |  15 |    | R1.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
+  Saudi Arabian Grand Prix  | WET          |  1 |   1 |  49 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.0 |  55.0 |  55.0
   Saudi Arabian Grand Prix  | WET          |  1 |   1 |  49 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
-  Saudi Arabian Grand Prix  | WET          |  1 |   1 |  49 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.0 |  55.0 |  55.0
-  Saudi Arabian Grand Prix  | WET          |  1 |   1 |  49 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.0 |  55.0 |  55.0
+  Saudi Arabian Grand Prix  | WET          |  1 |   1 |  49 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
+  Saudi Arabian Grand Prix  | WET          |  1 |   1 |  49 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
   Saudi Arabian Grand Prix  | WET          | 20 |  10 |  30 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
   Saudi Arabian Grand Prix  | WET          | 20 |  10 |  30 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
   Saudi Arabian Grand Prix  | WET          | 20 |  10 |  30 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
@@ -377,9 +377,9 @@
   Saudi Arabian Grand Prix  | WET          | 30 |  20 |  20 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  65.1 |  34.9 |  65.1
   Saudi Arabian Grand Prix  | WET          | 30 |  20 |  20 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  65.1 |  34.9 |  65.1
   Saudi Arabian Grand Prix  | WET          | 40 |  30 |  10 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
-  Saudi Arabian Grand Prix  | WET          | 40 |  30 |  10 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
+  Saudi Arabian Grand Prix  | WET          | 40 |  30 |  10 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Saudi Arabian Grand Prix  | WET          | 40 |  30 |  10 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
-  Saudi Arabian Grand Prix  | WET          | 40 |  30 |  10 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
+  Saudi Arabian Grand Prix  | WET          | 40 |  30 |  10 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Saudi Arabian Grand Prix  | WET          | 50 |  40 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Saudi Arabian Grand Prix  | WET          | 50 |  40 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Saudi Arabian Grand Prix  | WET          | 50 |  40 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
@@ -388,8 +388,8 @@
   Saudi Arabian Grand Prix  | WET          | 50 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Saudi Arabian Grand Prix  | WET          | 50 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Saudi Arabian Grand Prix  | WET          | 50 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Saudi Arabian Grand Prix  | WET          | 50 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Saudi Arabian Grand Prix  | WET          | 50 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Saudi Arabian Grand Prix  | WET          | 50 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
+  Saudi Arabian Grand Prix  | WET          | 50 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Saudi Arabian Grand Prix  | WET          | 50 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Saudi Arabian Grand Prix  | WET          | 50 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Saudi Arabian Grand Prix  | WET          | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
@@ -397,11 +397,11 @@
   Saudi Arabian Grand Prix  | WET          | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
   Saudi Arabian Grand Prix  | WET          | 25 |   5 |  25 | SC | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  60.1 |  39.9 |  60.1
   Saudi Arabian Grand Prix  | WET          | 30 |  15 |  20 |    | R0.5 | Alfa Romeo   | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
-  Saudi Arabian Grand Prix  | WET          | 30 |  15 |  20 |    | R0.5 | Alfa Romeo   | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
+  Saudi Arabian Grand Prix  | WET          | 30 |  15 |  20 |    | R0.5 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Saudi Arabian Grand Prix  | WET          | 30 |  15 |  20 |    | R0.5 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
   Saudi Arabian Grand Prix  | WET          | 30 |  15 |  20 |    | R0.5 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
-  Saudi Arabian Grand Prix  | WET          | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
-  Saudi Arabian Grand Prix  | WET          | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
+  Saudi Arabian Grand Prix  | WET          | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
+  Saudi Arabian Grand Prix  | WET          | 35 |  10 |  15 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Saudi Arabian Grand Prix  | WET          | 35 |  10 |  15 |    | R1.0 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
   Saudi Arabian Grand Prix  | WET          | 35 |  10 |  15 |    | R1.0 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
   Australian Grand Prix     | SOFT         |  1 |   1 |  57 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
@@ -438,9 +438,9 @@
   Australian Grand Prix     | SOFT         | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
   Australian Grand Prix     | SOFT         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
   Australian Grand Prix     | SOFT         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.6 |  54.4 |  54.4
-  Australian Grand Prix     | SOFT         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Australian Grand Prix     | SOFT         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
   Australian Grand Prix     | SOFT         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
-  Australian Grand Prix     | SOFT         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
+  Australian Grand Prix     | SOFT         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
   Australian Grand Prix     | SOFT         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
   Australian Grand Prix     | SOFT         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
   Australian Grand Prix     | SOFT         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
@@ -448,9 +448,9 @@
   Australian Grand Prix     | MEDIUM       |  1 |   1 |  57 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Australian Grand Prix     | MEDIUM       |  1 |   1 |  57 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Australian Grand Prix     | MEDIUM       |  1 |   1 |  57 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
-  Australian Grand Prix     | MEDIUM       | 20 |  10 |  38 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
-  Australian Grand Prix     | MEDIUM       | 20 |  10 |  38 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
-  Australian Grand Prix     | MEDIUM       | 20 |  10 |  38 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
+  Australian Grand Prix     | MEDIUM       | 20 |  10 |  38 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
+  Australian Grand Prix     | MEDIUM       | 20 |  10 |  38 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
+  Australian Grand Prix     | MEDIUM       | 20 |  10 |  38 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
   Australian Grand Prix     | MEDIUM       | 20 |  10 |  38 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
   Australian Grand Prix     | MEDIUM       | 30 |  20 |  28 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
   Australian Grand Prix     | MEDIUM       | 30 |  20 |  28 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
@@ -476,14 +476,14 @@
   Australian Grand Prix     | MEDIUM       | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
   Australian Grand Prix     | MEDIUM       | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  15.1 |  84.9 |  84.9
   Australian Grand Prix     | MEDIUM       | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
-  Australian Grand Prix     | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
-  Australian Grand Prix     | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.6 |  54.4 |  54.4
-  Australian Grand Prix     | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Australian Grand Prix     | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
+  Australian Grand Prix     | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Australian Grand Prix     | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
   Australian Grand Prix     | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
-  Australian Grand Prix     | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
-  Australian Grand Prix     | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Australian Grand Prix     | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Australian Grand Prix     | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
   Australian Grand Prix     | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
-  Australian Grand Prix     | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Australian Grand Prix     | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
   Australian Grand Prix     | HARD         |  1 |   1 |  57 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Australian Grand Prix     | HARD         |  1 |   1 |  57 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Australian Grand Prix     | HARD         |  1 |   1 |  57 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
@@ -492,14 +492,14 @@
   Australian Grand Prix     | HARD         | 20 |  10 |  38 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Australian Grand Prix     | HARD         | 20 |  10 |  38 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Australian Grand Prix     | HARD         | 20 |  10 |  38 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
-  Australian Grand Prix     | HARD         | 30 |  20 |  28 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
+  Australian Grand Prix     | HARD         | 30 |  20 |  28 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
   Australian Grand Prix     | HARD         | 30 |  20 |  28 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
-  Australian Grand Prix     | HARD         | 30 |  20 |  28 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
+  Australian Grand Prix     | HARD         | 30 |  20 |  28 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
   Australian Grand Prix     | HARD         | 30 |  20 |  28 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Australian Grand Prix     | HARD         | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
-  Australian Grand Prix     | HARD         | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
+  Australian Grand Prix     | HARD         | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Australian Grand Prix     | HARD         | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
-  Australian Grand Prix     | HARD         | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
+  Australian Grand Prix     | HARD         | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
   Australian Grand Prix     | HARD         | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
   Australian Grand Prix     | HARD         | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
   Australian Grand Prix     | HARD         | 50 |  40 |   8 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
@@ -517,15 +517,15 @@
   Australian Grand Prix     | HARD         | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  15.0 |  85.0 |  85.0
   Australian Grand Prix     | HARD         | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.0 |  85.0 |  85.0
   Australian Grand Prix     | HARD         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Australian Grand Prix     | HARD         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
+  Australian Grand Prix     | HARD         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
   Australian Grand Prix     | HARD         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
   Australian Grand Prix     | HARD         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
   Australian Grand Prix     | HARD         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Australian Grand Prix     | HARD         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Australian Grand Prix     | HARD         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.2 |  54.8 |  54.8
-  Australian Grand Prix     | HARD         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
+  Australian Grand Prix     | HARD         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
+  Australian Grand Prix     | HARD         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
+  Australian Grand Prix     | HARD         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
   Australian Grand Prix     | INTERMEDIATE |  1 |   1 |  57 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
-  Australian Grand Prix     | INTERMEDIATE |  1 |   1 |  57 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
+  Australian Grand Prix     | INTERMEDIATE |  1 |   1 |  57 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
   Australian Grand Prix     | INTERMEDIATE |  1 |   1 |  57 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
   Australian Grand Prix     | INTERMEDIATE |  1 |   1 |  57 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
   Australian Grand Prix     | INTERMEDIATE | 20 |  10 |  38 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
@@ -537,21 +537,21 @@
   Australian Grand Prix     | INTERMEDIATE | 30 |  20 |  28 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  65.1 |  34.9 |  65.1
   Australian Grand Prix     | INTERMEDIATE | 30 |  20 |  28 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  65.1 |  34.9 |  65.1
   Australian Grand Prix     | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
-  Australian Grand Prix     | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
+  Australian Grand Prix     | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.2 |  14.8 |  85.2
   Australian Grand Prix     | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Australian Grand Prix     | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
-  Australian Grand Prix     | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
-  Australian Grand Prix     | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
+  Australian Grand Prix     | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.2 |  14.8 |  85.2
+  Australian Grand Prix     | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.2 |  14.8 |  85.2
   Australian Grand Prix     | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Australian Grand Prix     | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
-  Australian Grand Prix     | INTERMEDIATE | 58 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Australian Grand Prix     | INTERMEDIATE | 58 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
   Australian Grand Prix     | INTERMEDIATE | 58 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Australian Grand Prix     | INTERMEDIATE | 58 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Australian Grand Prix     | INTERMEDIATE | 58 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Australian Grand Prix     | INTERMEDIATE | 58 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Australian Grand Prix     | INTERMEDIATE | 58 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Australian Grand Prix     | INTERMEDIATE | 58 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Australian Grand Prix     | INTERMEDIATE | 58 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Australian Grand Prix     | INTERMEDIATE | 58 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Australian Grand Prix     | INTERMEDIATE | 58 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Australian Grand Prix     | INTERMEDIATE | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
   Australian Grand Prix     | INTERMEDIATE | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  60.1 |  39.9 |  60.1
   Australian Grand Prix     | INTERMEDIATE | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
@@ -568,28 +568,28 @@
   Australian Grand Prix     | WET          |  1 |   1 |  57 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
   Australian Grand Prix     | WET          |  1 |   1 |  57 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
   Australian Grand Prix     | WET          |  1 |   1 |  57 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
-  Australian Grand Prix     | WET          | 20 |  10 |  38 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.0 |  55.0 |  55.0
+  Australian Grand Prix     | WET          | 20 |  10 |  38 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
   Australian Grand Prix     | WET          | 20 |  10 |  38 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
   Australian Grand Prix     | WET          | 20 |  10 |  38 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.0 |  55.0 |  55.0
   Australian Grand Prix     | WET          | 20 |  10 |  38 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
   Australian Grand Prix     | WET          | 30 |  20 |  28 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  65.1 |  34.9 |  65.1
-  Australian Grand Prix     | WET          | 30 |  20 |  28 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  65.0 |  34.9 |  65.0
+  Australian Grand Prix     | WET          | 30 |  20 |  28 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  65.1 |  34.9 |  65.1
   Australian Grand Prix     | WET          | 30 |  20 |  28 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  65.1 |  34.9 |  65.1
-  Australian Grand Prix     | WET          | 30 |  20 |  28 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  65.0 |  34.9 |  65.0
+  Australian Grand Prix     | WET          | 30 |  20 |  28 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  65.1 |  34.9 |  65.1
   Australian Grand Prix     | WET          | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
-  Australian Grand Prix     | WET          | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
+  Australian Grand Prix     | WET          | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.2 |  14.8 |  85.2
   Australian Grand Prix     | WET          | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Australian Grand Prix     | WET          | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Australian Grand Prix     | WET          | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Australian Grand Prix     | WET          | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Australian Grand Prix     | WET          | 50 |  40 |   8 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Australian Grand Prix     | WET          | 50 |  40 |   8 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
-  Australian Grand Prix     | WET          | 58 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Australian Grand Prix     | WET          | 58 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
   Australian Grand Prix     | WET          | 58 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Australian Grand Prix     | WET          | 58 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Australian Grand Prix     | WET          | 58 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Australian Grand Prix     | WET          | 58 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Australian Grand Prix     | WET          | 58 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Australian Grand Prix     | WET          | 58 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Australian Grand Prix     | WET          | 58 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Australian Grand Prix     | WET          | 58 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Australian Grand Prix     | WET          | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
@@ -616,10 +616,10 @@
   Japanese Grand Prix       | SOFT         | 30 |  20 |  23 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  20.1 |  79.9 |  79.9
   Japanese Grand Prix       | SOFT         | 30 |  20 |  23 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  20.1 |  79.9 |  79.9
   Japanese Grand Prix       | SOFT         | 30 |  20 |  23 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  20.1 |  79.9 |  79.9
-  Japanese Grand Prix       | SOFT         | 40 |  30 |  13 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
-  Japanese Grand Prix       | SOFT         | 40 |  30 |  13 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
+  Japanese Grand Prix       | SOFT         | 40 |  30 |  13 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.1 |  59.9 |  59.9
+  Japanese Grand Prix       | SOFT         | 40 |  30 |  13 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.1 |  59.9 |  59.9
   Japanese Grand Prix       | SOFT         | 40 |  30 |  13 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
-  Japanese Grand Prix       | SOFT         | 40 |  30 |  13 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
+  Japanese Grand Prix       | SOFT         | 40 |  30 |  13 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.1 |  60.0 |  60.0
   Japanese Grand Prix       | SOFT         | 50 |  40 |   3 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
   Japanese Grand Prix       | SOFT         | 50 |  40 |   3 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
   Japanese Grand Prix       | SOFT         | 50 |  40 |   3 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
@@ -636,7 +636,7 @@
   Japanese Grand Prix       | SOFT         | 25 |   5 |  28 | SC | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
   Japanese Grand Prix       | SOFT         | 25 |   5 |  28 | SC | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  15.1 |  84.9 |  84.9
   Japanese Grand Prix       | SOFT         | 25 |   5 |  28 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
-  Japanese Grand Prix       | SOFT         | 30 |  15 |  23 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Japanese Grand Prix       | SOFT         | 30 |  15 |  23 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
   Japanese Grand Prix       | SOFT         | 30 |  15 |  23 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
   Japanese Grand Prix       | SOFT         | 30 |  15 |  23 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
   Japanese Grand Prix       | SOFT         | 30 |  15 |  23 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
@@ -648,17 +648,17 @@
   Japanese Grand Prix       | MEDIUM       |  1 |   1 |  52 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Japanese Grand Prix       | MEDIUM       |  1 |   1 |  52 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Japanese Grand Prix       | MEDIUM       |  1 |   1 |  52 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
-  Japanese Grand Prix       | MEDIUM       | 20 |  10 |  33 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
-  Japanese Grand Prix       | MEDIUM       | 20 |  10 |  33 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
+  Japanese Grand Prix       | MEDIUM       | 20 |  10 |  33 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
+  Japanese Grand Prix       | MEDIUM       | 20 |  10 |  33 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Japanese Grand Prix       | MEDIUM       | 20 |  10 |  33 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
   Japanese Grand Prix       | MEDIUM       | 20 |  10 |  33 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
   Japanese Grand Prix       | MEDIUM       | 30 |  20 |  23 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
   Japanese Grand Prix       | MEDIUM       | 30 |  20 |  23 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Japanese Grand Prix       | MEDIUM       | 30 |  20 |  23 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
   Japanese Grand Prix       | MEDIUM       | 30 |  20 |  23 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
-  Japanese Grand Prix       | MEDIUM       | 40 |  30 |  13 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
-  Japanese Grand Prix       | MEDIUM       | 40 |  30 |  13 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.1 |  60.0 |  60.0
-  Japanese Grand Prix       | MEDIUM       | 40 |  30 |  13 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
+  Japanese Grand Prix       | MEDIUM       | 40 |  30 |  13 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.1 |  59.9 |  59.9
+  Japanese Grand Prix       | MEDIUM       | 40 |  30 |  13 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.1 |  59.9 |  59.9
+  Japanese Grand Prix       | MEDIUM       | 40 |  30 |  13 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.1 |  60.0 |  60.0
   Japanese Grand Prix       | MEDIUM       | 40 |  30 |  13 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.1 |  60.0 |  60.0
   Japanese Grand Prix       | MEDIUM       | 50 |  40 |   3 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
   Japanese Grand Prix       | MEDIUM       | 50 |  40 |   3 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
@@ -676,9 +676,9 @@
   Japanese Grand Prix       | MEDIUM       | 25 |   5 |  28 | SC | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
   Japanese Grand Prix       | MEDIUM       | 25 |   5 |  28 | SC | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  15.1 |  84.9 |  84.9
   Japanese Grand Prix       | MEDIUM       | 25 |   5 |  28 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
-  Japanese Grand Prix       | MEDIUM       | 30 |  15 |  23 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Japanese Grand Prix       | MEDIUM       | 30 |  15 |  23 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
   Japanese Grand Prix       | MEDIUM       | 30 |  15 |  23 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.6 |  54.4 |  54.4
-  Japanese Grand Prix       | MEDIUM       | 30 |  15 |  23 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Japanese Grand Prix       | MEDIUM       | 30 |  15 |  23 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
   Japanese Grand Prix       | MEDIUM       | 30 |  15 |  23 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
   Japanese Grand Prix       | MEDIUM       | 35 |  10 |  18 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
   Japanese Grand Prix       | MEDIUM       | 35 |  10 |  18 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
@@ -692,9 +692,9 @@
   Japanese Grand Prix       | HARD         | 20 |  10 |  33 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Japanese Grand Prix       | HARD         | 20 |  10 |  33 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Japanese Grand Prix       | HARD         | 20 |  10 |  33 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
-  Japanese Grand Prix       | HARD         | 30 |  20 |  23 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
+  Japanese Grand Prix       | HARD         | 30 |  20 |  23 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
   Japanese Grand Prix       | HARD         | 30 |  20 |  23 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
-  Japanese Grand Prix       | HARD         | 30 |  20 |  23 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
+  Japanese Grand Prix       | HARD         | 30 |  20 |  23 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
   Japanese Grand Prix       | HARD         | 30 |  20 |  23 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Japanese Grand Prix       | HARD         | 40 |  30 |  13 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Japanese Grand Prix       | HARD         | 40 |  30 |  13 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
@@ -716,12 +716,12 @@
   Japanese Grand Prix       | HARD         | 25 |   5 |  28 | SC | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  15.0 |  85.0 |  85.0
   Japanese Grand Prix       | HARD         | 25 |   5 |  28 | SC | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  15.0 |  85.0 |  85.0
   Japanese Grand Prix       | HARD         | 25 |   5 |  28 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.0 |  85.0 |  85.0
-  Japanese Grand Prix       | HARD         | 30 |  15 |  23 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
+  Japanese Grand Prix       | HARD         | 30 |  15 |  23 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
   Japanese Grand Prix       | HARD         | 30 |  15 |  23 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Japanese Grand Prix       | HARD         | 30 |  15 |  23 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
+  Japanese Grand Prix       | HARD         | 30 |  15 |  23 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
   Japanese Grand Prix       | HARD         | 30 |  15 |  23 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Japanese Grand Prix       | HARD         | 35 |  10 |  18 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.2 |  54.8 |  54.8
-  Japanese Grand Prix       | HARD         | 35 |  10 |  18 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
+  Japanese Grand Prix       | HARD         | 35 |  10 |  18 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
+  Japanese Grand Prix       | HARD         | 35 |  10 |  18 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
   Japanese Grand Prix       | HARD         | 35 |  10 |  18 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.2 |  54.8 |  54.8
   Japanese Grand Prix       | HARD         | 35 |  10 |  18 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
   Japanese Grand Prix       | INTERMEDIATE |  1 |   1 |  52 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
@@ -740,34 +740,34 @@
   Japanese Grand Prix       | INTERMEDIATE | 40 |  30 |  13 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Japanese Grand Prix       | INTERMEDIATE | 40 |  30 |  13 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Japanese Grand Prix       | INTERMEDIATE | 40 |  30 |  13 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
-  Japanese Grand Prix       | INTERMEDIATE | 50 |  40 |   3 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
-  Japanese Grand Prix       | INTERMEDIATE | 50 |  40 |   3 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Japanese Grand Prix       | INTERMEDIATE | 50 |  40 |   3 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
+  Japanese Grand Prix       | INTERMEDIATE | 50 |  40 |   3 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Japanese Grand Prix       | INTERMEDIATE | 50 |  40 |   3 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
-  Japanese Grand Prix       | INTERMEDIATE | 50 |  40 |   3 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Japanese Grand Prix       | INTERMEDIATE | 53 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Japanese Grand Prix       | INTERMEDIATE | 50 |  40 |   3 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
+  Japanese Grand Prix       | INTERMEDIATE | 53 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Japanese Grand Prix       | INTERMEDIATE | 53 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Japanese Grand Prix       | INTERMEDIATE | 53 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Japanese Grand Prix       | INTERMEDIATE | 53 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Japanese Grand Prix       | INTERMEDIATE | 53 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Japanese Grand Prix       | INTERMEDIATE | 53 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Japanese Grand Prix       | INTERMEDIATE | 53 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Japanese Grand Prix       | INTERMEDIATE | 53 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Japanese Grand Prix       | INTERMEDIATE | 53 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Japanese Grand Prix       | INTERMEDIATE | 53 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Japanese Grand Prix       | INTERMEDIATE | 25 |   5 |  28 | SC | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
   Japanese Grand Prix       | INTERMEDIATE | 25 |   5 |  28 | SC | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  60.1 |  39.9 |  60.1
   Japanese Grand Prix       | INTERMEDIATE | 25 |   5 |  28 | SC | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
   Japanese Grand Prix       | INTERMEDIATE | 25 |   5 |  28 | SC | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  60.1 |  39.9 |  60.1
-  Japanese Grand Prix       | INTERMEDIATE | 30 |  15 |  23 |    | R0.5 | Alfa Romeo   | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
+  Japanese Grand Prix       | INTERMEDIATE | 30 |  15 |  23 |    | R0.5 | Alfa Romeo   | ALB   | STAY OUT |   0.3 |  99.7 |  99.7
   Japanese Grand Prix       | INTERMEDIATE | 30 |  15 |  23 |    | R0.5 | Alfa Romeo   | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
   Japanese Grand Prix       | INTERMEDIATE | 30 |  15 |  23 |    | R0.5 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
   Japanese Grand Prix       | INTERMEDIATE | 30 |  15 |  23 |    | R0.5 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
-  Japanese Grand Prix       | INTERMEDIATE | 35 |  10 |  18 |    | R1.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
-  Japanese Grand Prix       | INTERMEDIATE | 35 |  10 |  18 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
-  Japanese Grand Prix       | INTERMEDIATE | 35 |  10 |  18 |    | R1.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
-  Japanese Grand Prix       | INTERMEDIATE | 35 |  10 |  18 |    | R1.0 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
-  Japanese Grand Prix       | WET          |  1 |   1 |  52 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
+  Japanese Grand Prix       | INTERMEDIATE | 35 |  10 |  18 |    | R1.0 | Alfa Romeo   | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
+  Japanese Grand Prix       | INTERMEDIATE | 35 |  10 |  18 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
+  Japanese Grand Prix       | INTERMEDIATE | 35 |  10 |  18 |    | R1.0 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
+  Japanese Grand Prix       | INTERMEDIATE | 35 |  10 |  18 |    | R1.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
+  Japanese Grand Prix       | WET          |  1 |   1 |  52 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.0 |  55.0 |  55.0
   Japanese Grand Prix       | WET          |  1 |   1 |  52 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
-  Japanese Grand Prix       | WET          |  1 |   1 |  52 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.0 |  55.0 |  55.0
-  Japanese Grand Prix       | WET          |  1 |   1 |  52 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.0 |  55.0 |  55.0
+  Japanese Grand Prix       | WET          |  1 |   1 |  52 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
+  Japanese Grand Prix       | WET          |  1 |   1 |  52 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
   Japanese Grand Prix       | WET          | 20 |  10 |  33 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
   Japanese Grand Prix       | WET          | 20 |  10 |  33 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
   Japanese Grand Prix       | WET          | 20 |  10 |  33 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
@@ -775,21 +775,21 @@
   Japanese Grand Prix       | WET          | 30 |  20 |  23 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  65.1 |  34.9 |  65.1
   Japanese Grand Prix       | WET          | 30 |  20 |  23 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  65.1 |  34.9 |  65.1
   Japanese Grand Prix       | WET          | 30 |  20 |  23 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  65.1 |  34.9 |  65.1
-  Japanese Grand Prix       | WET          | 30 |  20 |  23 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  65.0 |  34.9 |  65.0
+  Japanese Grand Prix       | WET          | 30 |  20 |  23 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  65.1 |  34.9 |  65.1
   Japanese Grand Prix       | WET          | 40 |  30 |  13 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Japanese Grand Prix       | WET          | 40 |  30 |  13 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Japanese Grand Prix       | WET          | 40 |  30 |  13 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Japanese Grand Prix       | WET          | 40 |  30 |  13 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
-  Japanese Grand Prix       | WET          | 50 |  40 |   3 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Japanese Grand Prix       | WET          | 50 |  40 |   3 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Japanese Grand Prix       | WET          | 50 |  40 |   3 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
+  Japanese Grand Prix       | WET          | 50 |  40 |   3 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Japanese Grand Prix       | WET          | 50 |  40 |   3 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
-  Japanese Grand Prix       | WET          | 50 |  40 |   3 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Japanese Grand Prix       | WET          | 53 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Japanese Grand Prix       | WET          | 50 |  40 |   3 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
+  Japanese Grand Prix       | WET          | 53 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
   Japanese Grand Prix       | WET          | 53 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Japanese Grand Prix       | WET          | 53 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Japanese Grand Prix       | WET          | 53 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Japanese Grand Prix       | WET          | 53 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Japanese Grand Prix       | WET          | 53 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Japanese Grand Prix       | WET          | 53 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Japanese Grand Prix       | WET          | 53 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Japanese Grand Prix       | WET          | 53 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Japanese Grand Prix       | WET          | 25 |   5 |  28 | SC | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
@@ -801,7 +801,7 @@
   Japanese Grand Prix       | WET          | 30 |  15 |  23 |    | R0.5 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
   Japanese Grand Prix       | WET          | 30 |  15 |  23 |    | R0.5 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
   Japanese Grand Prix       | WET          | 35 |  10 |  18 |    | R1.0 | Alfa Romeo   | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
-  Japanese Grand Prix       | WET          | 35 |  10 |  18 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
+  Japanese Grand Prix       | WET          | 35 |  10 |  18 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Japanese Grand Prix       | WET          | 35 |  10 |  18 |    | R1.0 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
   Japanese Grand Prix       | WET          | 35 |  10 |  18 |    | R1.0 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
   Chinese Grand Prix        | SOFT         |  1 |   1 |  55 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
@@ -817,9 +817,9 @@
   Chinese Grand Prix        | SOFT         | 30 |  20 |  26 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  20.1 |  79.9 |  79.9
   Chinese Grand Prix        | SOFT         | 30 |  20 |  26 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  20.1 |  79.9 |  79.9
   Chinese Grand Prix        | SOFT         | 40 |  30 |  16 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.1 |  59.9 |  59.9
-  Chinese Grand Prix        | SOFT         | 40 |  30 |  16 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.1 |  60.0 |  60.0
+  Chinese Grand Prix        | SOFT         | 40 |  30 |  16 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.1 |  59.9 |  59.9
   Chinese Grand Prix        | SOFT         | 40 |  30 |  16 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.1 |  59.9 |  59.9
-  Chinese Grand Prix        | SOFT         | 40 |  30 |  16 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.1 |  60.0 |  60.0
+  Chinese Grand Prix        | SOFT         | 40 |  30 |  16 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.1 |  59.9 |  59.9
   Chinese Grand Prix        | SOFT         | 50 |  40 |   6 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
   Chinese Grand Prix        | SOFT         | 50 |  40 |   6 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
   Chinese Grand Prix        | SOFT         | 50 |  40 |   6 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
@@ -836,20 +836,20 @@
   Chinese Grand Prix        | SOFT         | 25 |   5 |  31 | SC | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
   Chinese Grand Prix        | SOFT         | 25 |   5 |  31 | SC | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  15.1 |  84.9 |  84.9
   Chinese Grand Prix        | SOFT         | 25 |   5 |  31 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
-  Chinese Grand Prix        | SOFT         | 30 |  15 |  26 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
+  Chinese Grand Prix        | SOFT         | 30 |  15 |  26 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.7 |  54.3 |  54.3
   Chinese Grand Prix        | SOFT         | 30 |  15 |  26 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.6 |  54.4 |  54.4
-  Chinese Grand Prix        | SOFT         | 30 |  15 |  26 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
-  Chinese Grand Prix        | SOFT         | 30 |  15 |  26 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Chinese Grand Prix        | SOFT         | 30 |  15 |  26 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
+  Chinese Grand Prix        | SOFT         | 30 |  15 |  26 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.6 |  54.4 |  54.4
   Chinese Grand Prix        | SOFT         | 35 |  10 |  21 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
   Chinese Grand Prix        | SOFT         | 35 |  10 |  21 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
   Chinese Grand Prix        | SOFT         | 35 |  10 |  21 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
-  Chinese Grand Prix        | SOFT         | 35 |  10 |  21 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
+  Chinese Grand Prix        | SOFT         | 35 |  10 |  21 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
   Chinese Grand Prix        | MEDIUM       |  1 |   1 |  55 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Chinese Grand Prix        | MEDIUM       |  1 |   1 |  55 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Chinese Grand Prix        | MEDIUM       |  1 |   1 |  55 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Chinese Grand Prix        | MEDIUM       |  1 |   1 |  55 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
-  Chinese Grand Prix        | MEDIUM       | 20 |  10 |  36 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
-  Chinese Grand Prix        | MEDIUM       | 20 |  10 |  36 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
+  Chinese Grand Prix        | MEDIUM       | 20 |  10 |  36 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
+  Chinese Grand Prix        | MEDIUM       | 20 |  10 |  36 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Chinese Grand Prix        | MEDIUM       | 20 |  10 |  36 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
   Chinese Grand Prix        | MEDIUM       | 20 |  10 |  36 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
   Chinese Grand Prix        | MEDIUM       | 30 |  20 |  26 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
@@ -876,10 +876,10 @@
   Chinese Grand Prix        | MEDIUM       | 25 |   5 |  31 | SC | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
   Chinese Grand Prix        | MEDIUM       | 25 |   5 |  31 | SC | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  15.1 |  84.9 |  84.9
   Chinese Grand Prix        | MEDIUM       | 25 |   5 |  31 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
-  Chinese Grand Prix        | MEDIUM       | 30 |  15 |  26 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Chinese Grand Prix        | MEDIUM       | 30 |  15 |  26 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
   Chinese Grand Prix        | MEDIUM       | 30 |  15 |  26 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.6 |  54.4 |  54.4
-  Chinese Grand Prix        | MEDIUM       | 30 |  15 |  26 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
-  Chinese Grand Prix        | MEDIUM       | 30 |  15 |  26 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Chinese Grand Prix        | MEDIUM       | 30 |  15 |  26 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
+  Chinese Grand Prix        | MEDIUM       | 30 |  15 |  26 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.6 |  54.4 |  54.4
   Chinese Grand Prix        | MEDIUM       | 35 |  10 |  21 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
   Chinese Grand Prix        | MEDIUM       | 35 |  10 |  21 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
   Chinese Grand Prix        | MEDIUM       | 35 |  10 |  21 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
@@ -894,7 +894,7 @@
   Chinese Grand Prix        | HARD         | 20 |  10 |  36 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Chinese Grand Prix        | HARD         | 30 |  20 |  26 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
   Chinese Grand Prix        | HARD         | 30 |  20 |  26 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
-  Chinese Grand Prix        | HARD         | 30 |  20 |  26 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
+  Chinese Grand Prix        | HARD         | 30 |  20 |  26 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
   Chinese Grand Prix        | HARD         | 30 |  20 |  26 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Chinese Grand Prix        | HARD         | 40 |  30 |  16 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Chinese Grand Prix        | HARD         | 40 |  30 |  16 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
@@ -920,7 +920,7 @@
   Chinese Grand Prix        | HARD         | 30 |  15 |  26 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
   Chinese Grand Prix        | HARD         | 30 |  15 |  26 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
   Chinese Grand Prix        | HARD         | 30 |  15 |  26 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Chinese Grand Prix        | HARD         | 35 |  10 |  21 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.2 |  54.8 |  54.8
+  Chinese Grand Prix        | HARD         | 35 |  10 |  21 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
   Chinese Grand Prix        | HARD         | 35 |  10 |  21 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
   Chinese Grand Prix        | HARD         | 35 |  10 |  21 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.2 |  54.8 |  54.8
   Chinese Grand Prix        | HARD         | 35 |  10 |  21 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
@@ -940,18 +940,18 @@
   Chinese Grand Prix        | INTERMEDIATE | 40 |  30 |  16 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Chinese Grand Prix        | INTERMEDIATE | 40 |  30 |  16 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Chinese Grand Prix        | INTERMEDIATE | 40 |  30 |  16 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
-  Chinese Grand Prix        | INTERMEDIATE | 50 |  40 |   6 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Chinese Grand Prix        | INTERMEDIATE | 50 |  40 |   6 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Chinese Grand Prix        | INTERMEDIATE | 50 |  40 |   6 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
+  Chinese Grand Prix        | INTERMEDIATE | 50 |  40 |   6 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Chinese Grand Prix        | INTERMEDIATE | 50 |  40 |   6 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
-  Chinese Grand Prix        | INTERMEDIATE | 50 |  40 |   6 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Chinese Grand Prix        | INTERMEDIATE | 56 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Chinese Grand Prix        | INTERMEDIATE | 50 |  40 |   6 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
+  Chinese Grand Prix        | INTERMEDIATE | 56 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Chinese Grand Prix        | INTERMEDIATE | 56 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Chinese Grand Prix        | INTERMEDIATE | 56 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Chinese Grand Prix        | INTERMEDIATE | 56 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Chinese Grand Prix        | INTERMEDIATE | 56 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Chinese Grand Prix        | INTERMEDIATE | 56 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Chinese Grand Prix        | INTERMEDIATE | 56 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Chinese Grand Prix        | INTERMEDIATE | 56 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Chinese Grand Prix        | INTERMEDIATE | 56 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Chinese Grand Prix        | INTERMEDIATE | 56 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Chinese Grand Prix        | INTERMEDIATE | 25 |   5 |  31 | SC | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
   Chinese Grand Prix        | INTERMEDIATE | 25 |   5 |  31 | SC | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  60.1 |  39.9 |  60.1
   Chinese Grand Prix        | INTERMEDIATE | 25 |   5 |  31 | SC | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
@@ -960,17 +960,17 @@
   Chinese Grand Prix        | INTERMEDIATE | 30 |  15 |  26 |    | R0.5 | Alfa Romeo   | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
   Chinese Grand Prix        | INTERMEDIATE | 30 |  15 |  26 |    | R0.5 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
   Chinese Grand Prix        | INTERMEDIATE | 30 |  15 |  26 |    | R0.5 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
-  Chinese Grand Prix        | INTERMEDIATE | 35 |  10 |  21 |    | R1.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
-  Chinese Grand Prix        | INTERMEDIATE | 35 |  10 |  21 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
-  Chinese Grand Prix        | INTERMEDIATE | 35 |  10 |  21 |    | R1.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
-  Chinese Grand Prix        | INTERMEDIATE | 35 |  10 |  21 |    | R1.0 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
+  Chinese Grand Prix        | INTERMEDIATE | 35 |  10 |  21 |    | R1.0 | Alfa Romeo   | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
+  Chinese Grand Prix        | INTERMEDIATE | 35 |  10 |  21 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
+  Chinese Grand Prix        | INTERMEDIATE | 35 |  10 |  21 |    | R1.0 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
+  Chinese Grand Prix        | INTERMEDIATE | 35 |  10 |  21 |    | R1.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Chinese Grand Prix        | WET          |  1 |   1 |  55 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
   Chinese Grand Prix        | WET          |  1 |   1 |  55 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
-  Chinese Grand Prix        | WET          |  1 |   1 |  55 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.0 |  55.0 |  55.0
-  Chinese Grand Prix        | WET          |  1 |   1 |  55 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.0 |  55.0 |  55.0
-  Chinese Grand Prix        | WET          | 20 |  10 |  36 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.0 |  55.0 |  55.0
+  Chinese Grand Prix        | WET          |  1 |   1 |  55 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
+  Chinese Grand Prix        | WET          |  1 |   1 |  55 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
+  Chinese Grand Prix        | WET          | 20 |  10 |  36 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
   Chinese Grand Prix        | WET          | 20 |  10 |  36 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
-  Chinese Grand Prix        | WET          | 20 |  10 |  36 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.0 |  55.0 |  55.0
+  Chinese Grand Prix        | WET          | 20 |  10 |  36 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.1 |  54.9 |  54.9
   Chinese Grand Prix        | WET          | 20 |  10 |  36 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.1 |  54.9 |  54.9
   Chinese Grand Prix        | WET          | 30 |  20 |  26 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  65.1 |  34.9 |  65.1
   Chinese Grand Prix        | WET          | 30 |  20 |  26 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  65.1 |  34.9 |  65.1
@@ -980,16 +980,16 @@
   Chinese Grand Prix        | WET          | 40 |  30 |  16 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Chinese Grand Prix        | WET          | 40 |  30 |  16 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
   Chinese Grand Prix        | WET          | 40 |  30 |  16 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
-  Chinese Grand Prix        | WET          | 50 |  40 |   6 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Chinese Grand Prix        | WET          | 50 |  40 |   6 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Chinese Grand Prix        | WET          | 50 |  40 |   6 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
+  Chinese Grand Prix        | WET          | 50 |  40 |   6 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Chinese Grand Prix        | WET          | 50 |  40 |   6 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Chinese Grand Prix        | WET          | 50 |  40 |   6 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Chinese Grand Prix        | WET          | 56 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Chinese Grand Prix        | WET          | 50 |  40 |   6 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
+  Chinese Grand Prix        | WET          | 56 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
   Chinese Grand Prix        | WET          | 56 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Chinese Grand Prix        | WET          | 56 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Chinese Grand Prix        | WET          | 56 |  50 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Chinese Grand Prix        | WET          | 56 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Chinese Grand Prix        | WET          | 56 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Chinese Grand Prix        | WET          | 56 |  55 |   0 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Chinese Grand Prix        | WET          | 56 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Chinese Grand Prix        | WET          | 56 |  55 |   0 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Chinese Grand Prix        | WET          | 25 |   5 |  31 | SC | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  60.1 |  39.9 |  60.1
@@ -1001,17 +1001,17 @@
   Chinese Grand Prix        | WET          | 30 |  15 |  26 |    | R0.5 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
   Chinese Grand Prix        | WET          | 30 |  15 |  26 |    | R0.5 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
   Chinese Grand Prix        | WET          | 35 |  10 |  21 |    | R1.0 | Alfa Romeo   | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
-  Chinese Grand Prix        | WET          | 35 |  10 |  21 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
+  Chinese Grand Prix        | WET          | 35 |  10 |  21 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
   Chinese Grand Prix        | WET          | 35 |  10 |  21 |    | R1.0 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
   Chinese Grand Prix        | WET          | 35 |  10 |  21 |    | R1.0 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
   Abu Dhabi Grand Prix      | SOFT         |  1 |   1 |  57 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Abu Dhabi Grand Prix      | SOFT         |  1 |   1 |  57 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Abu Dhabi Grand Prix      | SOFT         |  1 |   1 |  57 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Abu Dhabi Grand Prix      | SOFT         |  1 |   1 |  57 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
-  Abu Dhabi Grand Prix      | SOFT         | 20 |  10 |  38 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
+  Abu Dhabi Grand Prix      | SOFT         | 20 |  10 |  38 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Abu Dhabi Grand Prix      | SOFT         | 20 |  10 |  38 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
-  Abu Dhabi Grand Prix      | SOFT         | 20 |  10 |  38 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
-  Abu Dhabi Grand Prix      | SOFT         | 20 |  10 |  38 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
+  Abu Dhabi Grand Prix      | SOFT         | 20 |  10 |  38 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.1 | 100.0 | 100.0
+  Abu Dhabi Grand Prix      | SOFT         | 20 |  10 |  38 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
   Abu Dhabi Grand Prix      | SOFT         | 30 |  20 |  28 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |  20.1 |  79.9 |  79.9
   Abu Dhabi Grand Prix      | SOFT         | 30 |  20 |  28 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  20.1 |  79.9 |  79.9
   Abu Dhabi Grand Prix      | SOFT         | 30 |  20 |  28 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  20.1 |  79.9 |  79.9
@@ -1038,12 +1038,12 @@
   Abu Dhabi Grand Prix      | SOFT         | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
   Abu Dhabi Grand Prix      | SOFT         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
   Abu Dhabi Grand Prix      | SOFT         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
-  Abu Dhabi Grand Prix      | SOFT         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
-  Abu Dhabi Grand Prix      | SOFT         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
-  Abu Dhabi Grand Prix      | SOFT         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
-  Abu Dhabi Grand Prix      | SOFT         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
+  Abu Dhabi Grand Prix      | SOFT         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
+  Abu Dhabi Grand Prix      | SOFT         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.6 |  54.4 |  54.4
+  Abu Dhabi Grand Prix      | SOFT         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.6 |  54.4 |  54.4
+  Abu Dhabi Grand Prix      | SOFT         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
   Abu Dhabi Grand Prix      | SOFT         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
-  Abu Dhabi Grand Prix      | SOFT         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
+  Abu Dhabi Grand Prix      | SOFT         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
   Abu Dhabi Grand Prix      | MEDIUM       |  1 |   1 |  57 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Abu Dhabi Grand Prix      | MEDIUM       |  1 |   1 |  57 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Abu Dhabi Grand Prix      | MEDIUM       |  1 |   1 |  57 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
@@ -1060,7 +1060,7 @@
   Abu Dhabi Grand Prix      | MEDIUM       | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.1 |  59.9 |  59.9
   Abu Dhabi Grand Prix      | MEDIUM       | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.1 |  59.9 |  59.9
   Abu Dhabi Grand Prix      | MEDIUM       | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.1 |  59.9 |  59.9
-  Abu Dhabi Grand Prix      | MEDIUM       | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
+  Abu Dhabi Grand Prix      | MEDIUM       | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.1 |  60.0 |  60.0
   Abu Dhabi Grand Prix      | MEDIUM       | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
   Abu Dhabi Grand Prix      | MEDIUM       | 50 |  40 |   8 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
   Abu Dhabi Grand Prix      | MEDIUM       | 50 |  40 |   8 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
@@ -1078,12 +1078,12 @@
   Abu Dhabi Grand Prix      | MEDIUM       | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
   Abu Dhabi Grand Prix      | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
   Abu Dhabi Grand Prix      | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
-  Abu Dhabi Grand Prix      | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
-  Abu Dhabi Grand Prix      | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
+  Abu Dhabi Grand Prix      | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Abu Dhabi Grand Prix      | MEDIUM       | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
   Abu Dhabi Grand Prix      | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
-  Abu Dhabi Grand Prix      | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
-  Abu Dhabi Grand Prix      | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
-  Abu Dhabi Grand Prix      | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.4 |  54.6 |  54.6
+  Abu Dhabi Grand Prix      | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Abu Dhabi Grand Prix      | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.5 |  54.5 |  54.5
+  Abu Dhabi Grand Prix      | MEDIUM       | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.5 |  54.5 |  54.5
   Abu Dhabi Grand Prix      | HARD         |  1 |   1 |  57 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Abu Dhabi Grand Prix      | HARD         |  1 |   1 |  57 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Abu Dhabi Grand Prix      | HARD         |  1 |   1 |  57 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
@@ -1099,7 +1099,7 @@
   Abu Dhabi Grand Prix      | HARD         | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
   Abu Dhabi Grand Prix      | HARD         | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
   Abu Dhabi Grand Prix      | HARD         | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALB   | STAY OUT |   0.0 | 100.0 | 100.0
-  Abu Dhabi Grand Prix      | HARD         | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.0 | 100.0 | 100.0
+  Abu Dhabi Grand Prix      | HARD         | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALO   | STAY OUT |   0.1 | 100.0 | 100.0
   Abu Dhabi Grand Prix      | HARD         | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
   Abu Dhabi Grand Prix      | HARD         | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  40.0 |  60.0 |  60.0
   Abu Dhabi Grand Prix      | HARD         | 50 |  40 |   8 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  40.0 |  60.0 |  60.0
@@ -1115,11 +1115,11 @@
   Abu Dhabi Grand Prix      | HARD         | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo   | ALB   | STAY OUT |  15.1 |  84.9 |  84.9
   Abu Dhabi Grand Prix      | HARD         | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo   | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
   Abu Dhabi Grand Prix      | HARD         | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo R | ALB   | STAY OUT |  15.1 |  84.9 |  84.9
-  Abu Dhabi Grand Prix      | HARD         | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.0 |  85.0 |  85.0
+  Abu Dhabi Grand Prix      | HARD         | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo R | ALO   | STAY OUT |  15.1 |  84.9 |  84.9
   Abu Dhabi Grand Prix      | HARD         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Abu Dhabi Grand Prix      | HARD         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Abu Dhabi Grand Prix      | HARD         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
-  Abu Dhabi Grand Prix      | HARD         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
+  Abu Dhabi Grand Prix      | HARD         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALO   | PIT NOW  |  45.2 |  54.8 |  54.8
+  Abu Dhabi Grand Prix      | HARD         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALB   | PIT NOW  |  45.4 |  54.6 |  54.6
+  Abu Dhabi Grand Prix      | HARD         | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
   Abu Dhabi Grand Prix      | HARD         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
   Abu Dhabi Grand Prix      | HARD         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALO   | PIT NOW  |  45.3 |  54.7 |  54.7
   Abu Dhabi Grand Prix      | HARD         | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALB   | PIT NOW  |  45.3 |  54.7 |  54.7
@@ -1137,11 +1137,11 @@
   Abu Dhabi Grand Prix      | INTERMEDIATE | 30 |  20 |  28 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  65.0 |  34.9 |  65.0
   Abu Dhabi Grand Prix      | INTERMEDIATE | 30 |  20 |  28 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  65.0 |  35.0 |  65.0
   Abu Dhabi Grand Prix      | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Abu Dhabi Grand Prix      | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Abu Dhabi Grand Prix      | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Abu Dhabi Grand Prix      | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Abu Dhabi Grand Prix      | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Abu Dhabi Grand Prix      | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.1 |  14.9 |  85.1
+  Abu Dhabi Grand Prix      | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.1 |  14.9 |  85.1
   Abu Dhabi Grand Prix      | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Abu Dhabi Grand Prix      | INTERMEDIATE | 50 |  40 |   8 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Abu Dhabi Grand Prix      | INTERMEDIATE | 58 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
@@ -1174,14 +1174,14 @@
   Abu Dhabi Grand Prix      | WET          | 20 |  10 |  38 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  45.0 |  55.0 |  55.0
   Abu Dhabi Grand Prix      | WET          | 30 |  20 |  28 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  65.0 |  35.0 |  65.0
   Abu Dhabi Grand Prix      | WET          | 30 |  20 |  28 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  65.0 |  35.0 |  65.0
-  Abu Dhabi Grand Prix      | WET          | 30 |  20 |  28 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  65.0 |  35.0 |  65.0
+  Abu Dhabi Grand Prix      | WET          | 30 |  20 |  28 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  65.0 |  34.9 |  65.0
   Abu Dhabi Grand Prix      | WET          | 30 |  20 |  28 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  65.0 |  35.0 |  65.0
   Abu Dhabi Grand Prix      | WET          | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Abu Dhabi Grand Prix      | WET          | 40 |  30 |  18 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Abu Dhabi Grand Prix      | WET          | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Abu Dhabi Grand Prix      | WET          | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Abu Dhabi Grand Prix      | WET          | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
-  Abu Dhabi Grand Prix      | WET          | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
+  Abu Dhabi Grand Prix      | WET          | 40 |  30 |  18 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
+  Abu Dhabi Grand Prix      | WET          | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  14.9 |  85.0
+  Abu Dhabi Grand Prix      | WET          | 50 |  40 |   8 |    | R0.0 | Alfa Romeo   | ALO   | PIT NOW  |  85.0 |  14.9 |  85.0
   Abu Dhabi Grand Prix      | WET          | 50 |  40 |   8 |    | R0.0 | Alfa Romeo R | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
   Abu Dhabi Grand Prix      | WET          | 50 |  40 |   8 |    | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  85.0 |  15.0 |  85.0
   Abu Dhabi Grand Prix      | WET          | 58 |  50 |   0 |    | R0.0 | Alfa Romeo   | ALB   | PIT NOW  |  85.0 |  15.0 |  85.0
@@ -1198,8 +1198,8 @@
   Abu Dhabi Grand Prix      | WET          | 25 |   5 |  33 | SC | R0.0 | Alfa Romeo R | ALO   | PIT NOW  |  60.1 |  39.9 |  60.1
   Abu Dhabi Grand Prix      | WET          | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
   Abu Dhabi Grand Prix      | WET          | 30 |  15 |  28 |    | R0.5 | Alfa Romeo   | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
-  Abu Dhabi Grand Prix      | WET          | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALB   | STAY OUT |   0.1 |  99.9 |  99.9
-  Abu Dhabi Grand Prix      | WET          | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALO   | STAY OUT |   0.1 |  99.9 |  99.9
+  Abu Dhabi Grand Prix      | WET          | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
+  Abu Dhabi Grand Prix      | WET          | 30 |  15 |  28 |    | R0.5 | Alfa Romeo R | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
   Abu Dhabi Grand Prix      | WET          | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
   Abu Dhabi Grand Prix      | WET          | 35 |  10 |  23 |    | R1.0 | Alfa Romeo   | ALO   | STAY OUT |   0.2 |  99.8 |  99.8
   Abu Dhabi Grand Prix      | WET          | 35 |  10 |  23 |    | R1.0 | Alfa Romeo R | ALB   | STAY OUT |   0.2 |  99.8 |  99.8
@@ -1209,25 +1209,25 @@
   Circuit | Compound | Decision | PitProb% | Confidence%
   ----------------------------------------------------------------------------
   Bahrain Grand Prix             | SOFT         | STAY OUT |   0.1 |  99.9
-  Bahrain Grand Prix             | MEDIUM       | STAY OUT |   0.1 | 100.0
+  Bahrain Grand Prix             | MEDIUM       | STAY OUT |   0.1 |  99.9
   Bahrain Grand Prix             | HARD         | STAY OUT |   0.0 | 100.0
   Bahrain Grand Prix             | INTERMEDIATE | PIT NOW  |  45.1 |  54.9
-  Bahrain Grand Prix             | WET          | PIT NOW  |  45.0 |  55.0
+  Bahrain Grand Prix             | WET          | PIT NOW  |  45.1 |  54.9
   Saudi Arabian Grand Prix       | SOFT         | STAY OUT |   0.1 | 100.0
   Saudi Arabian Grand Prix       | MEDIUM       | STAY OUT |   0.1 | 100.0
   Saudi Arabian Grand Prix       | HARD         | STAY OUT |   0.0 | 100.0
   Saudi Arabian Grand Prix       | INTERMEDIATE | PIT NOW  |  45.1 |  54.9
-  Saudi Arabian Grand Prix       | WET          | PIT NOW  |  45.1 |  54.9
+  Saudi Arabian Grand Prix       | WET          | PIT NOW  |  45.0 |  55.0
   Australian Grand Prix          | SOFT         | STAY OUT |   0.1 |  99.9
-  Australian Grand Prix          | MEDIUM       | STAY OUT |   0.1 | 100.0
+  Australian Grand Prix          | MEDIUM       | STAY OUT |   0.1 |  99.9
   Australian Grand Prix          | HARD         | STAY OUT |   0.0 | 100.0
   Australian Grand Prix          | INTERMEDIATE | PIT NOW  |  45.1 |  54.9
   Australian Grand Prix          | WET          | PIT NOW  |  45.0 |  55.0
-  Japanese Grand Prix            | SOFT         | STAY OUT |   0.1 | 100.0
-  Japanese Grand Prix            | MEDIUM       | STAY OUT |   0.1 | 100.0
+  Japanese Grand Prix            | SOFT         | STAY OUT |   0.1 |  99.9
+  Japanese Grand Prix            | MEDIUM       | STAY OUT |   0.1 |  99.9
   Japanese Grand Prix            | HARD         | STAY OUT |   0.0 | 100.0
   Japanese Grand Prix            | INTERMEDIATE | PIT NOW  |  45.1 |  54.9
-  Japanese Grand Prix            | WET          | PIT NOW  |  45.0 |  55.0
+  Japanese Grand Prix            | WET          | PIT NOW  |  45.1 |  54.9
   Chinese Grand Prix             | SOFT         | STAY OUT |   0.1 |  99.9
   Chinese Grand Prix             | MEDIUM       | STAY OUT |   0.1 |  99.9
   Chinese Grand Prix             | HARD         | STAY OUT |   0.0 | 100.0
@@ -1243,8 +1243,8 @@
   Emilia Romagna Grand Prix      | HARD         | STAY OUT |   0.0 | 100.0
   Emilia Romagna Grand Prix      | INTERMEDIATE | PIT NOW  |  45.1 |  54.9
   Emilia Romagna Grand Prix      | WET          | PIT NOW  |  45.1 |  54.9
-  Monaco Grand Prix              | SOFT         | STAY OUT |   0.1 | 100.0
-  Monaco Grand Prix              | MEDIUM       | STAY OUT |   0.0 | 100.0
+  Monaco Grand Prix              | SOFT         | STAY OUT |   0.1 |  99.9
+  Monaco Grand Prix              | MEDIUM       | STAY OUT |   0.1 | 100.0
   Monaco Grand Prix              | HARD         | STAY OUT |   0.0 | 100.0
   Monaco Grand Prix              | INTERMEDIATE | PIT NOW  |  45.0 |  55.0
   Monaco Grand Prix              | WET          | PIT NOW  |  45.0 |  55.0
@@ -1253,8 +1253,8 @@
   Canadian Grand Prix            | HARD         | STAY OUT |   0.0 | 100.0
   Canadian Grand Prix            | INTERMEDIATE | PIT NOW  |  45.0 |  55.0
   Canadian Grand Prix            | WET          | PIT NOW  |  45.0 |  55.0
-  Spanish Grand Prix             | SOFT         | STAY OUT |   0.1 | 100.0
-  Spanish Grand Prix             | MEDIUM       | STAY OUT |   0.0 | 100.0
+  Spanish Grand Prix             | SOFT         | STAY OUT |   0.1 |  99.9
+  Spanish Grand Prix             | MEDIUM       | STAY OUT |   0.1 | 100.0
   Spanish Grand Prix             | HARD         | STAY OUT |   0.0 | 100.0
   Spanish Grand Prix             | INTERMEDIATE | PIT NOW  |  45.0 |  55.0
   Spanish Grand Prix             | WET          | PIT NOW  |  45.0 |  55.0
@@ -1284,7 +1284,7 @@
   Dutch Grand Prix               | INTERMEDIATE | PIT NOW  |  45.0 |  55.0
   Dutch Grand Prix               | WET          | PIT NOW  |  45.0 |  55.0
   Italian Grand Prix             | SOFT         | STAY OUT |   0.0 | 100.0
-  Italian Grand Prix             | MEDIUM       | STAY OUT |   0.1 | 100.0
+  Italian Grand Prix             | MEDIUM       | STAY OUT |   0.0 | 100.0
   Italian Grand Prix             | HARD         | STAY OUT |   0.0 | 100.0
   Italian Grand Prix             | INTERMEDIATE | PIT NOW  |  45.0 |  55.0
   Italian Grand Prix             | WET          | PIT NOW  |  45.0 |  55.0
@@ -1293,22 +1293,22 @@
   Azerbaijan Grand Prix          | HARD         | STAY OUT |   0.0 | 100.0
   Azerbaijan Grand Prix          | INTERMEDIATE | PIT NOW  |  45.0 |  55.0
   Azerbaijan Grand Prix          | WET          | PIT NOW  |  45.0 |  55.0
-  Singapore Grand Prix           | SOFT         | STAY OUT |   0.1 | 100.0
-  Singapore Grand Prix           | MEDIUM       | STAY OUT |   0.1 | 100.0
+  Singapore Grand Prix           | SOFT         | STAY OUT |   0.1 |  99.9
+  Singapore Grand Prix           | MEDIUM       | STAY OUT |   0.1 |  99.9
   Singapore Grand Prix           | HARD         | STAY OUT |   0.0 | 100.0
   Singapore Grand Prix           | INTERMEDIATE | PIT NOW  |  45.0 |  55.0
   Singapore Grand Prix           | WET          | PIT NOW  |  45.0 |  55.0
   United States Grand Prix       | SOFT         | STAY OUT |   0.1 | 100.0
-  United States Grand Prix       | MEDIUM       | STAY OUT |   0.0 | 100.0
+  United States Grand Prix       | MEDIUM       | STAY OUT |   0.1 | 100.0
   United States Grand Prix       | HARD         | STAY OUT |   0.0 | 100.0
   United States Grand Prix       | INTERMEDIATE | PIT NOW  |  45.0 |  55.0
   United States Grand Prix       | WET          | PIT NOW  |  45.0 |  55.0
-  Mexico City Grand Prix         | SOFT         | STAY OUT |   0.1 | 100.0
+  Mexico City Grand Prix         | SOFT         | STAY OUT |   0.1 |  99.9
   Mexico City Grand Prix         | MEDIUM       | STAY OUT |   0.0 | 100.0
   Mexico City Grand Prix         | HARD         | STAY OUT |   0.0 | 100.0
   Mexico City Grand Prix         | INTERMEDIATE | PIT NOW  |  45.0 |  55.0
   Mexico City Grand Prix         | WET          | PIT NOW  |  45.0 |  55.0
-  São Paulo Grand Prix           | SOFT         | STAY OUT |   0.1 | 100.0
+  São Paulo Grand Prix           | SOFT         | STAY OUT |   0.0 | 100.0
   São Paulo Grand Prix           | MEDIUM       | STAY OUT |   0.0 | 100.0
   São Paulo Grand Prix           | HARD         | STAY OUT |   0.0 | 100.0
   São Paulo Grand Prix           | INTERMEDIATE | PIT NOW  |  45.0 |  55.0
@@ -2162,84 +2162,100 @@
 ================================================================================
 
 --- Driver Standings ---
-  Season: 2025 (final — new season not started)  |  Drivers returned: 21
+  Season: current  |  Drivers returned: 23
   Pos | Code | Driver | Team | Points | Wins
   ----------------------------------------------------------------------------
-  1 | NOR | Lando Norris | McLaren | 423.0 | 7
-  2 | VER | Max Verstappen | Red Bull | 421.0 | 8
-  3 | PIA | Oscar Piastri | McLaren | 410.0 | 7
-  4 | RUS | George Russell | Mercedes | 319.0 | 2
-  5 | LEC | Charles Leclerc | Ferrari | 242.0 | 0
-  6 | HAM | Lewis Hamilton | Ferrari | 156.0 | 0
-  7 | ANT | Andrea Kimi Antonell | Mercedes | 150.0 | 0
-  8 | ALB | Alexander Albon | Williams | 73.0 | 0
-  9 | SAI | Carlos Sainz | Williams | 64.0 | 0
-  10 | ALO | Fernando Alonso | Aston Martin | 56.0 | 0
-  11 | HUL | Nico Hülkenberg | Sauber | 51.0 | 0
-  12 | HAD | Isack Hadjar | RB F1 Team | 51.0 | 0
-  13 | BEA | Oliver Bearman | Haas F1 Team | 41.0 | 0
-  14 | LAW | Liam Lawson | Red Bull | 38.0 | 0
-  15 | OCO | Esteban Ocon | Haas F1 Team | 38.0 | 0
-  16 | STR | Lance Stroll | Aston Martin | 33.0 | 0
-  17 | TSU | Yuki Tsunoda | RB F1 Team | 33.0 | 0
-  18 | GAS | Pierre Gasly | Alpine F1 Team | 22.0 | 0
-  19 | BOR | Gabriel Bortoleto | Sauber | 19.0 | 0
-  20 | COL | Franco Colapinto | Alpine F1 Team | 0.0 | 0
-  21 | DOO | Jack Doohan | Alpine F1 Team | 0.0 | 0
+  1 | ANT | Andrea Kimi Antonell | Mercedes | 302.0 | 8
+  2 | RUS | George Russell | Mercedes | 236.0 | 3
+  3 | HAM | Lewis Hamilton | Ferrari | 199.0 | 1
+  4 | NOR | Lando Norris | McLaren | 186.0 | 2
+  5 | LEC | Charles Leclerc | Ferrari | 179.0 | 1
+  6 | VER | Max Verstappen | Red Bull | 163.0 | 0
+  7 | PIA | Oscar Piastri | McLaren | 120.0 | 0
+  8 | HAD | Isack Hadjar | Red Bull | 86.0 | 0
+  9 | LAW | Liam Lawson | RB F1 Team | 59.0 | 0
+  10 | GAS | Pierre Gasly | Alpine F1 Team | 41.0 | 0
+  11 | LIN | Arvid Lindblad | RB F1 Team | 37.0 | 0
+  12 | COL | Franco Colapinto | Alpine F1 Team | 27.0 | 0
+  13 | BEA | Oliver Bearman | Haas F1 Team | 20.0 | 0
+  14 | BOR | Gabriel Bortoleto | Audi | 10.0 | 0
+  15 | HUL | Nico Hülkenberg | Audi | 7.0 | 0
+  16 | OCO | Esteban Ocon | Haas F1 Team | 7.0 | 0
+  17 | SAI | Carlos Sainz | Williams | 7.0 | 0
+  18 | ALB | Alexander Albon | Williams | 5.0 | 0
+  19 | ALO | Fernando Alonso | Aston Martin | 3.0 | 0
+  20 | TSU | Yuki Tsunoda | RB F1 Team | 1.0 | 0
+  21 | STR | Lance Stroll | Aston Martin | 0.0 | 0
+  22 | BOT | Valtteri Bottas | Cadillac F1 Team | 0.0 | 0
+  23 | PER | Sergio Pérez | Cadillac F1 Team | 0.0 | 0
 
 --- Constructor Standings ---
-  Season: 2025 (final — new season not started)  |  Teams returned: 10
+  Season: current  |  Teams returned: 11
   Pos | Team | Points | Wins
   ----------------------------------------------------------------------------
-  1 | McLaren | 833.0 | 14
-  2 | Mercedes | 469.0 | 2
-  3 | Red Bull | 451.0 | 8
-  4 | Ferrari | 398.0 | 0
-  5 | Williams | 137.0 | 0
-  6 | RB F1 Team | 92.0 | 0
-  7 | Aston Martin | 89.0 | 0
-  8 | Haas F1 Team | 79.0 | 0
-  9 | Sauber | 70.0 | 0
-  10 | Alpine F1 Team | 22.0 | 0
+  1 | Mercedes | 538.0 | 11
+  2 | Ferrari | 378.0 | 2
+  3 | McLaren | 306.0 | 2
+  4 | Red Bull | 263.0 | 0
+  5 | RB F1 Team | 83.0 | 0
+  6 | Alpine F1 Team | 68.0 | 0
+  7 | Haas F1 Team | 27.0 | 0
+  8 | Audi | 17.0 | 0
+  9 | Williams | 12.0 | 0
+  10 | Aston Martin | 3.0 | 0
+  11 | Cadillac F1 Team | 0.0 | 0
 
 --- Last Race Results ---
   No last race data available (pre-season or API offline)
 
 --- Season Calendar ---
-  Rounds returned: 24
+  Rounds returned: 23
   Rd | Race | Country | Date | Status
   ----------------------------------------------------------------------------
-  1 | Australian Grand Prix | Australia | 2026-03-08 | next
-  2 | Chinese Grand Prix | China | 2026-03-15 | upcoming
-  3 | Japanese Grand Prix | Japan | 2026-03-29 | upcoming
-  4 | Bahrain Grand Prix | Bahrain | 2026-04-12 | upcoming
-  5 | Saudi Arabian Grand Prix | Saudi Arabia | 2026-04-19 | upcoming
-  6 | Miami Grand Prix | USA | 2026-05-03 | upcoming
-  7 | Canadian Grand Prix | Canada | 2026-05-24 | upcoming
-  8 | Monaco Grand Prix | Monaco | 2026-06-07 | upcoming
-  9 | Barcelona Grand Prix | Spain | 2026-06-14 | upcoming
-  10 | Austrian Grand Prix | Austria | 2026-06-28 | upcoming
-  11 | British Grand Prix | UK | 2026-07-05 | upcoming
-  12 | Belgian Grand Prix | Belgium | 2026-07-19 | upcoming
-  13 | Hungarian Grand Prix | Hungary | 2026-07-26 | upcoming
-  14 | Dutch Grand Prix | Netherlands | 2026-08-23 | upcoming
-  15 | Italian Grand Prix | Italy | 2026-09-06 | upcoming
-  16 | Spanish Grand Prix | Spain | 2026-09-13 | upcoming
-  17 | Azerbaijan Grand Prix | Azerbaijan | 2026-09-26 | upcoming
-  18 | Singapore Grand Prix | Singapore | 2026-10-11 | upcoming
-  19 | United States Grand Prix | USA | 2026-10-25 | upcoming
-  20 | Mexico City Grand Prix | Mexico | 2026-11-01 | upcoming
-  21 | Brazilian Grand Prix | Brazil | 2026-11-08 | upcoming
-  22 | Las Vegas Grand Prix | USA | 2026-11-22 | upcoming
-  23 | Qatar Grand Prix | Qatar | 2026-11-29 | upcoming
-  24 | Abu Dhabi Grand Prix | UAE | 2026-12-06 | upcoming
+  1 | Australian Grand Prix | Australia | 2026-03-08 | done
+  2 | Chinese Grand Prix | China | 2026-03-15 | done
+  3 | Japanese Grand Prix | Japan | 2026-03-29 | done
+  4 | Miami Grand Prix | USA | 2026-05-03 | done
+  5 | Canadian Grand Prix | Canada | 2026-05-24 | done
+  6 | Monaco Grand Prix | Monaco | 2026-06-07 | done
+  7 | Barcelona Grand Prix | Spain | 2026-06-14 | done
+  8 | Austrian Grand Prix | Austria | 2026-06-28 | done
+  9 | British Grand Prix | UK | 2026-07-05 | done
+  10 | Belgian Grand Prix | Belgium | 2026-07-19 | done
+  11 | Hungarian Grand Prix | Hungary | 2026-07-26 | done
+  12 | Dutch Grand Prix | Netherlands | 2026-08-23 | done
+  13 | Italian Grand Prix | Italy | 2026-09-06 | done
+  14 | Spanish Grand Prix | Spain | 2026-09-13 | done
+  15 | Azerbaijan Grand Prix | Azerbaijan | 2026-09-26 | next
+  16 | Bahrain Grand Prix in Malaysia | Malaysia | 2026-10-04 | upcoming
+  17 | Singapore Grand Prix | Singapore | 2026-10-11 | upcoming
+  18 | United States Grand Prix | USA | 2026-10-25 | upcoming
+  19 | Mexico City Grand Prix | Mexico | 2026-11-01 | upcoming
+  20 | Brazilian Grand Prix | Brazil | 2026-11-08 | upcoming
+  21 | Las Vegas Grand Prix | USA | 2026-11-22 | upcoming
+  22 | Qatar Grand Prix | Qatar | 2026-11-29 | upcoming
+  23 | Abu Dhabi Grand Prix | UAE | 2026-12-06 | upcoming
 
 --- Live Session Check (OpenF1) ---
-  No live session active right now (outside race weekend window)
+  LIVE: — at Baku, Azerbaijan
+  Session key: 11377  Start: 2026-09-26T11:00:00+00:00
+  Live positions returned: 22
+  Pos | # | Code | Driver | Team
+  ----------------------------------------------------------------------------
+  1 | 63 | RUS | George RUSSELL | Mercedes
+  2 | 3 | VER | Max VERSTAPPEN | Red Bull Racing
+  3 | 6 | HAD | Isack HADJAR | Red Bull Racing
+  4 | 16 | LEC | Charles LECLERC | Ferrari
+  5 | 12 | ANT | Kimi ANTONELLI | Mercedes
+  6 | 44 | HAM | Lewis HAMILTON | Ferrari
+  7 | 41 | LIN | Arvid LINDBLAD | Racing Bulls
+  8 | 31 | OCO | Esteban OCON | Haas F1 Team
+  9 | 87 | BEA | Oliver BEARMAN | Haas F1 Team
+  10 | 55 | SAI | Carlos SAINZ | Williams
 
 ================================================================================
   TEST SUMMARY
 ================================================================================
-  Generated: 2026-03-01 11:18:14
-  Total output lines: 2237
+  Generated: 2026-09-26 19:24:26
+  Total output lines: 2253
   Lines with errors:  0

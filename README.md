@@ -10,10 +10,12 @@ An AI-powered F1 pit stop strategy advisor — predicts optimal pit windows, com
 
 | Tab | What it does |
 |-----|-------------|
-| 🛞 Live Pit Decision | AI recommendation (PIT NOW / STAY OUT) with confidence gauge |
-| 🗺️ Strategy Recommender | Top-N ranked strategies with bar chart comparison |
-| 📈 Lap Simulator | Lap-by-lap tyre degradation chart for 4 strategy types |
-| 🏆 Live Scoreboard | Live championship standings, last race results, 2026 calendar |
+| ⚡ Live Pit Decision | Real-time AI pit recommendation (PIT NOW / STAY OUT) with confidence gauge |
+| 📊 Strategy Recommender | Top-N ranked pit stop strategies with interactive comparison |
+| 📈 Lap Simulator | Lap-by-lap tyre degradation curves and total race duration modeling |
+| 🏆 Live Scoreboard | Live championship standings, latest Grand Prix results, and 2026 calendar |
+| 📜 Previous Champions | Historical World Drivers' & Constructors' Championship archive |
+| 📍 Live Track Map | Real-time car positions and telemetry via OpenF1 API |
 
 ---
 
@@ -75,7 +77,7 @@ f1-strategy-ai/
 ├── .streamlit/
 │   └── config.toml           ← Streamlit Cloud theme config
 ├── app/
-│   └── app.py                ← Streamlit dashboard (4 tabs)
+│   └── app.py                ← Streamlit dashboard (6 tabs)
 ├── src/
 │   ├── data_loader.py        ← Fetches FastF1 race data (2021-2025)
 │   ├── features.py           ← ML feature engineering

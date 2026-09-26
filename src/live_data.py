@@ -8,20 +8,25 @@ Sources:
   - OpenF1 API — live session data, positions
     https://api.openf1.org/v1/
 """
+
 from __future__ import annotations
 
-import requests
 from datetime import datetime, timezone
 
+import requests
+
 _JOLPICA_BASE = "https://api.jolpi.ca/ergast/f1"
-_OPENF1_BASE  = "https://api.openf1.org/v1"
-_TIMEOUT      = 8   # seconds
+_OPENF1_BASE = "https://api.openf1.org/v1"
+_TIMEOUT = 8  # seconds
+
+_session = requests.Session()
+_session.headers.update({"User-Agent": "F1StrategyAI/1.0 (Dashboard)"})
 
 
 # ── Small request helper ──────────────────────────────────────────────────────
 def _get(url: str, params: dict | None = None) -> dict | list | None:
     try:
-        r = requests.get(url, params=params, timeout=_TIMEOUT)
+        r = _session.get(url, params=params, timeout=_TIMEOUT)
         r.raise_for_status()
         return r.json()
     except Exception:
@@ -36,6 +41,7 @@ def get_driver_standings(season: str = "current") -> tuple[list[dict], str]:
 
     Returns (standings_list, season_label)
     """
+
     def _fetch(s: str) -> list[dict]:
         data = _get(f"{_JOLPICA_BASE}/{s}/driverStandings.json")
         if data is None:
@@ -47,15 +53,19 @@ def get_driver_standings(season: str = "current") -> tuple[list[dict], str]:
             rows = []
             for s_ in standings_list[0]["DriverStandings"]:
                 drv = s_["Driver"]
-                rows.append({
-                    "pos":         int(s_["position"]),
-                    "driver_code": drv.get("code", drv["driverId"].upper()[:3]),
-                    "driver_name": f"{drv['givenName']} {drv['familyName']}",
-                    "nationality": drv.get("nationality", "—"),
-                    "team":        s_["Constructors"][0]["name"] if s_.get("Constructors") else "—",
-                    "points":      float(s_["points"]),
-                    "wins":        int(s_["wins"]),
-                })
+                rows.append(
+                    {
+                        "pos": int(s_["position"]),
+                        "driver_code": drv.get("code", drv["driverId"].upper()[:3]),
+                        "driver_name": f"{drv['givenName']} {drv['familyName']}",
+                        "nationality": drv.get("nationality", "—"),
+                        "team": s_["Constructors"][0]["name"]
+                        if s_.get("Constructors")
+                        else "—",
+                        "points": float(s_["points"]),
+                        "wins": int(s_["wins"]),
+                    }
+                )
             return rows
         except (KeyError, IndexError, TypeError):
             return []
@@ -76,6 +86,7 @@ def get_constructor_standings(season: str = "current") -> tuple[list[dict], str]
 
     Returns (standings_list, season_label)
     """
+
     def _fetch(s: str) -> list[dict]:
         data = _get(f"{_JOLPICA_BASE}/{s}/constructorStandings.json")
         if data is None:
@@ -87,13 +98,15 @@ def get_constructor_standings(season: str = "current") -> tuple[list[dict], str]
             rows = []
             for s_ in standings_list[0]["ConstructorStandings"]:
                 con = s_["Constructor"]
-                rows.append({
-                    "pos":         int(s_["position"]),
-                    "team":        con["name"],
-                    "nationality": con.get("nationality", "—"),
-                    "points":      float(s_["points"]),
-                    "wins":        int(s_["wins"]),
-                })
+                rows.append(
+                    {
+                        "pos": int(s_["position"]),
+                        "team": con["name"],
+                        "nationality": con.get("nationality", "—"),
+                        "points": float(s_["points"]),
+                        "wins": int(s_["wins"]),
+                    }
+                )
             return rows
         except (KeyError, IndexError, TypeError):
             return []
@@ -129,31 +142,31 @@ def get_last_race_results() -> dict:
         results = []
         for r in race.get("Results", []):
             drv = r["Driver"]
-            fl  = r.get("FastestLap", {})
+            fl = r.get("FastestLap", {})
             fl_time = fl.get("Time", {}).get("time", "—")
             fl_rank = int(fl.get("rank", 0)) if fl else 0
-            results.append({
-                "pos":         int(r["position"]) if r["position"].isdigit() else 99,
-                "driver_code": drv.get("code", drv["driverId"].upper()[:3]),
-                "driver_name": f"{drv['givenName']} {drv['familyName']}",
-                "team":        r["Constructor"]["name"],
-                "grid":        int(r.get("grid", 0)),
-                "laps":        int(r.get("laps", 0)),
-                "status":      r.get("status", "—"),
-                "points":      float(r.get("points", 0)),
-                "fastest_lap": fl_time,
-                "fl_rank":     fl_rank,
-            })
+            results.append(
+                {
+                    "pos": int(r["position"]) if r["position"].isdigit() else 99,
+                    "driver_code": drv.get("code", drv["driverId"].upper()[:3]),
+                    "driver_name": f"{drv['givenName']} {drv['familyName']}",
+                    "team": r["Constructor"]["name"],
+                    "grid": int(r.get("grid", 0)),
+                    "laps": int(r.get("laps", 0)),
+                    "status": r.get("status", "—"),
+                    "points": float(r.get("points", 0)),
+                    "fastest_lap": fl_time,
+                    "fl_rank": fl_rank,
+                }
+            )
         return {
             "race_name": race["raceName"],
-            "circuit":   race["Circuit"]["circuitName"],
-            "date":      race["date"],
-            "results":   results,
+            "circuit": race["Circuit"]["circuitName"],
+            "date": race["date"],
+            "results": results,
         }
     except (KeyError, IndexError, TypeError):
         return {}
-
-
 
 
 # ── Season Race Schedule ──────────────────────────────────────────────────────
@@ -182,14 +195,16 @@ def get_season_schedule(season: str = "current") -> list[dict]:
                 next_flagged = True
             else:
                 status = "upcoming"
-            rows.append({
-                "round":      int(r["round"]),
-                "race_name":  r["raceName"],
-                "circuit":    r["Circuit"]["circuitName"],
-                "country":    r["Circuit"]["Location"]["country"],
-                "date":       r["date"],
-                "status":     status,
-            })
+            rows.append(
+                {
+                    "round": int(r["round"]),
+                    "race_name": r["raceName"],
+                    "circuit": r["Circuit"]["circuitName"],
+                    "country": r["Circuit"]["Location"]["country"],
+                    "date": r["date"],
+                    "status": status,
+                }
+            )
         return rows
     except (KeyError, IndexError, TypeError):
         return []
@@ -235,12 +250,12 @@ def get_live_session() -> dict | None:
     # Take the latest
     _, latest = max(recent, key=lambda x: x[0])
     return {
-        "session_key":  latest.get("session_key"),
+        "session_key": latest.get("session_key"),
         "meeting_name": latest.get("meeting_name", "—"),
-        "circuit":      latest.get("circuit_short_name", "—"),
-        "date_start":   latest.get("date_start"),
-        "date_end":     latest.get("date_end"),
-        "country":      latest.get("country_name", "—"),
+        "circuit": latest.get("circuit_short_name", "—"),
+        "date_start": latest.get("date_start"),
+        "date_end": latest.get("date_end"),
+        "country": latest.get("country_name", "—"),
     }
 
 
@@ -283,9 +298,9 @@ def get_live_drivers(session_key: int) -> dict[int, dict]:
         num = d.get("driver_number")
         if num is not None:
             result[num] = {
-                "code":        d.get("name_acronym", "???"),
-                "full_name":   d.get("full_name", "—"),
-                "team":        d.get("team_name", "—"),
+                "code": d.get("name_acronym", "???"),
+                "full_name": d.get("full_name", "—"),
+                "team": d.get("team_name", "—"),
                 "team_colour": "#" + (d.get("team_colour") or "888888"),
             }
     return result
@@ -302,7 +317,7 @@ def get_live_locations(session_key: int) -> dict[int, dict]:
     )
     if not data or not isinstance(data, list):
         return {}
-    
+
     # Keep only the latest location per driver
     latest: dict[int, dict] = {}
     for entry in data:
