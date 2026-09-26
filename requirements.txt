@@ -19,7 +19,7 @@ lightgbm>=4.3.0
 xgboost>=2.0.0
 
 # Web dashboard
-streamlit>=1.32.0
+streamlit>=1.40.0
 
 # API calls (live scoreboard)
 requests>=2.31.0

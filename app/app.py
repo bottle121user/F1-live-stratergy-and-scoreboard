@@ -673,8 +673,7 @@ div[data-baseweb="tab-border"] {
 
 if hasattr(st, "html"):
     st.html(F1_CUSTOM_CSS)
-else:
-    st.markdown(F1_CUSTOM_CSS, unsafe_allow_html=True)
+st.markdown(F1_CUSTOM_CSS, unsafe_allow_html=True)
 
 
 # ----------------------------------------------------------------------------
