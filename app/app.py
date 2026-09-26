@@ -41,8 +41,7 @@ st.set_page_config(
 
 # ----------------------------------------------------------------------------
 
-st.markdown(
-    """
+F1_CUSTOM_CSS = """
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&family=Titillium+Web:wght@300;400;500;600;700;900&display=swap');
 
@@ -98,55 +97,113 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
 /* ============================================================ */
 /* PILL FORM CONTROLS (Selectboxes, Inputs, Step-Buttons)       */
 /* ============================================================ */
-[data-testid="stSelectbox"] [data-baseweb="select"],
-[data-testid="stSelectbox"] [data-baseweb="select"] > div,
-[data-testid="stNumberInput"] [data-baseweb="base-input"],
-[data-testid="stNumberInput"] [data-baseweb="input"],
-[data-testid="stTextInput"] [data-baseweb="base-input"],
-[data-testid="stTextInput"] [data-baseweb="input"] {
+[data-testid="stSelectbox"],
+[data-testid="stSelectbox"] > div,
+[data-testid="stSelectbox"] div[data-baseweb="select"],
+div[data-baseweb="select"],
+div[data-baseweb="select"] > div,
+div[data-baseweb="select"] > div:first-child {
     border-radius: 9999px !important;
-    background: rgba(255, 255, 255, 0.06) !important;
+}
+
+[data-testid="stSelectbox"] div[data-baseweb="select"] > div,
+div[data-baseweb="select"] > div {
+    border-radius: 9999px !important;
+    background-color: rgba(255, 255, 255, 0.07) !important;
     backdrop-filter: blur(25px) !important;
     -webkit-backdrop-filter: blur(25px) !important;
     border: 1px solid rgba(255, 255, 255, 0.18) !important;
     border-top: 1px solid rgba(255, 255, 255, 0.28) !important;
     box-shadow: inset 0 2px 8px rgba(255, 255, 255, 0.05), 0 8px 20px rgba(0, 0, 0, 0.35) !important;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    overflow: hidden !important;
+    min-height: 46px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    transition: all 0.25s ease !important;
 }
 
-[data-testid="stSelectbox"] [data-baseweb="select"] > div:hover,
-[data-testid="stNumberInput"] [data-baseweb="input"]:hover,
-[data-testid="stTextInput"] [data-baseweb="input"]:hover {
+[data-testid="stSelectbox"] div[data-baseweb="select"]:hover > div,
+div[data-baseweb="select"]:hover > div {
     border-color: rgba(225, 6, 0, 0.6) !important;
     box-shadow: 0 0 20px rgba(225, 6, 0, 0.25), inset 0 2px 8px rgba(255, 255, 255, 0.08) !important;
-    transform: translateY(-1px);
+}
+
+[data-testid="stSelectbox"] div[data-baseweb="select"] span,
+[data-testid="stSelectbox"] div[data-baseweb="select"] div {
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+}
+
+/* BaseWeb Dropdown Menu / Popover */
+div[data-baseweb="popover"],
+div[data-baseweb="popover"] > div,
+div[data-baseweb="menu"],
+ul[data-baseweb="menu"] {
+    background-color: #12151D !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(30px) !important;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.75) !important;
+    padding: 6px !important;
+}
+
+li[role="option"] {
+    border-radius: 9999px !important;
+    margin: 4px 6px !important;
+    padding: 8px 16px !important;
+    transition: all 0.2s ease !important;
+    color: #E2E8F0 !important;
+}
+
+li[role="option"]:hover,
+li[role="option"][aria-selected="true"] {
+    background: rgba(225, 6, 0, 0.25) !important;
+    color: #FFFFFF !important;
+}
+
+/* PILL INPUTS */
+[data-testid="stNumberInput"] div[data-baseweb="base-input"],
+[data-testid="stNumberInput"] div[data-baseweb="input"],
+[data-testid="stTextInput"] div[data-baseweb="base-input"],
+[data-testid="stTextInput"] div[data-baseweb="input"],
+div[data-baseweb="base-input"],
+div[data-baseweb="input"] {
+    border-radius: 9999px !important;
+    background-color: rgba(255, 255, 255, 0.07) !important;
+    backdrop-filter: blur(25px) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.28) !important;
+    box-shadow: inset 0 2px 8px rgba(255, 255, 255, 0.05), 0 8px 20px rgba(0, 0, 0, 0.35) !important;
+    overflow: hidden !important;
+    transition: all 0.25s ease !important;
+}
+
+[data-testid="stNumberInput"] div[data-baseweb="input"]:hover,
+[data-testid="stTextInput"] div[data-baseweb="input"]:hover,
+div[data-baseweb="input"]:hover {
+    border-color: rgba(225, 6, 0, 0.6) !important;
+    box-shadow: 0 0 20px rgba(225, 6, 0, 0.25), inset 0 2px 8px rgba(255, 255, 255, 0.08) !important;
 }
 
 [data-testid="stNumberInput"] input,
-[data-testid="stTextInput"] input {
+[data-testid="stTextInput"] input,
+div[data-baseweb="input"] input {
     background: transparent !important;
     color: #FFFFFF !important;
     font-weight: 600 !important;
     padding: 0 1.2rem !important;
+    border-radius: 9999px !important;
 }
 
 [data-testid="stNumberInput"] button {
     background: transparent !important;
     color: #FFFFFF !important;
     border-radius: 9999px !important;
-    transition: all 0.2s ease !important;
 }
 
 [data-testid="stNumberInput"] button:hover {
-    background: rgba(225, 6, 0, 0.2) !important;
+    background: rgba(225, 6, 0, 0.25) !important;
     color: #FF4B4B !important;
-}
-
-[data-testid="stSelectbox"] div[class*="singleValue"] {
-    color: #FFFFFF !important;
-    font-weight: 600 !important;
-    padding-left: 0.6rem !important;
 }
 
 /* ============================================================ */
@@ -154,9 +211,9 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
 /* ============================================================ */
 [data-testid="stSlider"] [data-testid="stSliderThumbValue"] {
     border-radius: 9999px !important;
-    background: rgba(225, 6, 0, 0.25) !important;
+    background: rgba(225, 6, 0, 0.35) !important;
     backdrop-filter: blur(20px) !important;
-    border: 1px solid rgba(225, 6, 0, 0.6) !important;
+    border: 1px solid rgba(225, 6, 0, 0.7) !important;
     color: #FFF !important;
     font-weight: 700 !important;
     padding: 0.2rem 0.8rem !important;
@@ -166,6 +223,10 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
     background-color: #E10600 !important;
     border: 2px solid #FFFFFF !important;
     box-shadow: 0 0 18px rgba(225, 6, 0, 0.85) !important;
+}
+
+[data-testid="stSlider"] div[data-baseweb="slider"] > div > div:first-child {
+    background: linear-gradient(90deg, #E10600, #FF4B4B) !important;
 }
 
 [data-testid="stToggle"] label span[data-baseweb="switch"] {
@@ -182,10 +243,11 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
 /* ============================================================ */
 /* GLOWING PILL BUTTONS                                         */
 /* ============================================================ */
-.stButton > button {
+.stButton > button,
+[data-testid="stButton"] > button {
     border-radius: 9999px !important;
     padding: 0.95rem 3rem !important;
-    background: linear-gradient(135deg, rgba(225, 6, 0, 0.22), rgba(225, 6, 0, 0.1)) !important;
+    background: linear-gradient(135deg, rgba(225, 6, 0, 0.28), rgba(225, 6, 0, 0.12)) !important;
     border: 1px solid rgba(225, 6, 0, 0.65) !important;
     border-top: 1px solid rgba(255, 80, 80, 0.8) !important;
     color: #FFFFFF !important;
@@ -199,58 +261,87 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
     cursor: pointer;
 }
 
-.stButton > button:hover {
-    background: linear-gradient(135deg, rgba(225, 6, 0, 0.45), rgba(225, 6, 0, 0.25)) !important;
+.stButton > button:hover,
+[data-testid="stButton"] > button:hover {
+    background: linear-gradient(135deg, rgba(225, 6, 0, 0.5), rgba(225, 6, 0, 0.3)) !important;
     border-color: #FF4B4B !important;
     color: #FFFFFF !important;
     box-shadow: 0 0 40px rgba(225, 6, 0, 0.6), inset 0 2px 12px rgba(255, 255, 255, 0.25) !important;
     transform: translateY(-2px) scale(1.02);
 }
 
-.stButton > button:active {
+.stButton > button:active,
+[data-testid="stButton"] > button:active {
     transform: translateY(0) scale(0.98);
 }
 
 /* ============================================================ */
 /* SEGMENTED PILL TABS                                          */
 /* ============================================================ */
-.stTabs [data-baseweb="tab-list"] {
-    gap: 8px;
-    background-color: rgba(255, 255, 255, 0.04) !important;
+.stTabs, [data-testid="stTabs"] {
+    background: transparent !important;
+}
+
+[data-testid="stTabs"] [data-baseweb="tab-list"],
+.stTabs [data-baseweb="tab-list"],
+div[data-baseweb="tab-list"] {
+    gap: 8px !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
     backdrop-filter: blur(30px) !important;
     -webkit-backdrop-filter: blur(30px) !important;
     border-radius: 9999px !important;
     padding: 8px !important;
     border: 1px solid rgba(255, 255, 255, 0.12) !important;
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4), inset 0 1px 6px rgba(255, 255, 255, 0.06) !important;
+    border-bottom: none !important;
 }
 
-.stTabs [data-baseweb="tab"] {
-    height: 48px;
+[data-testid="stTabs"] [data-baseweb="tab"],
+.stTabs [data-baseweb="tab"],
+button[data-baseweb="tab"] {
+    height: 48px !important;
     border-radius: 9999px !important;
-    color: #8C94A0 !important;
+    color: #94A3B8 !important;
     font-weight: 600 !important;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.04em !important;
     background-color: transparent !important;
     border: 1px solid transparent !important;
     padding: 0 24px !important;
-    transition: all 0.3s ease;
+    transition: all 0.25s ease !important;
+    white-space: nowrap !important;
 }
 
-.stTabs [data-baseweb="tab"]:hover {
+[data-testid="stTabs"] [data-baseweb="tab"]:hover,
+.stTabs [data-baseweb="tab"]:hover,
+button[data-baseweb="tab"]:hover {
     color: #FFFFFF !important;
     background-color: rgba(255, 255, 255, 0.08) !important;
-    border-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.18) !important;
 }
 
-.stTabs [aria-selected="true"] {
-    background-color: rgba(255, 255, 255, 0.16) !important;
+[data-testid="stTabs"] [data-baseweb="tab"][aria-selected="true"],
+.stTabs [data-baseweb="tab"][aria-selected="true"],
+button[data-baseweb="tab"][aria-selected="true"] {
+    background: linear-gradient(135deg, rgba(225, 6, 0, 0.35), rgba(225, 6, 0, 0.18)) !important;
     color: #FFFFFF !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(255, 255, 255, 0.18) !important;
-    border: 1px solid rgba(255, 255, 255, 0.28) !important;
+    box-shadow: 0 4px 20px rgba(225, 6, 0, 0.35), inset 0 1px 8px rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(225, 6, 0, 0.6) !important;
+    border-radius: 9999px !important;
 }
 
-.stTabs [data-baseweb="tab-highlight"] { display: none; }
+[data-testid="stTabs"] [data-baseweb="tab-highlight"],
+.stTabs [data-baseweb="tab-highlight"],
+div[data-baseweb="tab-highlight"],
+[data-testid="stTabs"] [data-baseweb="tab-border"],
+.stTabs [data-baseweb="tab-border"],
+div[data-baseweb="tab-border"] {
+    display: none !important;
+    height: 0 !important;
+    width: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    visibility: hidden !important;
+}
 
 /* ============================================================ */
 /* PILL METRIC CARDS                                            */
@@ -578,9 +669,12 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
     }
 }
 </style>
-""",
-    unsafe_allow_html=True,
-)
+"""
+
+if hasattr(st, "html"):
+    st.html(F1_CUSTOM_CSS)
+else:
+    st.markdown(F1_CUSTOM_CSS, unsafe_allow_html=True)
 
 
 # ----------------------------------------------------------------------------

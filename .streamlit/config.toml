@@ -4,8 +4,10 @@ port = 8501
 
 [theme]
 base = "dark"
-primaryColor = "#00d2ff"
+primaryColor = "#E10600"
+backgroundColor = "#0B0D12"
+secondaryBackgroundColor = "#161922"
+textColor = "#FFFFFF"
 
 [runner]
-# Silence Streamlit's "use_container_width" deprecation warnings
 fastReruns = true
