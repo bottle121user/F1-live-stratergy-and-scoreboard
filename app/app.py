@@ -55,24 +55,28 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFFFFF !important;
 }
 
-/* Readability for normal text */
+/* Text readability */
 p, li, .stMarkdown, .stText {
     font-size: 1.15rem !important;
     font-weight: 500 !important;
     color: #F5F7FA !important;
 }
 
-/* Label Sizes */
+/* Labels */
 label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
-    font-size: 1.15rem !important;
-    font-weight: 500 !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
     color: #E2E8F0 !important;
 }
 
-/* Main Background - Pitch Black Minimal */
+/* Pitch Black Minimalist Background with subtle F1 red ambient glow */
 [data-testid="stAppViewContainer"] {
-    background-color: #0E1015 !important;
-    background-image: radial-gradient(circle at 50% 0%, rgba(225, 6, 0, 0.08) 0%, rgba(14, 16, 21, 0) 60%) !important;
+    background-color: #0B0D12 !important;
+    background-image:
+        radial-gradient(circle at 50% 0%, rgba(225, 6, 0, 0.12) 0%, transparent 50%),
+        radial-gradient(circle at 85% 30%, rgba(255, 65, 54, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 15% 70%, rgba(225, 6, 0, 0.05) 0%, transparent 40%) !important;
+    background-attachment: fixed !important;
 }
 
 [data-testid="stHeader"] { background: transparent !important; }
@@ -83,123 +87,123 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
     max-width: 1400px !important;
 }
 
-/* Unified Frosted Glass Pill Columns */
+/* Columns: Clean layout containers (NO rigid rectangular boxes!) */
 [data-testid="column"] {
-    background: rgba(255, 255, 255, 0.04) !important;
-    backdrop-filter: blur(25px) !important;
-    -webkit-backdrop-filter: blur(25px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.22) !important;
-    border-radius: 36px !important;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45), inset 0 2px 10px rgba(255,255,255,0.06) !important;
-    padding: 2rem !important;
-    transform: translateZ(0);
-    will-change: transform, box-shadow, background;
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, background 0.3s ease;
-}
-
-[data-testid="column"]:hover {
-    transform: translate3d(0, -4px, 0);
-    background: rgba(255, 255, 255, 0.07) !important;
-    border-color: rgba(255, 255, 255, 0.2) !important;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55), inset 0 2px 15px rgba(255,255,255,0.12) !important;
-}
-
-/* Precise Pill Form Controls */
-[data-testid="stSelectbox"] div[data-baseweb="select"] > div,
-[data-testid="stNumberInput"] > div > div,
-[data-testid="stTextInput"] > div > div {
-    border-radius: 9999px !important;
-    background: rgba(255, 255, 255, 0.05) !important;
-    backdrop-filter: blur(25px) !important;
-    -webkit-backdrop-filter: blur(25px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.14) !important;
-    box-shadow: inset 0 2px 8px rgba(255,255,255,0.04) !important;
-    transition: all 0.25s ease !important;
-}
-
-[data-testid="stSelectbox"] div[data-baseweb="select"] > div:hover,
-[data-testid="stNumberInput"] > div > div:hover,
-[data-testid="stTextInput"] > div > div:hover {
-    border-color: rgba(225, 6, 0, 0.5) !important;
-    box-shadow: 0 0 15px rgba(225, 6, 0, 0.2), inset 0 2px 8px rgba(255,255,255,0.06) !important;
-}
-
-/* Fix Number Input internals so they don't render a second pill inside */
-[data-testid="stNumberInput"] div[data-baseweb="base-input"] {
     background: transparent !important;
     border: none !important;
+    box-shadow: none !important;
+    padding: 0.6rem !important;
+}
+
+/* ============================================================ */
+/* PILL FORM CONTROLS (Selectboxes, Inputs, Step-Buttons)       */
+/* ============================================================ */
+[data-testid="stSelectbox"] [data-baseweb="select"],
+[data-testid="stSelectbox"] [data-baseweb="select"] > div,
+[data-testid="stNumberInput"] [data-baseweb="base-input"],
+[data-testid="stNumberInput"] [data-baseweb="input"],
+[data-testid="stTextInput"] [data-baseweb="base-input"],
+[data-testid="stTextInput"] [data-baseweb="input"] {
+    border-radius: 9999px !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    backdrop-filter: blur(25px) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.28) !important;
+    box-shadow: inset 0 2px 8px rgba(255, 255, 255, 0.05), 0 8px 20px rgba(0, 0, 0, 0.35) !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    overflow: hidden !important;
+}
+
+[data-testid="stSelectbox"] [data-baseweb="select"] > div:hover,
+[data-testid="stNumberInput"] [data-baseweb="input"]:hover,
+[data-testid="stTextInput"] [data-baseweb="input"]:hover {
+    border-color: rgba(225, 6, 0, 0.6) !important;
+    box-shadow: 0 0 20px rgba(225, 6, 0, 0.25), inset 0 2px 8px rgba(255, 255, 255, 0.08) !important;
+    transform: translateY(-1px);
 }
 
 [data-testid="stNumberInput"] input,
 [data-testid="stTextInput"] input {
     background: transparent !important;
-    color: #FFF !important;
+    color: #FFFFFF !important;
     font-weight: 600 !important;
+    padding: 0 1.2rem !important;
 }
 
 [data-testid="stNumberInput"] button {
     background: transparent !important;
-    color: #FFF !important;
+    color: #FFFFFF !important;
     border-radius: 9999px !important;
+    transition: all 0.2s ease !important;
 }
 
-/* Selectbox text color */
+[data-testid="stNumberInput"] button:hover {
+    background: rgba(225, 6, 0, 0.2) !important;
+    color: #FF4B4B !important;
+}
+
 [data-testid="stSelectbox"] div[class*="singleValue"] {
-    color: #FFF !important;
+    color: #FFFFFF !important;
     font-weight: 600 !important;
+    padding-left: 0.6rem !important;
 }
 
-/* Frosted Sliders */
+/* ============================================================ */
+/* PILL SLIDERS & TOGGLES                                       */
+/* ============================================================ */
+[data-testid="stSlider"] [data-testid="stSliderThumbValue"] {
+    border-radius: 9999px !important;
+    background: rgba(225, 6, 0, 0.25) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(225, 6, 0, 0.6) !important;
+    color: #FFF !important;
+    font-weight: 700 !important;
+    padding: 0.2rem 0.8rem !important;
+}
+
 [data-testid="stSlider"] div[data-baseweb="slider"] div[role="slider"] {
     background-color: #E10600 !important;
     border: 2px solid #FFFFFF !important;
-    box-shadow: 0 0 15px rgba(225, 6, 0, 0.8) !important;
+    box-shadow: 0 0 18px rgba(225, 6, 0, 0.85) !important;
 }
 
-[data-testid="stSlider"] [data-testid="stSliderThumbValue"] {
-    border-radius: 9999px !important;
-    background: rgba(225, 6, 0, 0.2) !important;
-    backdrop-filter: blur(15px) !important;
-    border: 1px solid rgba(225, 6, 0, 0.5) !important;
-    color: #FFF !important;
-    font-weight: 700 !important;
-}
-
-/* Frosted Toggles */
 [data-testid="stToggle"] label span[data-baseweb="switch"] {
     border-radius: 9999px !important;
-    background-color: rgba(255, 255, 255, 0.1) !important;
+    background-color: rgba(255, 255, 255, 0.12) !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 [data-testid="stToggle"] label span[aria-checked="true"] {
     background-color: #E10600 !important;
-    box-shadow: 0 0 15px rgba(225, 6, 0, 0.6) !important;
+    box-shadow: 0 0 18px rgba(225, 6, 0, 0.7) !important;
 }
 
-/* Glowing Pill Buttons */
+/* ============================================================ */
+/* GLOWING PILL BUTTONS                                         */
+/* ============================================================ */
 .stButton > button {
     border-radius: 9999px !important;
-    padding: 0.9rem 2.8rem !important;
-    background: rgba(225, 6, 0, 0.15) !important;
-    border: 1px solid rgba(225, 6, 0, 0.55) !important;
+    padding: 0.95rem 3rem !important;
+    background: linear-gradient(135deg, rgba(225, 6, 0, 0.22), rgba(225, 6, 0, 0.1)) !important;
+    border: 1px solid rgba(225, 6, 0, 0.65) !important;
+    border-top: 1px solid rgba(255, 80, 80, 0.8) !important;
     color: #FFFFFF !important;
     font-weight: 800 !important;
     letter-spacing: 0.08em !important;
     text-transform: uppercase !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), inset 0 1px 8px rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(25px) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(225, 6, 0, 0.25), inset 0 1px 8px rgba(255, 255, 255, 0.15) !important;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
     cursor: pointer;
 }
 
 .stButton > button:hover {
-    background: rgba(225, 6, 0, 0.35) !important;
-    border-color: #FF3333 !important;
+    background: linear-gradient(135deg, rgba(225, 6, 0, 0.45), rgba(225, 6, 0, 0.25)) !important;
+    border-color: #FF4B4B !important;
     color: #FFFFFF !important;
-    box-shadow: 0 0 35px rgba(225, 6, 0, 0.5), inset 0 2px 10px rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 0 40px rgba(225, 6, 0, 0.6), inset 0 2px 12px rgba(255, 255, 255, 0.25) !important;
     transform: translateY(-2px) scale(1.02);
 }
 
@@ -207,16 +211,18 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
     transform: translateY(0) scale(0.98);
 }
 
-/* Segmented Control Pill Tabs */
+/* ============================================================ */
+/* SEGMENTED PILL TABS                                          */
+/* ============================================================ */
 .stTabs [data-baseweb="tab-list"] {
     gap: 8px;
-    background-color: rgba(255, 255, 255, 0.03) !important;
-    backdrop-filter: blur(25px) !important;
-    -webkit-backdrop-filter: blur(25px) !important;
+    background-color: rgba(255, 255, 255, 0.04) !important;
+    backdrop-filter: blur(30px) !important;
+    -webkit-backdrop-filter: blur(30px) !important;
     border-radius: 9999px !important;
     padding: 8px !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), inset 0 1px 5px rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4), inset 0 1px 6px rgba(255, 255, 255, 0.06) !important;
 }
 
 .stTabs [data-baseweb="tab"] {
@@ -233,37 +239,39 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
 
 .stTabs [data-baseweb="tab"]:hover {
     color: #FFFFFF !important;
-    background-color: rgba(255, 255, 255, 0.06) !important;
-    border-color: rgba(255, 255, 255, 0.1) !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
 }
 
 .stTabs [aria-selected="true"] {
-    background-color: rgba(255, 255, 255, 0.14) !important;
+    background-color: rgba(255, 255, 255, 0.16) !important;
     color: #FFFFFF !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(255, 255, 255, 0.15) !important;
-    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(255, 255, 255, 0.18) !important;
+    border: 1px solid rgba(255, 255, 255, 0.28) !important;
 }
 
 .stTabs [data-baseweb="tab-highlight"] { display: none; }
 
-/* Premium Metric Pill Cards */
+/* ============================================================ */
+/* PILL METRIC CARDS                                            */
+/* ============================================================ */
 [data-testid="stMetric"] {
-    background: rgba(255, 255, 255, 0.04) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
     backdrop-filter: blur(30px) !important;
     -webkit-backdrop-filter: blur(30px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.22) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
     border-radius: 9999px !important;
-    padding: 1.4rem 2.2rem !important;
-    box-shadow: inset 0 2px 10px rgba(255,255,255,0.05), 0 10px 30px rgba(0,0,0,0.45) !important;
+    padding: 1.4rem 2.5rem !important;
+    box-shadow: inset 0 2px 10px rgba(255, 255, 255, 0.06), 0 12px 35px rgba(0, 0, 0, 0.45) !important;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 [data-testid="stMetric"]:hover {
-    transform: translateY(-2px);
-    background: rgba(255, 255, 255, 0.07) !important;
-    border-color: rgba(255, 255, 255, 0.22) !important;
-    box-shadow: inset 0 2px 12px rgba(255,255,255,0.08), 0 15px 35px rgba(0,0,0,0.55) !important;
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.28) !important;
+    box-shadow: inset 0 2px 12px rgba(255, 255, 255, 0.1), 0 18px 40px rgba(0, 0, 0, 0.6) !important;
 }
 
 [data-testid="stMetricValue"] {
@@ -280,7 +288,9 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
     letter-spacing: 0.05em;
 }
 
-/* Frosted Pill Graphs */
+/* ============================================================ */
+/* FROSTED GLASS PLOTLY CHARTS & DATAFRAMES                     */
+/* ============================================================ */
 [data-testid="stPlotlyChart"] {
     background: rgba(255, 255, 255, 0.03) !important;
     backdrop-filter: blur(35px) !important;
@@ -292,7 +302,6 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
     box-shadow: 0 20px 45px rgba(0,0,0,0.5), inset 0 2px 15px rgba(255,255,255,0.04) !important;
 }
 
-/* Frosted Glass DataFrames */
 [data-testid="stDataFrame"] {
     background: rgba(255, 255, 255, 0.03) !important;
     backdrop-filter: blur(30px) !important;
@@ -304,14 +313,16 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
     overflow: hidden !important;
 }
 
-/* Frosted Pill Alerts */
+/* ============================================================ */
+/* PILL ALERTS & EXPANDERS                                      */
+/* ============================================================ */
 [data-testid="stAlert"] {
     border-radius: 9999px !important;
-    background: rgba(255, 255, 255, 0.04) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
     backdrop-filter: blur(25px) !important;
     -webkit-backdrop-filter: blur(25px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.14) !important;
-    padding: 0.9rem 2rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    padding: 0.9rem 2.2rem !important;
     box-shadow: 0 10px 30px rgba(0,0,0,0.4) !important;
 }
 
@@ -320,7 +331,6 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
     margin: 0 !important;
 }
 
-/* Frosted Glass Expanders */
 [data-testid="stExpander"] {
     background: rgba(255, 255, 255, 0.03) !important;
     backdrop-filter: blur(25px) !important;
@@ -331,7 +341,9 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
     overflow: hidden !important;
 }
 
-/* Premium Decision Pills */
+/* ============================================================ */
+/* GIANT DECISION PILLS (Pit Now / Stay Out)                    */
+/* ============================================================ */
 .pit-now {
     background: rgba(225, 6, 0, 0.16) !important;
     backdrop-filter: blur(40px) !important;
@@ -374,47 +386,51 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
     margin: 0;
 }
 
-/* Strategy Recommender Pill Cards */
+/* ============================================================ */
+/* PILL STRATEGY CARDS & BADGES                                 */
+/* ============================================================ */
 .strat-card {
-    background: rgba(255, 255, 255, 0.04) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
     backdrop-filter: blur(25px) !important;
     -webkit-backdrop-filter: blur(25px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
     border-radius: 9999px !important;
-    padding: 1.2rem 2.2rem !important;
+    padding: 1.2rem 2.5rem !important;
     margin-bottom: 0.9rem !important;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35), inset 0 1px 8px rgba(255, 255, 255, 0.05) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35), inset 0 1px 8px rgba(255, 255, 255, 0.06) !important;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .strat-card:hover {
     transform: translateY(-2px);
-    background: rgba(255, 255, 255, 0.07) !important;
-    border-color: rgba(225, 6, 0, 0.5) !important;
-    box-shadow: 0 15px 35px rgba(225, 6, 0, 0.15), inset 0 1px 10px rgba(255, 255, 255, 0.08) !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(225, 6, 0, 0.6) !important;
+    box-shadow: 0 15px 35px rgba(225, 6, 0, 0.2), inset 0 1px 10px rgba(255, 255, 255, 0.1) !important;
 }
 
 .rank-badge {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.3rem 0.95rem;
+    padding: 0.35rem 1rem;
     border-radius: 9999px;
-    background: rgba(225, 6, 0, 0.22);
-    border: 1px solid rgba(225, 6, 0, 0.6);
+    background: rgba(225, 6, 0, 0.25);
+    border: 1px solid rgba(225, 6, 0, 0.65);
     color: #FF5A5A;
     font-weight: 800;
     font-size: 1rem;
     margin-right: 0.85rem;
 }
 
-/* Podium Frosted Cards */
+/* ============================================================ */
+/* PODIUM PILL CARDS                                            */
+/* ============================================================ */
 .podium-card {
-    background: rgba(255, 255, 255, 0.04) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
     backdrop-filter: blur(25px) !important;
     -webkit-backdrop-filter: blur(25px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
-    border-radius: 32px !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 36px !important;
     padding: 1.8rem 1.4rem !important;
     text-align: center;
     margin-bottom: 1rem !important;
@@ -424,46 +440,46 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
 
 .podium-card:hover {
     transform: translateY(-4px);
-    background: rgba(255, 255, 255, 0.07) !important;
+    background: rgba(255, 255, 255, 0.08) !important;
 }
 
-/* F1 Live Pill Banner */
+/* ============================================================ */
+/* PILL BANNERS & BADGES                                        */
+/* ============================================================ */
 .f1-live-banner {
-    background: rgba(225, 6, 0, 0.15) !important;
+    background: rgba(225, 6, 0, 0.18) !important;
     backdrop-filter: blur(30px) !important;
     -webkit-backdrop-filter: blur(30px) !important;
-    border: 1px solid rgba(225, 6, 0, 0.5) !important;
+    border: 1px solid rgba(225, 6, 0, 0.55) !important;
     border-radius: 9999px !important;
-    padding: 1.2rem 2.5rem !important;
+    padding: 1.2rem 2.8rem !important;
     margin-bottom: 1.5rem !important;
-    box-shadow: 0 10px 30px rgba(225, 6, 0, 0.25) !important;
+    box-shadow: 0 10px 30px rgba(225, 6, 0, 0.3) !important;
 }
 
-/* Champion Gold Pill Banner */
 .champion-banner {
-    background: rgba(245, 197, 24, 0.08) !important;
+    background: rgba(245, 197, 24, 0.09) !important;
     backdrop-filter: blur(30px) !important;
     -webkit-backdrop-filter: blur(30px) !important;
-    border: 1px solid rgba(245, 197, 24, 0.45) !important;
+    border: 1px solid rgba(245, 197, 24, 0.5) !important;
     border-radius: 9999px !important;
-    padding: 1.5rem 3rem !important;
+    padding: 1.5rem 3.2rem !important;
     margin: 1.5rem 0 !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), inset 0 2px 15px rgba(245, 197, 24, 0.12) !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), inset 0 2px 15px rgba(245, 197, 24, 0.15) !important;
 }
 
-/* Calendar Frosted Pill Card */
 .calendar-card {
-    background: rgba(255, 255, 255, 0.04) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
     border-radius: 9999px !important;
-    padding: 0.8rem 1.4rem !important;
+    padding: 0.85rem 1.6rem !important;
     margin-bottom: 0.8rem !important;
     text-align: center;
     transition: all 0.25s ease !important;
@@ -471,8 +487,8 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
 
 .calendar-card:hover {
     transform: translateY(-2px);
-    background: rgba(255, 255, 255, 0.08) !important;
-    border-color: rgba(255, 255, 255, 0.2) !important;
+    background: rgba(255, 255, 255, 0.09) !important;
+    border-color: rgba(255, 255, 255, 0.25) !important;
 }
 
 /* Animations */
@@ -501,16 +517,12 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
 .light-4 { animation: lightSeq 4s infinite 0.8s; }
 .light-5 { animation: lightSeq 4s infinite 1.0s; }
 
-/* Responsive Fluid Layout & Breakpoints */
+/* Responsive Breakpoints */
 @media (max-width: 1024px) {
     .block-container {
         padding-top: 1.5rem !important;
         padding-left: 1.5rem !important;
         padding-right: 1.5rem !important;
-    }
-    [data-testid="column"] {
-        padding: 1.5rem !important;
-        border-radius: 28px !important;
     }
 }
 
@@ -521,13 +533,6 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
         padding-right: 0.8rem !important;
     }
 
-    [data-testid="column"] {
-        padding: 1.25rem !important;
-        border-radius: 24px !important;
-        margin-bottom: 1rem !important;
-    }
-
-    /* Scrollable horizontal pill tab bar on mobile */
     .stTabs [data-baseweb="tab-list"] {
         overflow-x: auto !important;
         flex-wrap: nowrap !important;
@@ -546,64 +551,32 @@ label, .st-bh, .st-bb, [data-testid="stMarkdownContainer"] p {
         flex-shrink: 0 !important;
     }
 
-    /* Responsive Decision Pill */
     .pit-now, .stay-out {
         padding: 1.8rem 1.2rem !important;
-        border-radius: 32px !important;
+        border-radius: 9999px !important;
     }
     .decision-label {
         font-size: clamp(2rem, 6vw, 2.5rem) !important;
         letter-spacing: 0.05em !important;
     }
-    .decision-sub {
-        font-size: 1.05rem !important;
-    }
 
-    /* Strategy cards and banners */
-    .strat-card {
-        border-radius: 24px !important;
-        padding: 1rem 1.4rem !important;
-    }
-    .champion-banner {
-        border-radius: 28px !important;
-        padding: 1.2rem 1.4rem !important;
-        flex-direction: column !important;
-        text-align: center !important;
-    }
-    .champion-banner > div {
-        text-align: center !important;
-    }
-    .f1-live-banner {
-        border-radius: 28px !important;
-        padding: 1rem 1.4rem !important;
-        text-align: center !important;
-    }
-
-    /* Full width buttons on mobile */
     .stButton > button {
         width: 100% !important;
         padding: 0.85rem 1.5rem !important;
     }
 
-    /* Responsive Metrics */
     [data-testid="stMetric"] {
-        border-radius: 24px !important;
-        padding: 1rem 1.2rem !important;
-        text-align: center !important;
-    }
-    [data-testid="stMetricValue"] {
-        font-size: 1.7rem !important;
+        border-radius: 9999px !important;
+        padding: 1rem 1.5rem !important;
     }
 
-    /* Hero header on mobile */
     .f1-hero-header {
         flex-direction: column !important;
         gap: 16px !important;
-        padding: 1.5rem 1rem !important;
-        border-radius: 28px !important;
+        padding: 1.5rem 1.2rem !important;
+        border-radius: 36px !important;
     }
 }
-
 </style>
 """,
     unsafe_allow_html=True,
